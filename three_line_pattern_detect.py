@@ -16,7 +16,7 @@ import sys
 
 import kite as kite
 import line_pattern_pdf_report
-
+import yaml_file_editing
 
 print("Start...")
 window=10
@@ -29,23 +29,48 @@ two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
 data_store_file_name = f"data_store_{time_frame}.json"
 start_time = time.time()
 max_execution_time = 5*3600
-isExist = os.path.exists(three_line_file_name)
-three_line_alert_df = pd.DataFrame()
-if(isExist):
-    three_line_alert_df = pd.read_excel(three_line_file_name)
+max_execution_time = 30
 
-two_line_alert_df = pd.DataFrame()
-if(isExist):
-    two_line_alert_df = pd.read_excel(two_line_file_name)
+# isExist = os.path.exists(three_line_file_name)
+# three_line_alert_df = pd.DataFrame()
+# if(isExist):
+#     three_line_alert_df = pd.read_excel(three_line_file_name)
 
-if os.path.exists(data_store_file_name):
-    with open(data_store_file_name, "r") as file:
-        data_store = json.load(file)
-else:
-    data_store = {}
+# isExist = os.path.exists(two_line_file_name)
+# two_line_alert_df = pd.DataFrame()
+# if(isExist):
+#     two_line_alert_df = pd.read_excel(two_line_file_name)
 
-logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
-logging.info(f"Started...")
+# if os.path.exists(data_store_file_name):
+#     with open(data_store_file_name, "r") as file:
+#         data_store = json.load(file)
+# else:
+#     data_store = {}
+
+# logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
+# logging.info(f"Started...")
+
+def process_row(candles,stock_name,function_name,number_of_calls=0):
+    # print(function_name.__name__)
+    # return
+    global three_line_alert_df,two_line_alert_df,data_store
+    logging.info(f'{stock_name} - {function_name.__name__} function started')
+    if(number_of_calls==0):
+        candles[f'{function_name.__name__}'] = candles.apply(lambda row: function_name(candles,stock_name,
+                                                            row.name, backcandles=15, window=window,
+                                                            ), axis=1)
+    else:
+        candles['backup'] = candles[f'{function_name.__name__}']
+        candles[f'{function_name.__name__}'] = candles.shift(-number_of_calls).iloc[-number_of_calls:].apply(
+                                                    lambda row: function_name(candles,stock_name,
+                                                    row.name, backcandles=15, window=window,
+                                                    ), axis=1)
+        candles[f'{function_name.__name__}'] = candles[f'{function_name.__name__}'].fillna(candles['backup'])
+    logging.info(f'{stock_name} - last n {function_name.__name__} function Ended')
+    three_line_alert_df.to_excel(three_line_file_name,index=False)
+    two_line_alert_df.to_excel(two_line_file_name,index=False)
+    logging.info(f'{stock_name} - {"last n" if number_of_calls !=0 else ""} preparing_for_candles function Ended')
+    logging.info(f'{stock_name} - alerts file Saved')
 
 def generate_url(rows, time_frame, is_history_starting_from=False, is_add_indicator=True,number_of_time_called=0):
     end_time = time.time()
@@ -80,58 +105,37 @@ def generate_url(rows, time_frame, is_history_starting_from=False, is_add_indica
             candles = candles.drop_duplicates(subset=['Datetime'], keep='first')\
                         .sort_values(by='Datetime')\
                         .reset_index(drop=True)
-            is_history_starting_from = True
+            # is_history_starting_from = True
+            logging.info(f'{stock_name} - {"last n" if is_history_starting_from !=True else ""} preparing_for_candles function started')
+            logging.info(f'{stock_name} - {"last n" if is_history_starting_from !=True else ""} isPivot function started')
             if(is_history_starting_from):
-                logging.info(f'{stock_name} - preparing_for_candles function started')
-                logging.info(f'{stock_name} - isPivot function started')
-                candles['isPivot'] = candles.apply(lambda row: isPivot(candles,stock_name,row.name,window), axis=1)
 
+                candles['isPivot'] = candles.apply(lambda row: isPivot(candles,stock_name,row.name,window), axis=1)
                 logging.info(f'{stock_name} - isPivot function Ended')
-                logging.info(f'{stock_name} - detect_structure function started')
-                candles['pattern_detected'] = candles.apply(lambda row: detect_structure(candles,stock_name,
-                                                                        row.name, backcandles=15, window=window,
-                                                                        ), axis=1)
-                logging.info(f'{stock_name} - detect_structure function Ended')
-                logging.info(f'{stock_name} - two_line_structure function started')
-                candles['two_line_structure'] = candles.apply(lambda row: two_line_structure(candles, stock_name,
-                                                                                   row.name, backcandles=15,
-                                                                                   window=window),
-                                                      axis=1)
-                logging.info(f'{stock_name} - two_line_structure function Ended')
-                
-                three_line_alert_df.to_excel(three_line_file_name,index=False)
-                two_line_alert_df.to_excel(two_line_file_name,index=False)
-                logging.info(f'{stock_name} - preparing_for_candles function Ended')
-                logging.info(f'{stock_name} - alerts file Saved')
+                threads = []
+                for function_name in [detect_structure, two_line_structure]:
+                    thread = threading.Thread(target=process_row, args=(candles, stock_name, function_name))
+                    threads.append(thread)
+                    thread.start()
+
+                for thread in threads:
+                    thread.join()
             else:
                 number_of_calls = kite.maximum_candle_limit[time_frame]
-                logging.info(f'{stock_name} - last n preparing_for_candles function started')
-                logging.info(f'{stock_name} - last n isPivot function started')
                 candles['backup'] = candles['isPivot']
                 candles['isPivot'] = candles.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: isPivot(candles, stock_name, row.name, window), axis=1)
                 candles['isPivot'] = candles['isPivot'].fillna(candles['backup'])
-                logging.info(f'{stock_name} - last n isPivot function Ended')
-
-                logging.info(f'{stock_name} - last n detect_structure function started')
-                candles['backup'] = candles['pattern_detected']
-                candles['pattern_detected'] = candles.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: detect_structure(candles,stock_name,
-                                                                        row.name, backcandles=15, window=window,
-                                                                        ), axis=1)
-                candles['pattern_detected'] = candles['pattern_detected'].fillna(candles['backup'])
-                logging.info(f'{stock_name} - last n detect_structure function Ended')
+                logging.info(f'{stock_name} - {"last n" if is_history_starting_from !=True else ""} isPivot function Ended')
                 
-                logging.info(f'{stock_name} - last n two_line_structure function started')
-                candles['backup'] = candles['two_line_structure']
-                candles['two_line_structure'] = candles.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: two_line_structure(candles,stock_name,
-                                                                        row.name, backcandles=15, window=window,
-                                                                        ), axis=1)
-                candles['two_line_structure'] = candles['two_line_structure'].fillna(candles['backup'])
-                logging.info(f'{stock_name} - last n two_line_structure function Ended')
+                threads = []
+                for function_name in [detect_structure, two_line_structure]:
+                    thread = threading.Thread(target=process_row, args=(candles, stock_name, function_name, number_of_calls))
+                    threads.append(thread)
+                    thread.start()
 
-                three_line_alert_df.to_excel(three_line_file_name,index=False)
-                two_line_alert_df.to_excel(two_line_file_name,index=False)
-                logging.info(f'{stock_name} - last n preparing_for_candles function Ended')
-                logging.info(f'{stock_name} - alerts file Saved')
+                for thread in threads:
+                    thread.join()
+
             candles.to_excel(file_name, index=False)
             session.close()
         else:
@@ -420,17 +424,40 @@ if __name__=="__main__":
         if len(sys.argv) >= 2:
             time_frame = sys.argv[1]
         
+        logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
+        logging.info(f"Started...")
+
+        three_line_file_name = f"three_line_alerts_{time_frame}.xlsx"
+        two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
+        data_store_file_name = f"data_store_{time_frame}.json"
+
+        isExist = os.path.exists(three_line_file_name)
+        three_line_alert_df = pd.DataFrame()
+        if(isExist):
+            three_line_alert_df = pd.read_excel(three_line_file_name)
+
+        isExist = os.path.exists(two_line_file_name)
+        two_line_alert_df = pd.DataFrame()
+        if(isExist):
+            two_line_alert_df = pd.read_excel(two_line_file_name)
+
+        if os.path.exists(data_store_file_name):
+            with open(data_store_file_name, "r") as file:
+                data_store = json.load(file)
+        else:
+            data_store = {}
+
         # max_execution_time = 5*3600
         logging.info(f'Stock threading stated ....')
         stock_data = pd.read_excel("stock market names.xlsx",sheet_name='Stock_list')
         is_history_starting_from,is_add_indicator=True,True
         # if time_frame in data_store and len(data_store[time_frame]) == len(stock_data):
         #     data_store[time_frame] = []
-        thread_limit = 25
+        thread_limit = 5
         total_rows = len(stock_data)
         threads = []
-        for start_index in range(0, 10, thread_limit):
-        #for start_index in range(0, total_rows, thread_limit):
+        # for start_index in range(0, 2, thread_limit):
+        for start_index in range(0, total_rows, thread_limit):
             end_index = min(start_index + thread_limit, total_rows)
             for index in range(start_index, end_index):
                 row = stock_data.iloc[index]
@@ -458,6 +485,15 @@ if __name__=="__main__":
             thread.join()
         if time_frame in data_store and len(data_store[time_frame]) >= len(stock_data):
             data_store[time_frame] = []
+        else:
+
+            logging.info(f"PDF Generater Started...")
+            line_pattern_pdf_report.pdf_generater(time_frame)
+            logging.info(f"PDF Generater Ended...")
+
+            logging.info(f"Yaml file editing Started...")
+            yaml_file_editing.yaml_file_edit(5,time_frame)
+            logging.info(f"Yaml file editing Ended...")
     except Exception as e:
         logging.info(f"Error in main function: {e}")
         traceback_msg = traceback.format_exc()
@@ -483,6 +519,6 @@ if __name__=="__main__":
         traceback_msg = traceback.format_exc()
         logging.info(f"Error : {traceback_msg}")
     logging.info(f"Ended....")
-    logging.info(f"PDF Generater Started...")
-    line_pattern_pdf_report.pdf_generater()
-    logging.info(f"PDF Generater Ended...")
+    # logging.info(f"PDF Generater Started...")
+    # line_pattern_pdf_report.pdf_generater()
+    # logging.info(f"PDF Generater Ended...")

@@ -26,8 +26,8 @@ def output_df_to_pdf(title,pdf, df):
     pdf.ln(10)
 
 
-def pdf_generater():
-    alerts = pd.read_excel("three_line_alerts_day.xlsx")
+def pdf_generater(time_frame):
+    alerts = pd.read_excel(f"three_line_alerts_{time_frame}.xlsx")
 
     alerts.columns = alerts.columns.astype(str)
     alerts = alerts[["stockname","alert_date","date1","value1","date2","value2","date3","value3","buyORsell"]]
@@ -42,7 +42,7 @@ def pdf_generater():
     output_df_to_pdf("Three Lines alert",pdf, filtered_alerts)
 
 
-    alerts = pd.read_excel("two_line_alerts_day.xlsx")
+    alerts = pd.read_excel(f"two_line_alerts_{time_frame}.xlsx")
 
     alerts.columns = alerts.columns.astype(str)
     alerts = alerts[["stockname","alert_date","date1","value1","date2","value2","buyORsell"]]
@@ -57,7 +57,7 @@ def pdf_generater():
     output_df_to_pdf("two Lines alert",pdf, filtered_alerts)
 
 
-    pdf.output('Line_pattern_pdf_report.pdf', 'F')
+    pdf.output(f'Line_pattern_pdf_report{time_frame}.pdf', 'F')
 
 if __name__=="__main__":
     pdf_generater()
