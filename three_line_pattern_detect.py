@@ -16,6 +16,7 @@ import sys
 
 import kite as kite
 import line_pattern_pdf_report
+import telegram_message_send 
 import yaml_file_editing
 
 print("Start...")
@@ -487,10 +488,9 @@ if __name__=="__main__":
         if time_frame in data_store and len(data_store[time_frame]) >= len(stock_data):
             data_store[time_frame] = []
         else:
-
-            logging.info(f"PDF Generater Started...")
-            line_pattern_pdf_report.pdf_generater(time_frame)
-            logging.info(f"PDF Generater Ended...")
+            # logging.info(f"PDF Generater Started...")
+            # line_pattern_pdf_report.pdf_generater(time_frame,3)
+            # logging.info(f"PDF Generater Ended...")
 
             logging.info(f"Yaml file editing Started...")
             yaml_file_editing.yaml_file_edit(5,time_frame)
@@ -520,6 +520,6 @@ if __name__=="__main__":
         traceback_msg = traceback.format_exc()
         logging.info(f"Error : {traceback_msg}")
     logging.info(f"Ended....")
-    # logging.info(f"PDF Generater Started...")
-    # line_pattern_pdf_report.pdf_generater()
-    # logging.info(f"PDF Generater Ended...")
+    logging.info(f"PDF Generater Started...")
+    line_pattern_pdf_report.pdf_generater(time_frame,3)
+    logging.info(f"PDF Generater Ended...")

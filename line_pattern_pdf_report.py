@@ -1,12 +1,12 @@
 from fpdf import FPDF
 import pandas as pd
-import telegram_message_send 
+import telegram_message_send
 
 pdf = FPDF(unit='mm', format=(250, 297))
 pdf.add_page()
 pdf.set_font('Arial', 'B', 16)
 days = 5
-
+pdf.cell(40, 20, "title", ln=True, align='C')
 def output_df_to_pdf(title,pdf, df):
     pdf.set_font('Arial', 'B', 16)
     pdf.cell(40, 20, title, ln=True, align='C')
@@ -27,9 +27,8 @@ def output_df_to_pdf(title,pdf, df):
     pdf.ln(10)
 
 
-def pdf_generater(time_frame):
+def pdf_generater(time_frame,days):
     alerts = pd.read_excel(f"three_line_alerts_{time_frame}.xlsx")
-
     alerts.columns = alerts.columns.astype(str)
     alerts = alerts[["stockname","alert_date","date1","value1","date2","value2","date3","value3","buyORsell"]]
     numeric_cols = alerts.select_dtypes(include='number').columns
@@ -42,9 +41,7 @@ def pdf_generater(time_frame):
 
     output_df_to_pdf("Three Lines alert",pdf, filtered_alerts)
 
-
     alerts = pd.read_excel(f"two_line_alerts_{time_frame}.xlsx")
-
     alerts.columns = alerts.columns.astype(str)
     alerts = alerts[["stockname","alert_date","date1","value1","date2","value2","buyORsell"]]
     numeric_cols = alerts.select_dtypes(include='number').columns
@@ -57,10 +54,10 @@ def pdf_generater(time_frame):
 
     output_df_to_pdf("two Lines alert",pdf, filtered_alerts)
 
-
-    pdf.output(f'Line_pattern_pdf_report_{time_frame}.pdf', 'F')
-    telegram_message_send.send_message_with_documents(f'Line_pattern_pdf_report_{time_frame}.pdf')
+    file_name = f'pdf_report/Line_pattern_pdf_report_{time_frame}.pdf'
+    pdf.output(file_name, 'F')
+    telegram_message_send.send_message_with_documents(document_paths=[file_name])
 
 if __name__=="__main__":
     time_frame = "day"
-    pdf_generater(time_frame)
+    pdf_generater(time_frame,2)

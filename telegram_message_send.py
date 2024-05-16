@@ -4,8 +4,6 @@ import pytz
 import logging
 import os
 
-logging.basicConfig(filename=f'logfile_send_telegram_alert.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
-logging.info(f"Started...")
 def send_message_with_documents(message="", document_paths=[]):
     bot_token = '6511501073:AAHbWvFY_dKcUQfKNGFODOeYK8PEUJ4vXPI'
     chat_id = -4254539095
