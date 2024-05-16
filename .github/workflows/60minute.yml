@@ -32,12 +32,29 @@ jobs:
         git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
 
         '
-    - name: push changes
-      uses: ad-m/github-push-action@v0.6.0
-      with:
-        branch: main
-        github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
-name: daily three_line_pattern_detect
+    # - name: push changes
+    #   uses: ad-m/github-push-action@v0.6.0
+    #   with:
+    #     branch: main
+    #     github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
+  push_changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      # Fetch changes from the remote repository
+      - name: Fetch changes
+        run: git fetch origin
+
+      # Merge changes from the remote main branch into the current branch
+      - name: Merge changes
+        run: git merge origin/main
+
+      # Push changes to the remote main branch
+      - name: Push changes
+        run: git push origin main
+name: 60minute three_line_pattern_detect
 'on':
   push:
     branches:
