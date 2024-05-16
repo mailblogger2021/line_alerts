@@ -1,5 +1,6 @@
 from fpdf import FPDF
 import pandas as pd
+import telegram_message_send 
 
 pdf = FPDF(unit='mm', format=(250, 297))
 pdf.add_page()
@@ -57,7 +58,9 @@ def pdf_generater(time_frame):
     output_df_to_pdf("two Lines alert",pdf, filtered_alerts)
 
 
-    pdf.output(f'Line_pattern_pdf_report{time_frame}.pdf', 'F')
+    pdf.output(f'Line_pattern_pdf_report_{time_frame}.pdf', 'F')
+    telegram_message_send.send_message_with_documents(f'Line_pattern_pdf_report_{time_frame}.pdf')
 
 if __name__=="__main__":
-    pdf_generater()
+    time_frame = "day"
+    pdf_generater(time_frame)

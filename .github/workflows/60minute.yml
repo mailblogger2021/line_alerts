@@ -1,64 +1,57 @@
+name: 60 minute three_line_pattern_detect
+
+'on':
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: 42 16 16 5 *
+    - cron: 45 15 * * mon-fri
+
 jobs:
   build:
     runs-on: macos-latest
     steps:
-    - name: checkout repo content
-      uses: actions/checkout@v2
-    - name: setup python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    - name: install python packages
-      run: 'python -m pip install --upgrade pip
-
-        pip install -r requirements.txt
-
-        '
-    - env:
-        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        CHAT_ID: ${{ secrets.CHAT_ID }}
-        SECRETS_GITHUB_TOKEN: ${{ secrets.SECRETS_GITHUB_TOKEN }}
-      name: execute py script
-      run: "if [[ ${{ github.event_name }} == 'push' ]]; then\n  python three_line_pattern_detect.py\
-        \ \"60minute\"\nelif [[ ${{ github.event_name }} == 'schedule' ]]; then\n\
-        \  python three_line_pattern_detect.py \"60minute\"\nfi\n"
-    - name: commit files
-      run: 'git config --local user.email "action@github.com"
-
-        git config --local user.name "GitHub Action"
-
-        git add -A
-
-        git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-
-        '
-    # - name: push changes
-    #   uses: ad-m/github-push-action@v0.6.0
-    #   with:
-    #     branch: main
-    #     github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
-  push_changes:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
+      - name: checkout repo content
         uses: actions/checkout@v2
-      
-      # Fetch changes from the remote repository
-      - name: Fetch changes
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: execute py script
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          SECRETS_GITHUB_TOKEN: ${{ secrets.SECRETS_GITHUB_TOKEN }}
+        run: |
+          if [[ ${{ github.event_name }} == 'push' ]]; then
+            python three_line_pattern_detect.py "60minute"
+          elif [[ ${{ github.event_name }} == 'schedule' ]]; then
+            python three_line_pattern_detect.py "60minute"
+          fi
+
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+
+      - name: fetch changes
         run: git fetch origin
 
-      # Merge changes from the remote main branch into the current branch
-      - name: Merge changes
+      - name: merge changes
         run: git merge origin/main
 
-      # Push changes to the remote main branch
-      - name: Push changes
-        run: git push origin main
-name: 60minute three_line_pattern_detect
-'on':
-  push:
-    branches:
-    - main
-  schedule:
-  - cron: 42 16 16 5 *
-  - cron: 45 15 * * mon-fri
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: main
+          github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
