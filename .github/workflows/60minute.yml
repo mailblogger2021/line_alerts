@@ -49,5 +49,5 @@ name: 60 minute three_line_pattern_detect
     branches:
     - main
   schedule:
-  - cron: 44 18 16 5 *
+  - cron: 22 21 16 5 *
   - cron: 45 15 * * mon-fri
