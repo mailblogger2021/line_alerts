@@ -39,7 +39,7 @@ jobs:
     - name: merge changes
       run: git merge origin/main
     - name: push changes
-        run: |
+      run: |
           git push https://mailblogger2021:${{ secrets.GITHUB_TOKEN }}github.com/mailblogger2021/line_alerts.git main
       with:
         branch: main
