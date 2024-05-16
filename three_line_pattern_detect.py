@@ -453,7 +453,7 @@ if __name__=="__main__":
         is_history_starting_from,is_add_indicator=True,True
         # if time_frame in data_store and len(data_store[time_frame]) == len(stock_data):
         #     data_store[time_frame] = []
-        thread_limit = 5
+        thread_limit = 2
         total_rows = len(stock_data)
         threads = []
         # for start_index in range(0, 2, thread_limit):
