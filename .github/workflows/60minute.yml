@@ -18,7 +18,7 @@ jobs:
     - env:
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
-        SECRETS_GITHUB_TOKEN: ${{ secrets.SECRETS_GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.SECRETS_GITHUB_TOKEN }}
       name: execute py script
       run: "if [[ ${{ github.event_name }} == 'push' ]]; then\n  python three_line_pattern_detect.py\
         \ \"60minute\"\nelif [[ ${{ github.event_name }} == 'schedule' ]]; then\n\
@@ -40,7 +40,7 @@ jobs:
       run: git merge origin/main
     - name: push changes
       run: |
-          git push https://mailblogger2021:${{ secrets.GITHUB_TOKEN }}github.com/mailblogger2021/line_alerts.git main
+          git push https://github.com/mailblogger2021/line_alerts.git main
       # with:
       #   branch: main
       #   github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
