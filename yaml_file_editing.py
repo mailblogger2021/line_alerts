@@ -7,6 +7,7 @@ def yaml_file_edit(minutes,file_name):
 
     cron_value = f"{cron_time.minute} {cron_time.hour} {cron_time.day} {cron_time.month} *"
 
+    file_name = "day"
     yaml_file_path = f'.github/workflows/{file_name}.yml'
     with open(yaml_file_path, 'r') as file:
         yaml_data = yaml.safe_load(file)
