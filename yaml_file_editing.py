@@ -12,7 +12,7 @@ def yaml_file_edit(minutes,file_name):
     with open(yaml_file_path, 'r') as file:
         yaml_data = yaml.safe_load(file)
 
-    yaml_data[True]['schedule'][0]['cron'] = cron_value 
+    yaml_data['on']['schedule'][0]['cron'] = cron_value 
 
     with open(yaml_file_path, 'w') as file:
         yaml.dump(yaml_data, file)

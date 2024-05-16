@@ -1,6 +1,7 @@
 from fpdf import FPDF
 import pandas as pd
 import telegram_message_send
+import yaml_file_editing
 
 pdf = FPDF(unit='mm', format=(250, 297))
 pdf.add_page()
@@ -59,5 +60,6 @@ def pdf_generater(time_frame,days):
     telegram_message_send.send_message_with_documents(document_paths=[file_name])
 
 if __name__=="__main__":
-    time_frame = "day"
-    pdf_generater(time_frame,2)
+    time_frame = "60minute"
+    # pdf_generater(time_frame,2)
+    # yaml_file_editing.yaml_file_edit(5,time_frame)
