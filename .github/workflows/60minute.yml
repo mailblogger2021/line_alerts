@@ -18,7 +18,7 @@ jobs:
     - env:
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
-        SECRETS_GITHUB_TOKEN: ${{ secrets.SECRETS_GITHUB_TOKEN }}
+        SECRETS_GITHUB_TOKEN: ${{ secrets.SECRETS_PAT_GITHUB_TOKEN }}
       name: execute py script
       run: "if [[ ${{ github.event_name }} == 'push' ]]; then\n  python three_line_pattern_detect.py\
         \ \"60minute\"\nelif [[ ${{ github.event_name }} == 'schedule' ]]; then\n\
@@ -42,7 +42,7 @@ jobs:
       uses: ad-m/github-push-action@v0.6.0
       with:
         branch: main
-        github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
+        github_token: ${{ secrets.SECRETS_PAT_GITHUB_TOKEN }}
 name: 60 minute three_line_pattern_detect
 'on':
   push:
