@@ -41,9 +41,9 @@ jobs:
     - name: push changes
       run: |
           git push https://mailblogger2021:${{ secrets.GITHUB_TOKEN }}github.com/mailblogger2021/line_alerts.git main
-      with:
-        branch: main
-        github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
+      # with:
+      #   branch: main
+      #   github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
 name: 60 minute three_line_pattern_detect
 'on':
   push:
