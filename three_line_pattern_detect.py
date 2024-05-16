@@ -456,6 +456,7 @@ if __name__=="__main__":
         thread_limit = 2
         total_rows = len(stock_data)
         threads = []
+        total_rows = 2
         # for start_index in range(0, 2, thread_limit):
         for start_index in range(0, total_rows, thread_limit):
             end_index = min(start_index + thread_limit, total_rows)

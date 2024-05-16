@@ -1,3 +1,12 @@
+name: daily three_line_pattern_detect
+'on':
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: 42 16 16 5 *
+    - cron: 45 15 * * mon-fri
+
 jobs:
   build:
     runs-on: macos-latest
@@ -33,7 +42,7 @@ jobs:
 
         '
     - name: fetch changes
-        run: git fetch origin
+      run: git fetch origin
 
     - name: merge changes
       run: git merge origin/main
@@ -43,11 +52,3 @@ jobs:
       with:
         branch: main
         github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
-name: daily three_line_pattern_detect
-'on':
-  push:
-    branches:
-    - main
-  schedule:
-  - cron: 41 16 16 5 *
-  - cron: 45 15 * * mon-fri
