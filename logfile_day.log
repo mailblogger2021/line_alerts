@@ -11487,3 +11487,86 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 2024-05-16 01:49:15,625 -INFO - Ended....
 2024-05-16 01:49:15,625 -INFO - PDF Generater Started...
 2024-05-16 01:49:22,073 -INFO - PDF Generater Ended...
+2024-05-16 11:11:30,690 -INFO - Started...
+2024-05-16 11:11:37,502 -INFO - Stock threading stated ....
+2024-05-16 11:11:37,543 -INFO - NIFTY BANK - Reading existing data...
+2024-05-16 11:11:37,544 -INFO - NIFTY FIN SERVICE - Reading existing data...
+2024-05-16 11:11:38,197 -INFO - NIFTY BANK - kite url call started...
+2024-05-16 11:11:38,284 -INFO - NIFTY BANK - is_history_starting_from - False
+2024-05-16 11:11:38,285 -INFO - NIFTY FIN SERVICE - kite url call started...
+2024-05-16 11:11:38,285 -INFO - NIFTY FIN SERVICE - is_history_starting_from - False
+2024-05-16 11:11:40,365 -INFO - NIFTY FIN SERVICE - kite url call Ended...
+2024-05-16 11:11:40,760 -INFO - NIFTY BANK - kite url call Ended...
+2024-05-16 11:11:41,244 -INFO - NIFTY FIN SERVICE - last n preparing_for_candles function started
+2024-05-16 11:11:41,244 -INFO - NIFTY FIN SERVICE - last n isPivot function started
+2024-05-16 11:11:41,737 -INFO - NIFTY BANK - last n preparing_for_candles function started
+2024-05-16 11:11:41,737 -INFO - NIFTY BANK - last n isPivot function started
+2024-05-16 11:11:41,976 -INFO - NIFTY FIN SERVICE - last n isPivot function Ended
+2024-05-16 11:11:41,976 -INFO - NIFTY FIN SERVICE - detect_structure function started
+2024-05-16 11:11:42,002 -INFO - NIFTY FIN SERVICE - two_line_structure function started
+2024-05-16 11:11:42,158 -INFO - NIFTY BANK - last n isPivot function Ended
+2024-05-16 11:11:42,158 -INFO - NIFTY BANK - detect_structure function started
+2024-05-16 11:11:42,176 -INFO - NIFTY BANK - two_line_structure function started
+2024-05-16 11:11:55,360 -INFO - NIFTY FIN SERVICE - last n two_line_structure function Ended
+2024-05-16 11:12:01,707 -INFO - NIFTY BANK - last n two_line_structure function Ended
+2024-05-16 11:12:21,922 -INFO - All stocks - alerts file Saved
+2024-05-16 11:12:21,922 -INFO - All stocks - json file saved
+2024-05-16 11:12:21,922 -INFO - 0 - thread Completed....
+2024-05-16 11:12:21,922 -INFO - 0 - 2 - Stock threading ended ....
+2024-05-16 11:12:21,922 -INFO - Max time reached....
+2024-05-16 11:12:32,956 -INFO - NIFTY FIN SERVICE - last n preparing_for_candles function Ended
+2024-05-16 11:12:32,956 -INFO - NIFTY FIN SERVICE - alerts file Saved
+2024-05-16 11:12:33,911 -INFO - NIFTY BANK - last n preparing_for_candles function Ended
+2024-05-16 11:12:33,911 -INFO - NIFTY BANK - alerts file Saved
+2024-05-16 11:12:35,018 -INFO - NIFTY FIN SERVICE - generate_url function ended...
+2024-05-16 11:12:35,032 -INFO - NIFTY BANK - generate_url function ended...
+2024-05-16 11:12:35,033 -INFO - PDF Generater Started...
+2024-05-16 11:12:35,035 -INFO - Error in main function: Error -3 while decompressing data: invalid code lengths set
+2024-05-16 11:12:35,040 -INFO - Error : Traceback (most recent call last):
+  File "/Users/runner/work/line_alerts/line_alerts/three_line_pattern_detect.py", line 491, in <module>
+    line_pattern_pdf_report.pdf_generater(time_frame)
+  File "/Users/runner/work/line_alerts/line_alerts/line_pattern_pdf_report.py", line 30, in pdf_generater
+    alerts = pd.read_excel(f"three_line_alerts_{time_frame}.xlsx")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/excel/_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/excel/_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/excel/_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/excel/_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/io/excel/_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/openpyxl/reader/excel.py", line 346, in load_workbook
+    reader.read()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/openpyxl/reader/excel.py", line 301, in read
+    self.read_worksheets()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/openpyxl/reader/excel.py", line 228, in read_worksheets
+    ws = ReadOnlyWorksheet(self.wb, sheet.name, rel.target, self.shared_strings)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/openpyxl/worksheet/_read_only.py", line 42, in __init__
+    self._get_size()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/openpyxl/worksheet/_read_only.py", line 49, in _get_size
+    dimensions = parser.parse_dimensions()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/openpyxl/worksheet/_reader.py", line 178, in parse_dimensions
+    for _event, element in it:
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/xml/etree/ElementTree.py", line 1253, in iterator
+    data = source.read(16 * 1024)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 965, in read
+    data = self._read1(n)
+           ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 1041, in _read1
+    data = self._decompressor.decompress(data, n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+zlib.error: Error -3 while decompressing data: invalid code lengths set
+
+2024-05-16 11:12:51,572 -INFO - All stocks - alerts file Saved
+2024-05-16 11:12:51,572 -INFO - All stocks - json file saved
+2024-05-16 11:12:51,572 -INFO - Ended....
