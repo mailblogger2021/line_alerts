@@ -1,5 +1,5 @@
 permissions:
-  actions: write
+  actions: write-all
 jobs:
   build:
     runs-on: macos-latest
