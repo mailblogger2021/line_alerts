@@ -125,6 +125,11 @@ def get_kite_url(session,rows,timeFrame,is_history_starting_from=False,is_add_in
 import yfinance as yf
 import pandas as pd
 
+# period - 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max
+# interval - 1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo
+# start - YYYY-MM-DD
+# end - YYYY-MM-DD
+
 def get_candle_data_from_yfinance(tickers, period='1mo', interval='1d'):
     if(len(tickers)<=1):
        tickers.append('NIFTY')
