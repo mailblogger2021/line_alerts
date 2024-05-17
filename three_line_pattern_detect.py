@@ -15,9 +15,8 @@ import traceback
 import sys
 
 import kite as kite
-import line_pattern_pdf_report
+import functions
 import telegram_message_send 
-import yaml_file_editing
 
 print("Start...")
 window=10
@@ -493,8 +492,11 @@ if __name__=="__main__":
             # logging.info(f"PDF Generater Ended...")
 
             logging.info(f"Yaml file editing Started...")
-            yaml_file_editing.yaml_file_edit(5,time_frame)
+            functions.yaml_file_edit(5,time_frame)
             logging.info(f"Yaml file editing Ended...")
+            logging.info(f"Git push editing Started...")
+            functions.git_push()
+            logging.info(f"Git push editing Ended...")
     except Exception as e:
         logging.info(f"Error in main function: {e}")
         traceback_msg = traceback.format_exc()
@@ -521,5 +523,5 @@ if __name__=="__main__":
         logging.info(f"Error : {traceback_msg}")
     logging.info(f"Ended....")
     logging.info(f"PDF Generater Started...")
-    line_pattern_pdf_report.pdf_generater(time_frame,3)
+    functions.pdf_generater(time_frame,3)
     logging.info(f"PDF Generater Ended...")
