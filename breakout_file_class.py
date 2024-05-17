@@ -8,7 +8,7 @@ import requests
 from scipy.stats import linregress
 import itertools
 import logging
-import kite as kite
+import get_candle_data as get_candle_data
 
 class StockAnalyzer:
     
@@ -34,7 +34,7 @@ class StockAnalyzer:
         
         # Make the request using a session
         with requests.Session() as session:
-            candles = kite.get_kite_url(session, rows, time_frame, is_history_starting_from=is_history_starting_from, is_add_indicator=is_add_indicator)
+            candles = get_candle_data.get_kite_url(session, rows, time_frame, is_history_starting_from=is_history_starting_from, is_add_indicator=is_add_indicator)
         
         logging.info(f"{stock_name} - kite url call ended...")
         

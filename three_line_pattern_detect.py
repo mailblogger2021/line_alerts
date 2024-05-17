@@ -14,7 +14,7 @@ import time
 import traceback
 import sys
 
-import kite as kite
+import get_candle_data as get_candle_data
 import functions
 import telegram_message_send 
 
@@ -97,7 +97,7 @@ def generate_url(rows, time_frame, is_history_starting_from=False, is_add_indica
             with requests.Session() as session:
                 logging.info(f"{stock_name} - kite url call started...")
                 logging.info(f"{stock_name} - is_history_starting_from - {is_history_starting_from}")
-                candles = kite.get_kite_url(session, rows, time_frame, is_history_starting_from, is_add_indicator,number_of_time_called)
+                candles = get_candle_data.get_kite_url(session, rows, time_frame, is_history_starting_from, is_add_indicator,number_of_time_called)
                 logging.info(f"{stock_name} - kite url call Ended...")
 
             candles = pd.concat([stock_data_historical, candles], axis=0)
@@ -121,7 +121,7 @@ def generate_url(rows, time_frame, is_history_starting_from=False, is_add_indica
                 for thread in threads:
                     thread.join()
             else:
-                number_of_calls = kite.maximum_candle_limit[time_frame]
+                number_of_calls = get_candle_data.maximum_candle_limit[time_frame]
                 candles['backup'] = candles['isPivot']
                 candles['isPivot'] = candles.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: isPivot(candles, stock_name, row.name, window), axis=1)
                 candles['isPivot'] = candles['isPivot'].fillna(candles['backup'])

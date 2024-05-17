@@ -120,3 +120,34 @@ def get_kite_url(session,rows,timeFrame,is_history_starting_from=False,is_add_in
   df = candles
   stockname = stock_name
   return candles
+
+
+import yfinance as yf
+import pandas as pd
+
+def get_candle_data_from_yfinance(tickers, period='1mo', interval='1d'):
+    if(len(tickers)<=1):
+       tickers.append('NIFTY')
+    data = yf.download(tickers=tickers, period=period, 
+                       interval=interval, group_by='ticker')
+    ticker_data = {}
+    for ticker in tickers:
+        ticker_df = data[ticker].copy()
+        ticker_df.dropna(inplace=True)
+        if not ticker_df.empty:
+            ticker_df.reset_index(inplace=True)
+            if 'Date' in data.columns:
+                data.rename(columns={'Date': 'Datetime'}, inplace=True)
+            ticker_df.columns = ['Datetime'] + [f"{col}" for col in ticker_df.columns[1:]]
+            ticker_df['Year'] = ticker_df['Datetime'].dt.year
+            ticker_df['Month'] = ticker_df['Datetime'].dt.month
+            ticker_df['Day'] = ticker_df['Datetime'].dt.day
+            ticker_df['Hour'] = ticker_df['Datetime'].dt.hour
+            ticker_df['Minute'] = ticker_df['Datetime'].dt.minute
+            ticker_df['Second'] = ticker_df['Datetime'].dt.second
+            ticker_df['Week'] = ticker_df['Datetime'].dt.isocalendar().week
+            ticker_df['Datetime'] = ticker_df['Datetime'].dt.strftime('%d-%m-%Y %H:%M:%S')
+            # ticker_df.set_index('Datetime', inplace=True)
+            ticker_data[ticker] = ticker_df
+
+    return ticker_data

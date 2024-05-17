@@ -8,7 +8,7 @@ import requests
 from scipy.stats import linregress
 import itertools
 import logging
-import kite as kite
+import get_candle_data as get_candle_data
 import json
 import traceback
 import time
@@ -68,7 +68,7 @@ def generate_url(rows, time_frame, is_history_starting_from=False, is_add_indica
             with requests.Session() as session:
                 logging.info(f"{stock_name} - kite url call started...")
                 logging.info(f"{stock_name} - is_history_starting_from - {is_history_starting_from}")
-                candles = kite.get_kite_url(session, rows, time_frame, is_history_starting_from, is_add_indicator,number_of_time_called)
+                candles = get_candle_data.get_kite_url(session, rows, time_frame, is_history_starting_from, is_add_indicator,number_of_time_called)
                 logging.info(f"{stock_name} - kite url call Ended...")
 
             candles = pd.concat([stock_data_historical, candles], axis=0)
@@ -100,7 +100,7 @@ def generate_url(rows, time_frame, is_history_starting_from=False, is_add_indica
                 logging.info(f'{stock_name} - preparing_for_candles function Ended')
                 logging.info(f'{stock_name} - alerts file Saved')
             else:
-                number_of_calls = kite.maximum_candle_limit[time_frame]
+                number_of_calls = get_candle_data.maximum_candle_limit[time_frame]
                 logging.info(f'{stock_name} - last n preparing_for_candles function started')
                 logging.info(f'{stock_name} - last n isPivot function started')
                 candles['backup'] = candles['isPivot']

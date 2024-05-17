@@ -1,0 +1,258 @@
+2024-05-17 21:02:24,441 -INFO - Started...
+2024-05-17 21:02:24,863 -INFO - Stock threading stated ....
+2024-05-17 21:02:24,941 -INFO - Error in main function: unsupported operand type(s) for -: 'list' and 'set'
+2024-05-17 21:02:24,941 -INFO - Error : Traceback (most recent call last):
+  File "D:\line_alerts\two_line_pattern_detect.py", line 461, in <module>
+    generate_url_yfinance(stock_name_list,time_frame,is_history_starting_from,is_add_indicator)
+  File "D:\line_alerts\two_line_pattern_detect.py", line 120, in generate_url_yfinance
+    already_done = list(set(data_store[time_frame] - set(stock_list)))
+                            ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'list' and 'set'
+
+2024-05-17 21:02:25,801 -INFO - All stocks - alerts file Saved
+2024-05-17 21:02:25,801 -INFO - All stocks - json file saved
+2024-05-17 21:02:25,801 -INFO - Ended....
+2024-05-17 21:02:25,801 -INFO - PDF Generater Started...
+2024-05-17 21:02:28,750 -INFO - Message sent successfully! - 
+2024-05-17 21:02:28,766 -INFO - PDF Generater Ended...
+2024-05-17 21:05:01,122 -INFO - Started...
+2024-05-17 21:05:01,544 -INFO - Stock threading stated ....
+2024-05-17 21:05:06,746 -INFO - BRITANNIA.NS - Reading existing data...
+2024-05-17 21:05:06,748 -INFO - HEROMOTOCO.NS - Reading existing data...
+2024-05-17 21:05:06,749 -INFO - BPCL.NS - Reading existing data...
+2024-05-17 21:05:06,752 -INFO - ULTRACEMCO.NS - Reading existing data...
+2024-05-17 21:05:06,753 -INFO - WIPRO.NS - Reading existing data...
+2024-05-17 21:05:14,250 -INFO - HEROMOTOCO.NS - isPivot function started
+2024-05-17 21:05:14,329 -INFO - ULTRACEMCO.NS - isPivot function started
+2024-05-17 21:05:16,911 -INFO - BPCL.NS - isPivot function started
+2024-05-17 21:05:17,664 -INFO - BRITANNIA.NS - isPivot function started
+2024-05-17 21:05:23,740 -INFO - WIPRO.NS - isPivot function started
+2024-05-17 21:05:29,751 -INFO - HEROMOTOCO.NS - isPivot function Ended
+2024-05-17 21:05:29,922 -INFO - ULTRACEMCO.NS - isPivot function Ended
+2024-05-17 21:05:29,938 -INFO - HEROMOTOCO.NS - detect_structure function started
+2024-05-17 21:05:29,969 -INFO - ULTRACEMCO.NS - detect_structure function started
+2024-05-17 21:05:30,055 -INFO - ULTRACEMCO.NS - two_line_structure function started
+2024-05-17 21:05:30,071 -INFO - HEROMOTOCO.NS - two_line_structure function started
+2024-05-17 21:05:38,470 -INFO - BPCL.NS - isPivot function Ended
+2024-05-17 21:05:38,548 -INFO - BPCL.NS - detect_structure function started
+2024-05-17 21:05:38,579 -INFO - BPCL.NS - two_line_structure function started
+2024-05-17 21:05:38,751 -INFO - BRITANNIA.NS - isPivot function Ended
+2024-05-17 21:05:38,767 -INFO - BRITANNIA.NS - detect_structure function started
+2024-05-17 21:05:38,814 -INFO - BRITANNIA.NS - two_line_structure function started
+2024-05-17 21:05:41,985 -INFO - WIPRO.NS - isPivot function Ended
+2024-05-17 21:05:42,016 -INFO - WIPRO.NS - detect_structure function started
+2024-05-17 21:05:42,079 -INFO - WIPRO.NS - two_line_structure function started
+2024-05-17 21:11:45,488 -INFO - ULTRACEMCO.NS - last n two_line_structure function Ended
+2024-05-17 21:11:51,681 -INFO - HEROMOTOCO.NS - last n two_line_structure function Ended
+2024-05-17 21:11:54,938 -INFO - ULTRACEMCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:11:54,953 -INFO - ULTRACEMCO.NS - alerts file Saved
+2024-05-17 21:11:57,956 -INFO - HEROMOTOCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:11:57,956 -INFO - HEROMOTOCO.NS - alerts file Saved
+2024-05-17 21:12:03,420 -INFO - ULTRACEMCO.NS - last n detect_structure function Ended
+2024-05-17 21:12:09,099 -INFO - ULTRACEMCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:12:09,100 -INFO - ULTRACEMCO.NS - alerts file Saved
+2024-05-17 21:12:23,463 -INFO - HEROMOTOCO.NS - last n detect_structure function Ended
+2024-05-17 21:12:28,769 -INFO - HEROMOTOCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:12:28,769 -INFO - HEROMOTOCO.NS - alerts file Saved
+2024-05-17 21:13:22,072 -INFO - WIPRO.NS - last n two_line_structure function Ended
+2024-05-17 21:13:26,300 -INFO - WIPRO.NS -  preparing_for_candles function Ended
+2024-05-17 21:13:26,300 -INFO - WIPRO.NS - alerts file Saved
+2024-05-17 21:13:30,861 -INFO - BPCL.NS - last n two_line_structure function Ended
+2024-05-17 21:13:34,508 -INFO - BPCL.NS -  preparing_for_candles function Ended
+2024-05-17 21:13:34,508 -INFO - BPCL.NS - alerts file Saved
+2024-05-17 21:13:39,565 -INFO - BRITANNIA.NS - last n two_line_structure function Ended
+2024-05-17 21:13:43,515 -INFO - BRITANNIA.NS -  preparing_for_candles function Ended
+2024-05-17 21:13:43,515 -INFO - BRITANNIA.NS - alerts file Saved
+2024-05-17 21:13:44,983 -INFO - BRITANNIA.NS - last n detect_structure function Ended
+2024-05-17 21:13:46,162 -INFO - WIPRO.NS - last n detect_structure function Ended
+2024-05-17 21:13:48,436 -INFO - BPCL.NS - last n detect_structure function Ended
+2024-05-17 21:13:51,125 -INFO - BRITANNIA.NS -  preparing_for_candles function Ended
+2024-05-17 21:13:51,125 -INFO - BRITANNIA.NS - alerts file Saved
+2024-05-17 21:13:52,991 -INFO - WIPRO.NS -  preparing_for_candles function Ended
+2024-05-17 21:13:52,991 -INFO - WIPRO.NS - alerts file Saved
+2024-05-17 21:13:58,408 -INFO - BPCL.NS -  preparing_for_candles function Ended
+2024-05-17 21:13:58,408 -INFO - BPCL.NS - alerts file Saved
+2024-05-17 21:23:28,435 -INFO - Started...
+2024-05-17 21:23:29,716 -INFO - Stock threading stated ....
+2024-05-17 21:23:33,141 -INFO - HEROMOTOCO.NS - Reading existing data...
+2024-05-17 21:23:33,141 -INFO - ULTRACEMCO.NS - Reading existing data...
+2024-05-17 21:23:35,640 -INFO - ULTRACEMCO.NS - isPivot function started
+2024-05-17 21:23:35,687 -INFO - HEROMOTOCO.NS - isPivot function started
+2024-05-17 21:23:42,467 -INFO - ULTRACEMCO.NS - isPivot function Ended
+2024-05-17 21:23:42,499 -INFO - ULTRACEMCO.NS - detect_structure function started
+2024-05-17 21:23:42,530 -INFO - ULTRACEMCO.NS - two_line_structure function started
+2024-05-17 21:23:42,796 -INFO - HEROMOTOCO.NS - isPivot function Ended
+2024-05-17 21:23:42,811 -INFO - HEROMOTOCO.NS - detect_structure function started
+2024-05-17 21:23:42,811 -INFO - HEROMOTOCO.NS - two_line_structure function started
+2024-05-17 21:26:53,732 -INFO - ULTRACEMCO.NS - last n two_line_structure function Ended
+2024-05-17 21:27:02,005 -INFO - ULTRACEMCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:27:02,021 -INFO - ULTRACEMCO.NS - alerts file Saved
+2024-05-17 21:27:06,412 -INFO - HEROMOTOCO.NS - last n detect_structure function Ended
+2024-05-17 21:27:09,973 -INFO - ULTRACEMCO.NS - last n detect_structure function Ended
+2024-05-17 21:27:12,977 -INFO - HEROMOTOCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:27:12,977 -INFO - HEROMOTOCO.NS - alerts file Saved
+2024-05-17 21:27:13,321 -INFO - HEROMOTOCO.NS - last n two_line_structure function Ended
+2024-05-17 21:27:17,260 -INFO - ULTRACEMCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:27:17,260 -INFO - ULTRACEMCO.NS - alerts file Saved
+2024-05-17 21:27:20,658 -INFO - HEROMOTOCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:27:20,658 -INFO - HEROMOTOCO.NS - alerts file Saved
+2024-05-17 21:27:26,477 -INFO - All stocks - alerts file Saved
+2024-05-17 21:27:26,479 -INFO - All stocks - json file saved
+2024-05-17 21:27:26,479 -INFO - Yaml file editing Started...
+2024-05-17 21:27:26,479 -INFO - Yaml file editing Ended...
+2024-05-17 21:27:26,479 -INFO - Git push Started...
+2024-05-17 21:27:26,479 -INFO - Git push Ended...
+2024-05-17 21:27:28,395 -INFO - All stocks - alerts file Saved
+2024-05-17 21:27:28,396 -INFO - All stocks - json file saved
+2024-05-17 21:27:28,397 -INFO - Ended....
+2024-05-17 21:27:28,397 -INFO - PDF Generater Started...
+2024-05-17 21:27:31,681 -INFO - Message sent successfully! - 
+2024-05-17 21:27:31,685 -INFO - PDF Generater Ended...
+2024-05-17 21:37:56,165 -INFO - Started...
+2024-05-17 21:37:56,743 -INFO - Stock threading stated ....
+2024-05-17 21:37:56,832 -INFO - ULTRACEMCO.NS - this stock already completed
+2024-05-17 21:37:56,832 -INFO - HEROMOTOCO.NS - this stock already completed
+2024-05-17 21:38:01,676 -ERROR - 
+1 Failed download:
+2024-05-17 21:38:01,676 -ERROR - ['NIFTY']: Exception('%ticker%: No timezone found, symbol may be delisted')
+2024-05-17 21:38:01,676 -INFO - Error in main function: 'NIFTY'
+2024-05-17 21:38:01,692 -INFO - Error : Traceback (most recent call last):
+  File "D:\line_alerts\env\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'NIFTY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\line_alerts\two_line_pattern_detect.py", line 466, in <module>
+    generate_url_yfinance(stock_name_list,time_frame,is_history_starting_from,is_add_indicator)
+  File "D:\line_alerts\two_line_pattern_detect.py", line 131, in generate_url_yfinance
+    stocks_data_df = get_candle_data.get_candle_data_from_yfinance(tickers = stock_list, period='max', interval=time_frame)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\line_alerts\get_candle_data.py", line 135, in get_candle_data_from_yfinance
+    ticker_df = data[ticker].copy()
+                ~~~~^^^^^^^^
+  File "D:\line_alerts\env\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\line_alerts\env\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'NIFTY'
+
+2024-05-17 21:38:03,052 -INFO - All stocks - alerts file Saved
+2024-05-17 21:38:03,053 -INFO - All stocks - json file saved
+2024-05-17 21:38:03,053 -INFO - Ended....
+2024-05-17 21:38:03,053 -INFO - PDF Generater Started...
+2024-05-17 21:38:05,782 -INFO - Message sent successfully! - 
+2024-05-17 21:38:05,782 -INFO - PDF Generater Ended...
+2024-05-17 21:39:38,088 -INFO - Started...
+2024-05-17 21:39:39,300 -INFO - Stock threading stated ....
+2024-05-17 21:39:39,423 -INFO - ULTRACEMCO.NS - this stock already completed
+2024-05-17 21:39:39,423 -INFO - HEROMOTOCO.NS - this stock already completed
+2024-05-17 21:39:41,820 -INFO - All stocks - alerts file Saved
+2024-05-17 21:39:41,822 -INFO - All stocks - json file saved
+2024-05-17 21:39:41,822 -INFO - Yaml file editing Started...
+2024-05-17 21:39:41,823 -INFO - Yaml file editing Ended...
+2024-05-17 21:39:41,823 -INFO - Git push Started...
+2024-05-17 21:39:41,823 -INFO - Git push Ended...
+2024-05-17 21:39:43,248 -INFO - All stocks - alerts file Saved
+2024-05-17 21:39:43,248 -INFO - All stocks - json file saved
+2024-05-17 21:39:43,248 -INFO - Ended....
+2024-05-17 21:39:43,248 -INFO - PDF Generater Started...
+2024-05-17 21:39:46,309 -INFO - Message sent successfully! - 
+2024-05-17 21:39:46,309 -INFO - PDF Generater Ended...
+2024-05-17 21:43:58,974 -INFO - Started...
+2024-05-17 21:43:59,597 -INFO - Error in main function: Expecting value: line 5 column 5 (char 43)
+2024-05-17 21:43:59,655 -INFO - Error : Traceback (most recent call last):
+  File "D:\line_alerts\two_line_pattern_detect.py", line 439, in <module>
+    data_store = json.load(file)
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\Logesh\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Logesh\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logesh\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logesh\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 5 column 5 (char 43)
+
+2024-05-17 21:44:00,719 -INFO - All stocks - alerts file Saved
+2024-05-17 21:44:00,719 -INFO - All stocks - json file saved
+2024-05-17 21:44:00,719 -INFO - Ended....
+2024-05-17 21:44:00,719 -INFO - PDF Generater Started...
+2024-05-17 21:44:03,575 -INFO - Message sent successfully! - 
+2024-05-17 21:44:03,575 -INFO - PDF Generater Ended...
+2024-05-17 21:44:35,281 -INFO - Started...
+2024-05-17 21:44:35,889 -INFO - Stock threading stated ....
+2024-05-17 21:44:35,981 -INFO - Error in main function: '1d'
+2024-05-17 21:44:35,987 -INFO - Error : Traceback (most recent call last):
+  File "D:\line_alerts\two_line_pattern_detect.py", line 471, in <module>
+    generate_url_yfinance(stock_name_list,time_frame,is_history_starting_from,is_add_indicator)
+  File "D:\line_alerts\two_line_pattern_detect.py", line 126, in generate_url_yfinance
+    already_done = list(set(data_store[time_frame]).intersection(stock_list))
+                            ~~~~~~~~~~^^^^^^^^^^^^
+KeyError: '1d'
+
+2024-05-17 21:44:37,262 -INFO - All stocks - alerts file Saved
+2024-05-17 21:44:37,262 -INFO - All stocks - json file saved
+2024-05-17 21:44:37,262 -INFO - Ended....
+2024-05-17 21:44:37,262 -INFO - PDF Generater Started...
+2024-05-17 21:44:40,251 -INFO - Message sent successfully! - 
+2024-05-17 21:44:40,251 -INFO - PDF Generater Ended...
+2024-05-17 21:46:04,204 -INFO - Started...
+2024-05-17 21:46:04,704 -INFO - Stock threading stated ....
+2024-05-17 21:46:09,701 -INFO - All stocks - alerts file Saved
+2024-05-17 21:46:09,701 -INFO - All stocks - json file saved
+2024-05-17 21:46:09,701 -INFO - Yaml file editing Started...
+2024-05-17 21:46:09,701 -INFO - Yaml file editing Ended...
+2024-05-17 21:46:09,701 -INFO - Git push Started...
+2024-05-17 21:46:09,701 -INFO - Git push Ended...
+2024-05-17 21:46:10,685 -INFO - All stocks - alerts file Saved
+2024-05-17 21:46:10,685 -INFO - All stocks - json file saved
+2024-05-17 21:46:10,685 -INFO - Ended....
+2024-05-17 21:46:10,685 -INFO - PDF Generater Started...
+2024-05-17 21:46:13,349 -INFO - Message sent successfully! - 
+2024-05-17 21:46:13,365 -INFO - PDF Generater Ended...
+2024-05-17 21:46:59,826 -INFO - Started...
+2024-05-17 21:47:00,436 -INFO - Stock threading stated ....
+2024-05-17 21:47:03,853 -INFO - ULTRACEMCO.NS - Reading existing data...
+2024-05-17 21:47:03,853 -INFO - HEROMOTOCO.NS - Reading existing data...
+2024-05-17 21:47:14,459 -INFO - ULTRACEMCO.NS - last n isPivot function Ended
+2024-05-17 21:47:14,491 -INFO - ULTRACEMCO.NS - detect_structure function started
+2024-05-17 21:47:14,552 -INFO - ULTRACEMCO.NS - two_line_structure function started
+2024-05-17 21:47:16,696 -INFO - HEROMOTOCO.NS - last n isPivot function Ended
+2024-05-17 21:47:16,712 -INFO - HEROMOTOCO.NS - detect_structure function started
+2024-05-17 21:47:16,727 -INFO - HEROMOTOCO.NS - two_line_structure function started
+2024-05-17 21:49:36,036 -INFO - ULTRACEMCO.NS - last n two_line_structure function Ended
+2024-05-17 21:49:40,685 -INFO - ULTRACEMCO.NS - last n preparing_for_candles function Ended
+2024-05-17 21:49:40,685 -INFO - ULTRACEMCO.NS - alerts file Saved
+2024-05-17 21:49:42,140 -INFO - ULTRACEMCO.NS - last n detect_structure function Ended
+2024-05-17 21:49:44,200 -INFO - ULTRACEMCO.NS - last n preparing_for_candles function Ended
+2024-05-17 21:49:44,200 -INFO - ULTRACEMCO.NS - alerts file Saved
+2024-05-17 21:49:49,144 -INFO - HEROMOTOCO.NS - last n detect_structure function Ended
+2024-05-17 21:49:50,790 -INFO - HEROMOTOCO.NS - last n two_line_structure function Ended
+2024-05-17 21:49:51,775 -INFO - HEROMOTOCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:49:51,775 -INFO - HEROMOTOCO.NS - alerts file Saved
+2024-05-17 21:49:52,114 -INFO - HEROMOTOCO.NS -  preparing_for_candles function Ended
+2024-05-17 21:49:52,114 -INFO - HEROMOTOCO.NS - alerts file Saved
+2024-05-17 21:49:56,162 -INFO - All stocks - alerts file Saved
+2024-05-17 21:49:56,162 -INFO - All stocks - json file saved
+2024-05-17 21:49:56,162 -INFO - Yaml file editing Started...
+2024-05-17 21:49:56,162 -INFO - Yaml file editing Ended...
+2024-05-17 21:49:56,162 -INFO - Git push Started...
+2024-05-17 21:49:56,162 -INFO - Git push Ended...
+2024-05-17 21:49:57,258 -INFO - All stocks - alerts file Saved
+2024-05-17 21:49:57,258 -INFO - All stocks - json file saved
+2024-05-17 21:49:57,258 -INFO - Ended....
+2024-05-17 21:49:57,258 -INFO - PDF Generater Started...
+2024-05-17 21:50:00,283 -INFO - Message sent successfully! - 
+2024-05-17 21:50:00,298 -INFO - PDF Generater Ended...
