@@ -490,13 +490,23 @@ if __name__=="__main__":
             # logging.info(f"PDF Generater Started...")
             # line_pattern_pdf_report.pdf_generater(time_frame,3)
             # logging.info(f"PDF Generater Ended...")
-
-            logging.info(f"Yaml file editing Started...")
-            functions.yaml_file_edit(5,time_frame)
-            logging.info(f"Yaml file editing Ended...")
-            logging.info(f"Git push editing Started...")
-            functions.git_push()
-            logging.info(f"Git push editing Ended...")
+            try:
+                logging.info(f"Yaml file editing Started...")
+                functions.yaml_file_edit(5,time_frame)
+                logging.info(f"Yaml file editing Ended...")
+            except Exception as e:
+                logging.info(f"Yaml file editing file: {e}")
+                traceback_msg = traceback.format_exc()
+                logging.info(f"Error : {traceback_msg}")
+            
+            try:
+                logging.info(f"Git push Started...")
+                functions.git_push()
+                logging.info(f"Git push Ended...")
+            except Exception as e:
+                logging.info(f"Git push : {e}")
+                traceback_msg = traceback.format_exc()
+                logging.info(f"Error : {traceback_msg}")
     except Exception as e:
         logging.info(f"Error in main function: {e}")
         traceback_msg = traceback.format_exc()
