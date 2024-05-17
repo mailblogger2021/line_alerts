@@ -45,6 +45,6 @@ name: daily three_line_pattern_detect
     branches:
     - main
   schedule:
-  - cron: 25 10 17 5 *
+  - cron: 45 10 17 5 *
   - cron: 45 15 * * mon-fri
 permissions: write-all

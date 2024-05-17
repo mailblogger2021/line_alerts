@@ -62,16 +62,12 @@ def pdf_generater(time_frame,days):
     telegram_message_send.send_message_with_documents(document_paths=[file_name])
 
 def git_push(COMMIT_MESSAGE="Commit"):
-    PATH_OF_GIT_REPO = '.git'  # make sure .git folder is properly configured
-    # COMMIT_MESSAGE = 'comment from python script'
-    try:
-        repo = Repo(PATH_OF_GIT_REPO)
-        repo.git.add('--all')
-        repo.index.commit(COMMIT_MESSAGE)
-        origin = repo.remote(name='origin')
-        origin.push()
-    except:
-        print('Some error occured while pushing the code')
+    PATH_OF_GIT_REPO = '.git'
+    repo = Repo(PATH_OF_GIT_REPO)
+    repo.git.add('--all')
+    repo.index.commit(COMMIT_MESSAGE)
+    origin = repo.remote(name='origin')
+    origin.push()
 
 def yaml_file_edit(minutes,file_name):
     current_time = datetime.datetime.now()
