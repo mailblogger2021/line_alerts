@@ -506,6 +506,7 @@ if __name__=="__main__":
             except Exception as e:
                 logging.info(f"Git push : {e}")
                 traceback_msg = traceback.format_exc()
+                print(traceback_msg)
                 logging.info(f"Error : {traceback_msg}")
     except Exception as e:
         logging.info(f"Error in main function: {e}")
