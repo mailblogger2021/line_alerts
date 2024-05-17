@@ -492,7 +492,7 @@ if __name__=="__main__":
             # logging.info(f"PDF Generater Ended...")
             try:
                 logging.info(f"Yaml file editing Started...")
-                functions.yaml_file_edit(5,time_frame)
+                # functions.yaml_file_edit(5,time_frame)
                 logging.info(f"Yaml file editing Ended...")
             except Exception as e:
                 logging.info(f"Yaml file editing file: {e}")
@@ -501,7 +501,7 @@ if __name__=="__main__":
             
             try:
                 logging.info(f"Git push Started...")
-                functions.git_push()
+                functions.git_push(f'{ time_frame } yaml file run')
                 logging.info(f"Git push Ended...")
             except Exception as e:
                 logging.info(f"Git push : {e}")
