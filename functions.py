@@ -57,8 +57,11 @@ def pdf_generater(time_frame,days):
 
     output_df_to_pdf("two Lines alert",pdf, filtered_alerts)
 
-    file_name = f'pdf_report/Line_pattern_pdf_report_{time_frame}.pdf'
+    current_time = datetime.datetime.now()
+    date_time = current_time.strftime("%d_%m_%Y_%H_%M_%S")
+    file_name = f'pdf_report/Line_pattern_pdf_report_{time_frame}_{date_time}.pdf'
     pdf.output(file_name, 'F')
+    
     telegram_message_send.send_message_with_documents(document_paths=[file_name])
 
 def git_push(COMMIT_MESSAGE="Commit"):

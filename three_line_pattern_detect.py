@@ -456,7 +456,7 @@ if __name__=="__main__":
         thread_limit = 25
         total_rows = len(stock_data)
         threads = []
-        total_rows = 2
+        total_rows = 1
         # for start_index in range(0, 2, thread_limit):
         for start_index in range(0, total_rows, thread_limit):
             end_index = min(start_index + thread_limit, total_rows)
@@ -502,7 +502,7 @@ if __name__=="__main__":
             
             try:
                 logging.info(f"Git push Started...")
-                functions.git_push(f'{ time_frame } yaml file run')
+                # functions.git_push(f'{ time_frame } yaml file run')
                 logging.info(f"Git push Ended...")
             except Exception as e:
                 logging.info(f"Git push : {e}")
