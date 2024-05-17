@@ -32,15 +32,14 @@ jobs:
 
         git diff-index --quiet HEAD || (git commit -a -m "60 minute.yaml completed"
         --allow-empty)
-
         '
-    - name: fetch changes
-      run: git fetch origin
-    - name: merge changes
-      run: git merge origin/main
-    - name: push changes
-      run: |
-          git push https://github.com/mailblogger2021/line_alerts.git main
+    # - name: fetch changes
+    #   run: git fetch origin
+    # - name: merge changes
+    #   run: git merge origin/main
+    # - name: push changes
+    #   run: |
+    #       git push https://github.com/mailblogger2021/line_alerts.git main
       # with:
       #   branch: main
       #   github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
