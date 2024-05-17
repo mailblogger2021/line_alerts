@@ -19,7 +19,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.SECRETS_GITHUB_TOKEN }}
       name: execute py script
       run: "if [[ ${{ github.event_name }} == 'push' ]]; then\n  python three_line_pattern_detect.py\
-        \ \"daily\"\nelif [[ ${{ github.event_name }} == 'schedule' ]]; then\n\
+        \ \"day\"\nelif [[ ${{ github.event_name }} == 'schedule' ]]; then\n\
         \  python three_line_pattern_detect.py \"day\"\nfi\n"
     - name: commit files
       run: 'git config --local user.email "action@github.com"
