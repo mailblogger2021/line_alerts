@@ -29,7 +29,7 @@ two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
 data_store_file_name = f"data_store_{time_frame}.json"
 start_time = time.time()
 max_execution_time = 5*3600
-max_execution_time = 30
+max_execution_time = 300
 
 # isExist = os.path.exists(three_line_file_name)
 # three_line_alert_df = pd.DataFrame()
@@ -484,6 +484,7 @@ if __name__=="__main__":
                 break
         for thread in threads:
             thread.join()
+        save_files()
         if time_frame in data_store and len(data_store[time_frame]) >= len(stock_data):
             data_store[time_frame] = []
         else:
