@@ -29,7 +29,7 @@ two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
 data_store_file_name = f"data_store_{time_frame}.json"
 start_time = time.time()
 max_execution_time = 5*3600
-max_execution_time = 300
+# max_execution_time = 300
 
 # isExist = os.path.exists(three_line_file_name)
 # three_line_alert_df = pd.DataFrame()
@@ -456,7 +456,7 @@ if __name__=="__main__":
         thread_limit = 25
         total_rows = len(stock_data)
         threads = []
-        total_rows = 5
+        # total_rows = 5
         # for start_index in range(0, 2, thread_limit):
         for start_index in range(0, total_rows, thread_limit):
             end_index = min(start_index + thread_limit, total_rows)
