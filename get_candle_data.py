@@ -1,8 +1,7 @@
-import requests
+import yfinance as yf
 import pandas as pd
 import datetime
 from pytz import timezone
-import requests_cache
 
 maximum_candle_limit = {"minute" : 60,
                          "3minute" : 100,
@@ -32,6 +31,22 @@ higher_time_frame_data = {"minute" : "day",
                           "60minute" : "week",
                           "day" : "month"
                         }
+
+maximum_days_yfinance = {"1m" : 'max',
+                         "2m" : '60d',
+                         "5m" : '60d',
+                          "15m" :'60d',
+                          "30m" :'60d',
+                          "60m" : "590d",
+                          "1h" : "590d",
+                          "90m" : '60d',
+                          "1d" :'max',
+                          "5d" : 'max',
+                          "1wk" : 'max',
+                          "1mo" : 'max',
+                          "3mo" : 'max',
+                        }
+
 timeout = 30
 kite_authorization_df = pd.read_csv("https://docs.google.com/spreadsheets/d/1EcGGvmEATua3T_t4UskqiDeYRqJcqw-JMHeT_WE51NI/export?gid=0&format=csv")
 kite_authorization = kite_authorization_df['Unnamed: 7'][0]
@@ -121,20 +136,18 @@ def get_kite_url(session,rows,timeFrame,is_history_starting_from=False,is_add_in
   stockname = stock_name
   return candles
 
-
-import yfinance as yf
-import pandas as pd
-
 # period - 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max
 # interval - 1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo
 # start - YYYY-MM-DD
 # end - YYYY-MM-DD
 
-def get_candle_data_from_yfinance(tickers, period='1mo', interval='1d'):
+def get_candle_data_from_yfinance(tickers, period='1mo', interval='60m'):
     if(len(tickers)<=1):
        tickers.append('NIFTY')
+    period = maximum_days_yfinance[interval] if interval in maximum_days_yfinance else 'max'
     data = yf.download(tickers=tickers, period=period, 
                        interval=interval, group_by='ticker')
+    
     ticker_data = {}
     for ticker in tickers:
         ticker_df = data[ticker].copy()

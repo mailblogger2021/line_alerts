@@ -23,30 +23,33 @@ window=10
 percentage = 1
 pivot_line_count  = 3 #3
 two_line_count = 2
-time_frame = "day"
-three_line_file_name = f"three_line_alerts_{time_frame}.xlsx"
-two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
-data_store_file_name = f"data_store_{time_frame}.json"
+# time_frame = "day"
+# three_line_file_name = f"three_line_alerts_{time_frame}.xlsx"
+# two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
+# data_store_file_name = f"data_store_{time_frame}.json"
 start_time = time.time()
 max_execution_time = 5*3600
 # max_execution_time = 300
 
-isExist = os.path.exists(three_line_file_name)
+# isExist = os.path.exists(three_line_file_name)
+# three_line_alert_df = pd.DataFrame()
+# # if(isExist):
+# #     three_line_alert_df = pd.read_excel(three_line_file_name)
+
+# # isExist = os.path.exists(two_line_file_name)
+# two_line_alert_df = pd.DataFrame()
+# # if(isExist):
+# #     two_line_alert_df = pd.read_excel(two_line_file_name)
+
+# if os.path.exists(data_store_file_name):
+#     with open(data_store_file_name, "r") as file:
+#         data_store = json.load(file)
+# else:
+#     data_store = {}
+
 three_line_alert_df = pd.DataFrame()
-if(isExist):
-    three_line_alert_df = pd.read_excel(three_line_file_name)
-
-isExist = os.path.exists(two_line_file_name)
 two_line_alert_df = pd.DataFrame()
-if(isExist):
-    two_line_alert_df = pd.read_excel(two_line_file_name)
-
-if os.path.exists(data_store_file_name):
-    with open(data_store_file_name, "r") as file:
-        data_store = json.load(file)
-else:
-    data_store = {}
-
+data_store = {}
 # logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
 # logging.info(f"Started...")
 
@@ -91,24 +94,29 @@ def process_function(stock_df,stock_name,file_name,is_history_starting_from=True
             .reset_index(drop=True)
 
     number_of_calls = stock_df.isnull().any(axis=1).idxmax()
-    if(number_of_calls==0):
+    if(number_of_calls==0 and is_history_starting_from):
         number_of_calls = 0
         stock_df['isPivot'] = stock_df.apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
-    else:
+        threads = []
+        for function_name in [detect_structure, two_line_structure]:
+            thread = threading.Thread(target=process_row, args=(stock_df, stock_name, function_name,number_of_calls))
+            threads.append(thread)
+            thread.start()
+        for thread in threads:
+            thread.join()
+    elif(number_of_calls != 0):
         number_of_calls = max(0,number_of_calls - 50)
         stock_df['backup'] = stock_df['isPivot']
         stock_df['isPivot'] = stock_df.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
         stock_df['isPivot'] = stock_df['isPivot'].fillna(stock_df['backup'])
+        for function_name in [detect_structure, two_line_structure]:
+            thread = threading.Thread(target=process_row, args=(stock_df, stock_name, function_name,number_of_calls))
+            threads.append(thread)
+            thread.start()
+        for thread in threads:
+            thread.join()
     logging.info(f'{stock_name} - {"last n" if is_history_starting_from !=True else ""} isPivot function Ended')
     
-    threads = []
-    for function_name in [detect_structure, two_line_structure]:
-        thread = threading.Thread(target=process_row, args=(stock_df, stock_name, function_name,number_of_calls))
-        threads.append(thread)
-        thread.start()
-    for thread in threads:
-        thread.join()
-
     stock_df.to_excel(file_name, index=False)
 
     if time_frame in data_store:
@@ -123,11 +131,12 @@ def generate_url_yfinance(stock_list, time_frame, is_history_starting_from=False
     if elapsed_time > max_execution_time:
         logging.info(f"Max time reached....")
         return
-    stock_list = [stock_name + ".NS" for stock_name in stock_list]
-    already_done = list(set(data_store[time_frame]).intersection(stock_list))
-    for stock_name in already_done:
-        logging.info(f"{stock_name} - this stock already completed")
+    # stock_list = [stock_name + ".NS" for stock_name in stock_list]
+
     if time_frame in data_store:
+        already_done = list(set(data_store[time_frame]).intersection(stock_list))
+        for stock_name in already_done:
+            logging.info(f"{stock_name} - this stock already completed")
         stock_list = list(set(stock_list) - set(data_store[time_frame]))
     
     os.makedirs(f"stock_historical_data/{time_frame}", exist_ok=True)
@@ -415,12 +424,15 @@ def save_files():
 if __name__=="__main__":
     try:
         time_frame = "1d"
+        time_frame = "60m"
+        print(time_frame)
         if len(sys.argv) >= 2:
             time_frame = sys.argv[1]
+            print(time_frame)
         
         logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
         logging.info(f"Started...")
-
+        
         three_line_file_name = f"three_line_alerts_{time_frame}.xlsx"
         two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
         data_store_file_name = f"data_store_{time_frame}.json"
@@ -451,11 +463,12 @@ if __name__=="__main__":
         thread_limit = 25
         total_rows = len(stock_data)
         threads = []
-        for start_index in range(15, total_rows, thread_limit):
+        for start_index in range(0, total_rows, thread_limit):
+            # break
             end_index = min(start_index + thread_limit, total_rows)
             stock_name_list = []
             for index in range(start_index, end_index):
-                stock_name = stock_data.iloc[index]['STOCK NAME']
+                stock_name = stock_data.iloc[index]['YFINANCE']
                 stock_name_list.append(stock_name)
 
             generate_url_yfinance(stock_name_list,time_frame,is_history_starting_from,is_add_indicator)
@@ -466,8 +479,9 @@ if __name__=="__main__":
             if elapsed_time > max_execution_time:
                 logging.info(f"Max time reached....")
                 break
-        for thread in threads:
-            thread.join()
+            # break
+        # for thread in threads:
+        #     thread.join()
         save_files()
         if time_frame in data_store and len(data_store[time_frame]) >= len(stock_data):
             data_store[time_frame] = []
