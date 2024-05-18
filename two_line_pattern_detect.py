@@ -89,15 +89,16 @@ def process_function(stock_df,stock_name,file_name,is_history_starting_from=True
     stock_df = stock_df.drop_duplicates(subset=['Datetime'], keep='first')\
             .sort_values(by='Datetime')\
             .reset_index(drop=True)
-    
-    if(is_history_starting_from):
+
+    number_of_calls = stock_df.isnull().any(axis=1).idxmax()
+    if(number_of_calls==0):
         number_of_calls = 0
+        stock_df['isPivot'] = stock_df.apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
     else:
-        number_of_calls = stock_df.isnull().any(axis=1).idxmax()
         number_of_calls = max(0,number_of_calls - 50)
-    stock_df['backup'] = stock_df['isPivot']
-    stock_df['isPivot'] = stock_df.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
-    stock_df['isPivot'] = stock_df['isPivot'].fillna(stock_df['backup'])
+        stock_df['backup'] = stock_df['isPivot']
+        stock_df['isPivot'] = stock_df.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
+        stock_df['isPivot'] = stock_df['isPivot'].fillna(stock_df['backup'])
     logging.info(f'{stock_name} - {"last n" if is_history_starting_from !=True else ""} isPivot function Ended')
     
     threads = []
