@@ -51,7 +51,7 @@ jobs:
         elif [[ "${SCHEDULE_TYPE}" == "quarter" ]]; then
           python PH_PL_chartink_to_pdf.py "quarter"
         elif [[ "${{ github.event_name }}" == 'push' ]]; then
-          python PH_PL_chartink_to_pdf.py "day,week,month,quarter"
+          python PH_PL_chartink_to_pdf.py "day"
         fi
 
     - name: Commit files
