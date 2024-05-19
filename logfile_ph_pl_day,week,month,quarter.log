@@ -1,0 +1,26 @@
+2024-05-19 22:44:44,747 -INFO - Started...
+2024-05-19 22:51:34,835 -INFO - Started...
+2024-05-19 22:52:43,898 -INFO - Started...
+2024-05-19 23:01:20,553 -ERROR - 
+1 Failed download:
+2024-05-19 23:01:21,011 -ERROR - ['NIFTY']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-05-19 23:03:18,245 -INFO - isPivot function started
+2024-05-19 23:03:37,408 -INFO - isPivot function Ended
+2024-05-19 23:03:45,028 -INFO - NAVINFLUOR.NS - detect_structure function started
+2024-05-19 23:03:45,050 -INFO - NAVINFLUOR.NS - two_line_structure function started
+2024-05-19 23:06:13,286 -INFO - NAVINFLUOR.NS - last n two_line_structure function Ended
+2024-05-19 23:06:42,917 -INFO - NAVINFLUOR.NS - last n detect_structure function Ended
+2024-05-19 23:13:11,035 -INFO - NAVINFLUOR.NS -  preparing_for_candles function Ended
+2024-05-19 23:13:11,036 -INFO - NAVINFLUOR.NS - alerts file Saved
+2024-05-19 23:13:11,407 -INFO - NAVINFLUOR.NS -  preparing_for_candles function Ended
+2024-05-19 23:13:11,408 -INFO - NAVINFLUOR.NS - alerts file Saved
+2024-05-19 23:13:11,410 -INFO - NAVINFLUOR.NS -  isPivot function Ended
+2024-05-19 23:18:12,732 -INFO - Started...
+2024-05-19 23:27:08,336 -INFO - Started...
+2024-05-19 23:31:04,926 -INFO - Started...
+2024-05-19 23:34:58,979 -INFO - Started...
+2024-05-19 23:37:26,093 -ERROR - 
+1 Failed download:
+2024-05-19 23:37:26,093 -ERROR - ['NIFTY']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-05-19 23:37:52,526 -INFO - NAVINFLUOR.NS - Reading existing data...
+2024-05-19 23:38:43,232 -INFO - NAVINFLUOR.NS - last n isPivot function Ended
