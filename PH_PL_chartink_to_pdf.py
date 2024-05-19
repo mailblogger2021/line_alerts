@@ -88,7 +88,7 @@ if __name__ =="__main__":
     day_ph_pl = "( {33489} ( ( {33489} ( 10 days ago high > latest max ( 10 , 11 days ago high ) and 10 days ago high >= latest max ( 10 , latest high ) ) ) or ( {33489} ( 10 days ago low < latest min ( 10 , 11 days ago low ) and 10 days ago low <= latest min ( 10 , latest low ) ) ) ) )"
 
     base_code_list,title_list,time_frame_list = [],[],[]
-    time_frames = time_frames[:1]
+    # time_frames = time_frames[:1]
     for time_frame in time_frames:
         time_frame_dict = time_frames_dict[time_frame]
         base_code = day_ph_pl.replace("days",time_frame_dict[0]).replace("latest",time_frame_dict[1])
@@ -96,13 +96,13 @@ if __name__ =="__main__":
         base_code_list.append(base_code)
         title_list.append(time_frame_dict[1]+" time Frame new PH PL ")
         # two_line.generate_url_yfinance()
-    title = "PH_PL_chartink_to_pdf"
-    ph_pl_list = generate_chartink_code(time_frame_list,base_code_list,title_list,title)
+    pdf_file_name = "PH_PL_chartink_to_pdf"
+    ph_pl_list = generate_chartink_code(time_frame_list,base_code_list,title_list,pdf_file_name)
     threads = []
     for time_frame in ph_pl_list:
         stock_lists = ph_pl_list[time_frame]
         stock_lists = [stock+".NS" for stock in stock_lists]
-        stock_lists = stock_lists[:1]
+        # stock_lists = stock_lists[:1]
         yfinance_time_frame = time_frames_for_yfinance[time_frame]
         try:
             two_line.three_line_file_name = f"three_line_alerts_{yfinance_time_frame}.xlsx"
