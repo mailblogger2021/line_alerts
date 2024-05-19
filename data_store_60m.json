@@ -608,6 +608,11 @@
         "THERMAX.NS",
         "ISEC.NS",
         "PHOENIXLTD.NS",
-        "SUNDARMFIN.NS"
+        "SUNDARMFIN.NS",
+        "NIFTY_MID_SELECT.NS",
+        "^NSEI",
+        "NIFTY_FIN_SERVICE.NS",
+        "^NSEBANK",
+        "^INDIAVIX"
     ]
 }
