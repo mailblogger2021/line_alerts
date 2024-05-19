@@ -24,13 +24,15 @@ percentage = 1
 pivot_line_count  = 3 #3
 two_line_count = 2
 # time_frame = "day"
-# three_line_file_name = f"three_line_alerts_{time_frame}.xlsx"
-# two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
-# data_store_file_name = f"data_store_{time_frame}.json"
+three_line_file_name = f"three_line_alerts_1d.xlsx"
+two_line_file_name = f"two_line_alerts_1d.xlsx"
+data_store_file_name = f"data_store_1d.json"
 start_time = time.time()
 max_execution_time = 5*3600
 # max_execution_time = 300
-
+three_line_alert_df = pd.DataFrame()
+two_line_alert_df = pd.DataFrame()
+data_store = {}
 # isExist = os.path.exists(three_line_file_name)
 # three_line_alert_df = pd.DataFrame()
 # # if(isExist):
@@ -75,7 +77,7 @@ def process_row(candles,stock_name,function_name,number_of_calls=0):
     logging.info(f'{stock_name} - {"last n" if number_of_calls !=0 else ""} preparing_for_candles function Ended')
     logging.info(f'{stock_name} - alerts file Saved')
 
-def process_function(stock_df,stock_name,file_name,is_history_starting_from=True):
+def process_function(stock_df,stock_name,time_frame,file_name,is_history_starting_from=True):
 
     stock_data_historical = pd.DataFrame()  # Initialize with an empty DataFrame
     isExist = os.path.exists(file_name)
@@ -96,7 +98,9 @@ def process_function(stock_df,stock_name,file_name,is_history_starting_from=True
     number_of_calls = stock_df.isnull().any(axis=1).idxmax()
     if(number_of_calls==0 and is_history_starting_from):
         number_of_calls = 0
+        logging.info(f'isPivot function started')
         stock_df['isPivot'] = stock_df.apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
+        logging.info(f'isPivot function Ended')
         threads = []
         for function_name in [detect_structure, two_line_structure]:
             thread = threading.Thread(target=process_row, args=(stock_df, stock_name, function_name,number_of_calls))
@@ -106,9 +110,11 @@ def process_function(stock_df,stock_name,file_name,is_history_starting_from=True
             thread.join()
     elif(number_of_calls != 0):
         number_of_calls = max(0,number_of_calls - 50)
+        logging.info(f'isPivot function started')
         stock_df['backup'] = stock_df['isPivot']
         stock_df['isPivot'] = stock_df.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
         stock_df['isPivot'] = stock_df['isPivot'].fillna(stock_df['backup'])
+        logging.info(f'isPivot function Ended')
         for function_name in [detect_structure, two_line_structure]:
             thread = threading.Thread(target=process_row, args=(stock_df, stock_name, function_name,number_of_calls))
             threads.append(thread)
@@ -126,6 +132,7 @@ def process_function(stock_df,stock_name,file_name,is_history_starting_from=True
         data_store[time_frame] = [stock_name]
 
 def generate_url_yfinance(stock_list, time_frame, is_history_starting_from=False, is_add_indicator=True):
+    
     end_time = time.time()
     elapsed_time = end_time - start_time
     if elapsed_time > max_execution_time:
@@ -151,7 +158,7 @@ def generate_url_yfinance(stock_list, time_frame, is_history_starting_from=False
             try:
                     file_name = f"stock_historical_data/{time_frame}/{stock_name}.xlsx"
                     
-                    thread = threading.Thread(target=process_function, args=(stock_df,stock_name,file_name,))
+                    thread = threading.Thread(target=process_function, args=(stock_df,stock_name,time_frame,file_name,))
                     threads.append(thread)
                     thread.start()
 
@@ -424,12 +431,9 @@ def save_files():
 if __name__=="__main__":
     try:
         time_frame = "1d"
-        time_frame = "60m"
-        print(time_frame)
         if len(sys.argv) >= 2:
             time_frame = sys.argv[1]
-            print(time_frame)
-        
+
         logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
         logging.info(f"Started...")
         
@@ -532,6 +536,6 @@ if __name__=="__main__":
         traceback_msg = traceback.format_exc()
         logging.info(f"Error : {traceback_msg}")
     logging.info(f"Ended....")
-    logging.info(f"PDF Generater Started...")
-    functions.pdf_generater(time_frame,3)
-    logging.info(f"PDF Generater Ended...")
+    # logging.info(f"PDF Generater Started...")
+    # functions.pdf_generater(time_frame,3)
+    # logging.info(f"PDF Generater Ended...")

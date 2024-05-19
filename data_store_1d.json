@@ -390,7 +390,6 @@
         "SUNTV.NS",
         "RAMCOCEM.NS",
         "COROMANDEL.NS",
-        "NAVINFLUOR.NS",
         "TATACHEM.NS",
         "SPLPETRO.NS",
         "PEL.NS",
@@ -625,6 +624,7 @@
         "SKFINDIA.NS",
         "THERMAX.NS",
         "SUNDARMFIN.NS",
-        "PHOENIXLTD.NS"
+        "PHOENIXLTD.NS",
+        "NAVINFLUOR.NS"
     ]
 }
