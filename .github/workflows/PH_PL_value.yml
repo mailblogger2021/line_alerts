@@ -43,15 +43,15 @@ jobs:
     - name: Run Python script based on schedule
       run: |
         if [[ "${SCHEDULE_TYPE}" == "day" ]]; then
-          python PH_PL_chartink_to_pdf.py "day"
+          python PH_PL_chartink.py "day"
         elif [[ "${SCHEDULE_TYPE}" == "week" ]]; then
-          python PH_PL_chartink_to_pdf.py "week"
+          python PH_PL_chartink.py "week"
         elif [[ "${SCHEDULE_TYPE}" == "month" ]]; then
-          python PH_PL_chartink_to_pdf.py "month"
+          python PH_PL_chartink.py "month"
         elif [[ "${SCHEDULE_TYPE}" == "quarter" ]]; then
-          python PH_PL_chartink_to_pdf.py "quarter"
+          python PH_PL_chartink.py "quarter"
         elif [[ "${{ github.event_name }}" == 'push' ]]; then
-          python PH_PL_chartink_to_pdf.py "day,week,month,quarter"
+          python PH_PL_chartink.py "day,week,month,quarter"
         fi
 
     - name: Commit files
