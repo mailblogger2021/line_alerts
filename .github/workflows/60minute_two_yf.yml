@@ -18,9 +18,9 @@ jobs:
         CHAT_ID: ${{ secrets.CHAT_ID }}
         GITHUB_TOKEN: ${{ secrets.SECRETS_GITHUB_TOKEN }}
       name: execute py script
-      run: "if [[ ${{ github.event_name }} == 'push' ]]; then\n  python two_line_pattern_detect.py\
+      run: "if [[ ${{ github.event_name }} == 'push' ]]; then\n  python two_line_pattern_detect_class.py\
         \ \"60m\"\nelif [[ ${{ github.event_name }} == 'schedule' ]]; then\n\
-        \  python two_line_pattern_detect.py \"60m\"\nfi\n"
+        \  python two_line_pattern_detect_class.py \"60m\"\nfi\n"
     - name: commit files
       run: 'git config --local user.email "action@github.com"
 
@@ -41,7 +41,7 @@ jobs:
       # with:
       #   branch: main
       #   github_token: ${{ secrets.SECRETS_GITHUB_TOKEN }}
-name: 60 minute two_line_pattern_detect
+name: 60 minute two_line_pattern_detect_class
 'on':
   push:
     branches:
