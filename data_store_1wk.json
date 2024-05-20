@@ -1,12 +1,12 @@
 {
     "1wk": [
-        "MGL.NS",
-        "ADANIENT.NS",
-        "BAJFINANCE.NS",
-        "CHOLAFIN.NS",
-        "BAJAJFINSV.NS",
         "TVSMOTOR.NS",
+        "BAJFINANCE.NS",
+        "MGL.NS",
+        "CHOLAFIN.NS",
         "PEL.NS",
+        "ADANIENT.NS",
+        "BAJAJFINSV.NS",
         "RELIANCE.NS",
         "TATACHEM.NS",
         "TATAMOTORS.NS"
