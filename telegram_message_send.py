@@ -4,7 +4,7 @@ import pytz
 import logging
 import os
 
-def send_message_with_documents(message="", document_paths=[]):
+def send_message_with_documents(message="", document_paths=[],captions=[]):
     bot_token = '6511501073:AAHbWvFY_dKcUQfKNGFODOeYK8PEUJ4vXPI'
     chat_id = -4254539095
     # bot_token = os.environ["BOT_TOKEN"]
@@ -23,9 +23,10 @@ def send_message_with_documents(message="", document_paths=[]):
             logging.info(f'Failed to send message: - { response.text }')
 
     document_url = f'https://api.telegram.org/bot{bot_token}/sendDocument'
-    for path in document_paths:
+    for path,caption in zip(document_paths,captions):
         document_params = {
             'chat_id': chat_id,
+            'caption' : caption
         }
         document_file = {'document': open(path, 'rb')}
         document_response = requests.post(document_url, params=document_params, files=document_file)
@@ -37,4 +38,4 @@ def send_message_with_documents(message="", document_paths=[]):
 if __name__=="__main__":
     message = 'Hello from Python! Here are the documents.'
     document_paths = ['line_pattern_pdf_report.pdf', 'line_pattern_pdf_report.pdf']
-    send_message_with_documents(message=message, document_paths=document_paths)
+    send_message_with_documents(message=message, document_paths=document_paths,captions=["Line pattern","Line pattern"])

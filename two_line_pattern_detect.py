@@ -95,9 +95,9 @@ def process_function(stock_df,stock_name,time_frame,file_name,is_history_startin
     number_of_calls = stock_df.isnull().any(axis=1).idxmax()
     if(number_of_calls==0 and is_history_starting_from):
         number_of_calls = 0
-        logging.info(f'isPivot function started')
+        logging.info(f'{stock_name} - isPivot function started')
         stock_df['isPivot'] = stock_df.apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
-        logging.info(f'isPivot function Ended')
+        logging.info(f'{stock_name} - isPivot function Ended')
         threads = []
         for function_name in [detect_structure, two_line_structure]:
             thread = threading.Thread(target=process_row, args=(stock_df, stock_name, function_name,number_of_calls))
