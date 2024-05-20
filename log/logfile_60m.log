@@ -1,0 +1,65 @@
+2024-05-20 16:47:14,639 -INFO - Started...
+2024-05-20 16:47:14,640 -INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/Users/runner/Library/Caches/py-yfinance' reason: [Errno 17] File exists: '/Users/runner/Library/Caches/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2024-05-20 16:47:14,640 -INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/Users/runner/Library/Caches/py-yfinance' reason: [Errno 17] File exists: '/Users/runner/Library/Caches/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2024-05-20 16:47:15,346 -INFO - ADANIPORTS.NS - Process function started
+2024-05-20 16:47:15,346 -INFO - ADANIENT.NS - Process function started
+2024-05-20 16:47:15,347 -INFO - ^NSEI - Process function started
+2024-05-20 16:47:15,352 -INFO - ^NSEBANK - Process function started
+2024-05-20 16:47:15,353 -INFO - NIFTY_FIN_SERVICE.NS - Process function started
+2024-05-20 16:47:15,376 -INFO - ADANIPORTS.NS - isPivot function started
+2024-05-20 16:47:15,391 -INFO - ^NSEI - isPivot function started
+2024-05-20 16:47:15,391 -INFO - ADANIENT.NS - isPivot function started
+2024-05-20 16:47:15,840 -INFO - ^NSEI - isPivot function Ended
+2024-05-20 16:47:16,025 -INFO - ^NSEI -  detect_structure function started
+2024-05-20 16:47:16,423 -INFO - ^NSEI -  two_line_structure function started
+2024-05-20 16:47:16,423 -INFO - NIFTY_FIN_SERVICE.NS - isPivot function started
+2024-05-20 16:47:16,423 -INFO - ^NSEBANK - isPivot function started
+2024-05-20 16:47:16,503 -INFO - ADANIPORTS.NS - isPivot function Ended
+2024-05-20 16:47:16,664 -INFO - ADANIENT.NS - isPivot function Ended
+2024-05-20 16:47:16,834 -INFO - ADANIPORTS.NS -  detect_structure function started
+2024-05-20 16:47:16,844 -INFO - ADANIPORTS.NS -  two_line_structure function started
+2024-05-20 16:47:17,141 -INFO - ADANIENT.NS -  detect_structure function started
+2024-05-20 16:47:17,144 -INFO - ^NSEBANK - isPivot function Ended
+2024-05-20 16:47:17,158 -INFO - ADANIENT.NS -  two_line_structure function started
+2024-05-20 16:47:17,575 -INFO - ^NSEBANK -  detect_structure function started
+2024-05-20 16:47:17,584 -INFO - ^NSEBANK -  two_line_structure function started
+2024-05-20 16:47:17,673 -INFO - NIFTY_FIN_SERVICE.NS - isPivot function Ended
+2024-05-20 16:47:17,682 -INFO - NIFTY_FIN_SERVICE.NS -  detect_structure function started
+2024-05-20 16:47:17,709 -INFO - NIFTY_FIN_SERVICE.NS -  two_line_structure function started
+2024-05-20 16:48:06,757 -INFO - ADANIENT.NS -  detect_structure function Ended
+2024-05-20 16:48:07,174 -INFO - ADANIENT.NS -  two_line_structure function Ended
+2024-05-20 16:48:08,145 -INFO - ADANIPORTS.NS -  two_line_structure function Ended
+2024-05-20 16:48:09,147 -INFO - NIFTY_FIN_SERVICE.NS -  two_line_structure function Ended
+2024-05-20 16:48:09,347 -INFO - ^NSEBANK -  two_line_structure function Ended
+2024-05-20 16:48:09,374 -INFO - ^NSEI -  two_line_structure function Ended
+2024-05-20 16:48:09,449 -INFO - ADANIPORTS.NS -  detect_structure function Ended
+2024-05-20 16:48:11,966 -INFO - ^NSEBANK -  detect_structure function Ended
+2024-05-20 16:48:12,548 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:12,550 -INFO - All stocks - json file saved
+2024-05-20 16:48:12,550 -INFO - ADANIENT.NS - alerts file Saved
+2024-05-20 16:48:12,550 -INFO - ADANIENT.NS - Process function Ended
+2024-05-20 16:48:12,787 -INFO - NIFTY_FIN_SERVICE.NS -  detect_structure function Ended
+2024-05-20 16:48:13,186 -INFO - ^NSEI -  detect_structure function Ended
+2024-05-20 16:48:14,397 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:14,397 -INFO - All stocks - json file saved
+2024-05-20 16:48:14,397 -INFO - ADANIPORTS.NS - alerts file Saved
+2024-05-20 16:48:14,398 -INFO - ADANIPORTS.NS - Process function Ended
+2024-05-20 16:48:16,231 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:16,271 -INFO - All stocks - json file saved
+2024-05-20 16:48:16,271 -INFO - ^NSEBANK - alerts file Saved
+2024-05-20 16:48:16,271 -INFO - ^NSEBANK - Process function Ended
+2024-05-20 16:48:16,375 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:16,375 -INFO - All stocks - json file saved
+2024-05-20 16:48:16,375 -INFO - NIFTY_FIN_SERVICE.NS - alerts file Saved
+2024-05-20 16:48:16,375 -INFO - NIFTY_FIN_SERVICE.NS - Process function Ended
+2024-05-20 16:48:16,378 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:16,378 -INFO - All stocks - json file saved
+2024-05-20 16:48:16,378 -INFO - ^NSEI - alerts file Saved
+2024-05-20 16:48:16,378 -INFO - ^NSEI - Process function Ended
+2024-05-20 16:48:17,226 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:17,226 -INFO - All stocks - json file saved
+2024-05-20 16:48:18,107 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:18,107 -INFO - All stocks - json file saved
+2024-05-20 16:48:18,107 -INFO - 0 - 5 - Stock threading ended ....
+2024-05-20 16:48:18,949 -INFO - All stocks - Excel file Saved
+2024-05-20 16:48:18,950 -INFO - All stocks - json file saved

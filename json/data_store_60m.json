@@ -1,0 +1,9 @@
+{
+    "60m": [
+        "ADANIENT.NS",
+        "ADANIPORTS.NS",
+        "^NSEBANK",
+        "NIFTY_FIN_SERVICE.NS",
+        "^NSEI"
+    ]
+}
