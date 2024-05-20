@@ -1,14 +1,14 @@
 {
     "1wk": [
-        "TVSMOTOR.NS",
-        "BAJFINANCE.NS",
         "MGL.NS",
-        "CHOLAFIN.NS",
-        "PEL.NS",
-        "ADANIENT.NS",
-        "BAJAJFINSV.NS",
         "RELIANCE.NS",
+        "TATAMOTORS.NS",
+        "BAJAJFINSV.NS",
+        "CHOLAFIN.NS",
+        "BAJFINANCE.NS",
+        "ADANIENT.NS",
+        "PEL.NS",
         "TATACHEM.NS",
-        "TATAMOTORS.NS"
+        "TVSMOTOR.NS"
     ]
 }
