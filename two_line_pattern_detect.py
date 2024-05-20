@@ -11,7 +11,6 @@ import logging
 import json
 import traceback
 import time
-import traceback
 import sys
 
 import get_candle_data as get_candle_data
@@ -24,8 +23,8 @@ percentage = 1
 pivot_line_count  = 3 #3
 two_line_count = 2
 # time_frame = "day"
-three_line_file_name = f"three_line_alerts_1d.xlsx"
-two_line_file_name = f"two_line_alerts_1d.xlsx"
+three_line_file_name = f"excel/1d/three_line_alerts_1d.xlsx"
+two_line_file_name = f"excel/1d/two_line_alerts_1d.xlsx"
 data_store_file_name = f"data_store_1d.json"
 start_time = time.time()
 max_execution_time = 5*3600
@@ -49,9 +48,6 @@ data_store = {}
 # else:
 #     data_store = {}
 
-three_line_alert_df = pd.DataFrame()
-two_line_alert_df = pd.DataFrame()
-data_store = {}
 # logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
 # logging.info(f"Started...")
 
@@ -59,7 +55,7 @@ def process_row(candles,stock_name,function_name,number_of_calls=0):
     # print(function_name.__name__)
     # return
     global three_line_alert_df,two_line_alert_df,data_store
-    logging.info(f'{stock_name} - {function_name.__name__} function started')
+    logging.info(f'{stock_name} - {"last n" if number_of_calls !=0 else ""} {function_name.__name__} function started')
     if(number_of_calls==0):
         candles[f'{function_name.__name__}'] = candles.apply(lambda row: function_name(candles,stock_name,
                                                             row.name, backcandles=15, window=window,
@@ -71,7 +67,7 @@ def process_row(candles,stock_name,function_name,number_of_calls=0):
                                                     row.name, backcandles=15, window=window,
                                                     ), axis=1)
         candles[f'{function_name.__name__}'] = candles[f'{function_name.__name__}'].fillna(candles['backup'])
-    logging.info(f'{stock_name} - last n {function_name.__name__} function Ended')
+    logging.info(f'{stock_name} - {"last n" if number_of_calls !=0 else ""} {function_name.__name__} function Ended')
     three_line_alert_df.to_excel(three_line_file_name,index=False)
     two_line_alert_df.to_excel(two_line_file_name,index=False)
     logging.info(f'{stock_name} - {"last n" if number_of_calls !=0 else ""} preparing_for_candles function Ended')
@@ -79,6 +75,7 @@ def process_row(candles,stock_name,function_name,number_of_calls=0):
 
 def process_function(stock_df,stock_name,time_frame,file_name,is_history_starting_from=True):
 
+    logging.info(f'{stock_name} - Process function started')
     stock_data_historical = pd.DataFrame()  # Initialize with an empty DataFrame
     isExist = os.path.exists(file_name)
     if isExist:
@@ -110,18 +107,18 @@ def process_function(stock_df,stock_name,time_frame,file_name,is_history_startin
             thread.join()
     elif(number_of_calls != 0):
         number_of_calls = max(0,number_of_calls - 50)
-        logging.info(f'isPivot function started')
+        logging.info(f'last n isPivot function started')
         stock_df['backup'] = stock_df['isPivot']
         stock_df['isPivot'] = stock_df.shift(-number_of_calls).iloc[-number_of_calls:].apply(lambda row: isPivot(stock_df, stock_name, row.name, window), axis=1)
         stock_df['isPivot'] = stock_df['isPivot'].fillna(stock_df['backup'])
-        logging.info(f'isPivot function Ended')
+        logging.info(f'last n isPivot function Ended')
+        threads = []
         for function_name in [detect_structure, two_line_structure]:
             thread = threading.Thread(target=process_row, args=(stock_df, stock_name, function_name,number_of_calls))
             threads.append(thread)
             thread.start()
         for thread in threads:
             thread.join()
-    logging.info(f'{stock_name} - {"last n" if is_history_starting_from !=True else ""} isPivot function Ended')
     
     stock_df.to_excel(file_name, index=False)
 
@@ -130,6 +127,7 @@ def process_function(stock_df,stock_name,time_frame,file_name,is_history_startin
             data_store[time_frame].append(stock_name)
     else:
         data_store[time_frame] = [stock_name]
+    logging.info(f'{stock_name} - Process function Ended')
 
 def generate_url_yfinance(stock_list, time_frame, is_history_starting_from=False, is_add_indicator=True):
     
@@ -357,7 +355,8 @@ def two_line_structure(df,stockname,candle, backcandles, window):
         for combination in leatest_combinations:
             x_values,y_values = zip(*combination)
             percent_difference = abs(y_values[0] - y_values[1]) / y_values[1] * 100
-            is_line = percent_difference<=1
+            is_line = percent_difference<=percentage
+            slope, intercept , is_line= plus_minus_01_percent(combination,percentage)
             if(is_line):
                 levelbreak = 1
                 alert = pd.DataFrame(combination, columns=['index', 'value']).set_index('index').copy(deep=True)
@@ -372,6 +371,8 @@ def two_line_structure(df,stockname,candle, backcandles, window):
                     'row2': [alert.index[1]],
                     'value2': [alert.iloc[1, 0]],
                     'buyORsell' : 'Low',
+                    "slope" : slope,
+                    "intercept" : intercept,
                     "window_size":window,
                     "percentage_value" : percentage,
                     "two_line_count" : two_line_count
@@ -385,6 +386,7 @@ def two_line_structure(df,stockname,candle, backcandles, window):
             x_values,y_values = zip(*combination)
             percent_difference = abs(y_values[0] - y_values[1]) / y_values[1] * 100
             is_line = percent_difference<=1
+            slope, intercept , is_line= plus_minus_01_percent(combination,percentage)
             if(is_line):
                 levelbreak = 2
                 alert = pd.DataFrame(combination, columns=['index', 'value']).set_index('index').copy(deep=True)
@@ -399,6 +401,8 @@ def two_line_structure(df,stockname,candle, backcandles, window):
                     'row2': [alert.index[1]],
                     'value2': [alert.iloc[1, 0]],
                     'buyORsell' : 'High',
+                    "slope" : slope,
+                    "intercept" : intercept,
                     "window_size":window,
                     "percentage_value" : percentage,
                     "two_line_count" : two_line_count
@@ -409,8 +413,8 @@ def two_line_structure(df,stockname,candle, backcandles, window):
 def save_files():
     global three_line_alert_df,two_line_alert_df,data_store
     try:
-        three_line_alert_df.drop_duplicates(subset=['stockname','date1', 'row1', 'value1', 'date2', 'row2', 'value2', 'date3', 'row3', 'value3', 'buyORsell', 'slope', 'intercept','window_size','percentage_value','pivot_line_count'], keep='first', inplace=True)
-        two_line_alert_df.drop_duplicates(subset=['stockname','date1', 'row1', 'value1', 'date2', 'row2', 'value2', 'buyORsell','window_size','percentage_value','two_line_count'], keep='first', inplace=True)
+        three_line_alert_df.drop_duplicates(subset=['stockname','date1','value1', 'date2', 'value2', 'date3', 'value3', 'buyORsell'], keep='first', inplace=True)
+        two_line_alert_df.drop_duplicates(subset=['stockname','date1','value1', 'date2','value2', 'buyORsell'], keep='first', inplace=True)
         three_line_alert_df.to_excel(three_line_file_name,index=False)
         two_line_alert_df.to_excel(two_line_file_name,index=False)
         logging.info(f'All stocks - alerts file Saved')
@@ -437,8 +441,9 @@ if __name__=="__main__":
         logging.basicConfig(filename=f'logfile_{time_frame}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
         logging.info(f"Started...")
         
-        three_line_file_name = f"three_line_alerts_{time_frame}.xlsx"
-        two_line_file_name = f"two_line_alerts_{time_frame}.xlsx"
+        os.makedirs(f"excel/{time_frame}", exist_ok=True)
+        three_line_file_name = f"excel/{time_frame}/three_line_alerts_{time_frame}.xlsx"
+        two_line_file_name = f"excel/{time_frame}/two_line_alerts_{time_frame}.xlsx"
         data_store_file_name = f"data_store_{time_frame}.json"
 
         isExist = os.path.exists(three_line_file_name)
@@ -455,7 +460,7 @@ if __name__=="__main__":
             with open(data_store_file_name, "r") as file:
                 data_store = json.load(file)
         else:
-            data_store = {}
+            data_store[time_frame] = []
 
         # max_execution_time = 5*3600
         logging.info(f'Stock threading stated ....')
@@ -517,8 +522,8 @@ if __name__=="__main__":
         logging.info(f"Error : {traceback_msg}")
 
     try:
-        three_line_alert_df.drop_duplicates(subset=['stockname','date1', 'row1', 'value1', 'date2', 'row2', 'value2', 'date3', 'row3', 'value3', 'buyORsell', 'slope', 'intercept','window_size','percentage_value','pivot_line_count'], keep='first', inplace=True)
-        two_line_alert_df.drop_duplicates(subset=['stockname','date1', 'row1', 'value1', 'date2', 'row2', 'value2', 'buyORsell','window_size','percentage_value','two_line_count'], keep='first', inplace=True)
+        three_line_alert_df.drop_duplicates(subset=['stockname','date1','value1', 'date2', 'value2', 'date3', 'value3', 'buyORsell'], keep='first', inplace=True)
+        two_line_alert_df.drop_duplicates(subset=['stockname','date1','value1', 'date2','value2', 'buyORsell'], keep='first', inplace=True)
         three_line_alert_df.to_excel(three_line_file_name,index=False)
         two_line_alert_df.to_excel(two_line_file_name,index=False)
         logging.info(f'All stocks - alerts file Saved')

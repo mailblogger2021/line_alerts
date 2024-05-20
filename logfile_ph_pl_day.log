@@ -1,2 +1,71 @@
-2024-05-19 18:25:29,648 -INFO - Started...
-2024-05-19 18:25:34,963 -INFO - NAVINFLUOR.NS - this stock already completed
+2024-05-20 08:50:14,431 -INFO - Started...
+2024-05-20 08:50:16,066 -INFO - NAVINFLUOR.NS - this stock already completed
+2024-05-20 08:57:34,998 -INFO - Started...
+2024-05-20 08:58:06,455 -INFO - Started...
+2024-05-20 09:00:06,362 -INFO - Started...
+2024-05-20 09:00:07,690 -INFO - day - Error in PH PL main function: 'day'
+2024-05-20 09:00:07,690 -INFO - day - Error : Traceback (most recent call last):
+  File "D:\line_alerts\PH_PL_chartink_to_pdf.py", line 127, in <module>
+    two_line.data_store[time_frame] = list(set(two_line.data_store[time_frame]) - set(stock_lists))
+                                               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'day'
+
+2024-05-20 09:01:36,224 -INFO - Started...
+2024-05-20 09:01:43,221 -ERROR - 
+1 Failed download:
+2024-05-20 09:01:43,221 -ERROR - ['NIFTY']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-05-20 09:01:43,486 -INFO - NAVINFLUOR.NS - Reading existing data...
+2024-05-20 09:01:46,145 -INFO - NAVINFLUOR.NS - last n isPivot function Ended
+2024-05-20 09:07:54,122 -INFO - Started...
+2024-05-20 09:08:01,565 -ERROR - 
+1 Failed download:
+2024-05-20 09:08:01,565 -ERROR - ['NIFTY']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-05-20 09:08:01,705 -INFO - NAVINFLUOR.NS - Process function started
+2024-05-20 09:08:01,705 -INFO - NAVINFLUOR.NS - Reading existing data...
+2024-05-20 09:08:03,127 -INFO - last n isPivot function started
+2024-05-20 09:08:06,470 -INFO - last n isPivot function Ended
+2024-05-20 09:09:53,984 -INFO - Started...
+2024-05-20 09:10:01,122 -ERROR - 
+1 Failed download:
+2024-05-20 09:10:01,122 -ERROR - ['NIFTY']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-05-20 09:10:01,232 -INFO - NAVINFLUOR.NS - Process function started
+2024-05-20 09:10:01,232 -INFO - NAVINFLUOR.NS - Reading existing data...
+2024-05-20 09:10:02,794 -INFO - last n isPivot function started
+2024-05-20 09:10:05,528 -INFO - last n isPivot function Ended
+2024-05-20 09:10:05,528 -INFO - NAVINFLUOR.NS - detect_structure function started
+2024-05-20 09:10:05,544 -INFO - NAVINFLUOR.NS - two_line_structure function started
+2024-05-20 09:11:23,557 -INFO - NAVINFLUOR.NS - last n two_line_structure function Ended
+2024-05-20 09:11:25,758 -INFO - NAVINFLUOR.NS - last n detect_structure function Ended
+2024-05-20 09:11:29,457 -INFO - NAVINFLUOR.NS - Process function Ended
+2024-05-20 09:14:41,646 -INFO - Started...
+2024-05-20 09:14:48,711 -ERROR - 
+1 Failed download:
+2024-05-20 09:14:48,711 -ERROR - ['NIFTY']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-05-20 09:14:48,852 -INFO - NAVINFLUOR.NS - Process function started
+2024-05-20 09:14:48,883 -INFO - isPivot function started
+2024-05-20 09:14:51,484 -INFO - isPivot function Ended
+2024-05-20 09:14:51,484 -INFO - NAVINFLUOR.NS -  detect_structure function started
+2024-05-20 09:14:51,484 -INFO - NAVINFLUOR.NS -  two_line_structure function started
+2024-05-20 09:16:09,007 -INFO - NAVINFLUOR.NS -  two_line_structure function Ended
+2024-05-20 09:16:11,793 -INFO - NAVINFLUOR.NS -  detect_structure function Ended
+2024-05-20 09:16:13,840 -INFO - NAVINFLUOR.NS -  preparing_for_candles function Ended
+2024-05-20 09:16:13,840 -INFO - NAVINFLUOR.NS - alerts file Saved
+2024-05-20 09:16:13,856 -INFO - NAVINFLUOR.NS -  preparing_for_candles function Ended
+2024-05-20 09:16:13,856 -INFO - NAVINFLUOR.NS - alerts file Saved
+2024-05-20 09:16:15,845 -INFO - NAVINFLUOR.NS - Process function Ended
+2024-05-20 09:34:53,667 -INFO - Started...
+2024-05-20 09:35:01,504 -ERROR - 
+1 Failed download:
+2024-05-20 09:35:01,504 -ERROR - ['NIFTY']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-05-20 09:35:01,598 -INFO - NAVINFLUOR.NS - Process function started
+2024-05-20 09:35:01,645 -INFO - isPivot function started
+2024-05-20 09:35:04,473 -INFO - isPivot function Ended
+2024-05-20 09:35:04,473 -INFO - NAVINFLUOR.NS -  detect_structure function started
+2024-05-20 09:35:04,473 -INFO - NAVINFLUOR.NS -  two_line_structure function started
+2024-05-20 09:35:58,551 -INFO - NAVINFLUOR.NS -  detect_structure function Ended
+2024-05-20 09:35:59,785 -INFO - NAVINFLUOR.NS -  two_line_structure function Ended
+2024-05-20 09:36:01,191 -INFO - NAVINFLUOR.NS -  preparing_for_candles function Ended
+2024-05-20 09:36:01,191 -INFO - NAVINFLUOR.NS - alerts file Saved
+2024-05-20 09:36:01,223 -INFO - NAVINFLUOR.NS -  preparing_for_candles function Ended
+2024-05-20 09:36:01,223 -INFO - NAVINFLUOR.NS - alerts file Saved
+2024-05-20 09:36:03,613 -INFO - NAVINFLUOR.NS - Process function Ended

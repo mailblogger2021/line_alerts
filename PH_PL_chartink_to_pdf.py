@@ -8,6 +8,7 @@ import threading
 import logging
 import os
 import json
+import traceback
 
 def chartink_to_pdf(session,title, pdf,chartink_url):
     r = session.post('https://chartink.com/screener/process', data={'scan_clause': chartink_url}).json()
@@ -96,8 +97,8 @@ if __name__ =="__main__":
         base_code_list.append(base_code)
         title_list.append(time_frame_dict[1]+" time Frame new PH PL ")
         # two_line.generate_url_yfinance()
-    pdf_file_name = "PH_PL_chartink_to_pdf"
-    ph_pl_list = generate_chartink_code(time_frame_list,base_code_list,title_list,pdf_file_name)
+    title = "PH_PL_chartink_to_pdf"
+    ph_pl_list = generate_chartink_code(time_frame_list,base_code_list,title_list,title)
     threads = []
     for time_frame in ph_pl_list:
         stock_lists = ph_pl_list[time_frame]
@@ -105,8 +106,9 @@ if __name__ =="__main__":
         # stock_lists = stock_lists[:1]
         yfinance_time_frame = time_frames_for_yfinance[time_frame]
         try:
-            two_line.three_line_file_name = f"three_line_alerts_{yfinance_time_frame}.xlsx"
-            two_line.two_line_file_name = f"two_line_alerts_{yfinance_time_frame}.xlsx"
+            os.makedirs(f"excel/{yfinance_time_frame}", exist_ok=True)
+            two_line.three_line_file_name = f"excel/{yfinance_time_frame}/three_line_alerts_{yfinance_time_frame}.xlsx"
+            two_line.two_line_file_name = f"excel/{yfinance_time_frame}/two_line_alerts_{yfinance_time_frame}.xlsx"
             two_line.data_store_file_name = f"data_store_{yfinance_time_frame}.json"
 
             isExist = os.path.exists(two_line.two_line_file_name)
@@ -122,7 +124,8 @@ if __name__ =="__main__":
                 with open(two_line.data_store_file_name, "r") as file:
                     two_line.data_store = json.load(file)
             else:
-                two_line.data_store = {}
+                two_line.data_store[yfinance_time_frame] = []
+            two_line.data_store[yfinance_time_frame] = list(set(two_line.data_store[yfinance_time_frame]) - set(stock_lists))
             two_line.generate_url_yfinance(stock_lists,yfinance_time_frame)
             # thread = threading.Thread(target=two_line.generate_url_yfinance, 
             #                         args=(stock_lists,time_frames_for_yfinance[time_frame]))
@@ -130,7 +133,12 @@ if __name__ =="__main__":
             # thread.start()
 
         except Exception as e:
-            print(f"{time_frame} - Error in isPivot function: {e}")
+            logging.info(f"{time_frame} - Error in PH PL main function: {e}")
+            traceback_msg = traceback.format_exc()
+            logging.info(f"{time_frame} - Error : {traceback_msg}")
+
+            print(f"{time_frame} - Error in PH PL main function: {e}")
+            print(f"{time_frame} - Error : {traceback_msg}")
     # for thread in threads:
     #     thread.join()
     print(ph_pl_list)

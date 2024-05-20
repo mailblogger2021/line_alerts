@@ -3,6 +3,7 @@ import pandas as pd
 import datetime
 import yaml
 import telegram_message_send
+import os
 
 pdf = FPDF(unit='mm', format=(250, 297))
 pdf.add_page()
@@ -58,7 +59,8 @@ def pdf_generater(time_frame,days):
 
     current_time = datetime.datetime.now()
     date_time = current_time.strftime("%d_%m_%Y_%H_%M_%S")
-    file_name = f'pdf_report/Line_pattern_pdf_report_{time_frame}_{date_time}.pdf'
+    os.makedirs(f"pdf_report/{time_frame}", exist_ok=True)
+    file_name = f'pdf_report/{time_frame}/Line_pattern_pdf_report_{time_frame}_{date_time}.pdf'
     pdf.output(file_name, 'F')
     
     telegram_message_send.send_message_with_documents(document_paths=[file_name])
