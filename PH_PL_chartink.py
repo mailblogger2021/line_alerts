@@ -74,6 +74,7 @@ if __name__ =="__main__":
     if(len(sys.argv) >= 2):
         time_frames = (sys.argv[1]).split(',')
 
+    os.makedirs(f"log/", exist_ok=True)
     logging.basicConfig(filename=f'log/logfile_ph_pl_{",".join(time_frames)}.log',level=logging.INFO, format='%(asctime)s -%(levelname)s - %(message)s')
     logging.info(f"Started...")
     time_frames_dict = {
