@@ -39437,3 +39437,1248 @@ ValueError: Length of values (178945) does not match length of index (178694)
 2024-06-27 20:53:00,051 -INFO - Max time reached....
 2024-06-27 20:54:12,408 -INFO - All stocks - Excel file Saved
 2024-06-27 20:54:12,417 -INFO - All stocks - json file saved
+2024-06-28 15:51:06,610 -INFO - Started...
+2024-06-28 15:51:26,333 -INFO - ADANIENT.NS - this stock already completed
+2024-06-28 15:51:26,333 -INFO - ADANIPORTS.NS - this stock already completed
+2024-06-28 15:51:26,333 -INFO - NIFTY_FIN_SERVICE.NS - this stock already completed
+2024-06-28 15:51:26,333 -INFO - ^NSEI - this stock already completed
+2024-06-28 15:51:26,333 -INFO - ^NSEBANK - this stock already completed
+2024-06-28 15:52:43,850 -INFO - All stocks - Excel file Saved
+2024-06-28 15:52:43,852 -INFO - All stocks - json file saved
+2024-06-28 15:54:02,479 -INFO - All stocks - Excel file Saved
+2024-06-28 15:54:02,481 -INFO - All stocks - json file saved
+2024-06-28 15:54:02,481 -INFO - 0 - 5 - Stock threading ended ....
+2024-06-28 15:54:02,482 -INFO - ASIANPAINT.NS - this stock already completed
+2024-06-28 15:54:02,482 -INFO - APOLLOHOSP.NS - this stock already completed
+2024-06-28 15:54:02,482 -INFO - BAJAJ-AUTO.NS - this stock already completed
+2024-06-28 15:54:02,482 -INFO - BAJFINANCE.NS - this stock already completed
+2024-06-28 15:54:02,482 -INFO - BAJAJFINSV.NS - this stock already completed
+2024-06-28 15:55:21,108 -INFO - All stocks - Excel file Saved
+2024-06-28 15:55:21,110 -INFO - All stocks - json file saved
+2024-06-28 15:56:39,437 -INFO - All stocks - Excel file Saved
+2024-06-28 15:56:39,438 -INFO - All stocks - json file saved
+2024-06-28 15:56:39,438 -INFO - 5 - 10 - Stock threading ended ....
+2024-06-28 15:56:39,438 -INFO - RELIANCE.NS - this stock already completed
+2024-06-28 15:56:39,438 -INFO - M&M.NS - this stock already completed
+2024-06-28 15:56:39,438 -INFO - BHARTIARTL.NS - this stock already completed
+2024-06-28 15:56:39,438 -INFO - ULTRACEMCO.NS - this stock already completed
+2024-06-28 15:56:39,438 -INFO - HEROMOTOCO.NS - this stock already completed
+2024-06-28 15:57:55,637 -INFO - All stocks - Excel file Saved
+2024-06-28 15:57:55,638 -INFO - All stocks - json file saved
+2024-06-28 15:59:12,115 -INFO - All stocks - Excel file Saved
+2024-06-28 15:59:12,116 -INFO - All stocks - json file saved
+2024-06-28 15:59:12,117 -INFO - 10 - 15 - Stock threading ended ....
+2024-06-28 15:59:12,117 -INFO - TITAN.NS - this stock already completed
+2024-06-28 15:59:12,117 -INFO - CIPLA.NS - this stock already completed
+2024-06-28 15:59:12,117 -INFO - BRITANNIA.NS - this stock already completed
+2024-06-28 15:59:12,117 -INFO - BPCL.NS - this stock already completed
+2024-06-28 15:59:12,117 -INFO - WIPRO.NS - this stock already completed
+2024-06-28 16:00:28,873 -INFO - All stocks - Excel file Saved
+2024-06-28 16:00:28,876 -INFO - All stocks - json file saved
+2024-06-28 16:01:46,981 -INFO - All stocks - Excel file Saved
+2024-06-28 16:01:46,985 -INFO - All stocks - json file saved
+2024-06-28 16:01:46,985 -INFO - 15 - 20 - Stock threading ended ....
+2024-06-28 16:01:46,986 -INFO - HINDALCO.NS - this stock already completed
+2024-06-28 16:01:46,986 -INFO - COALINDIA.NS - this stock already completed
+2024-06-28 16:01:46,986 -INFO - DIVISLAB.NS - this stock already completed
+2024-06-28 16:01:46,986 -INFO - DRREDDY.NS - this stock already completed
+2024-06-28 16:01:46,986 -INFO - EICHERMOT.NS - this stock already completed
+2024-06-28 16:03:08,891 -INFO - All stocks - Excel file Saved
+2024-06-28 16:03:08,892 -INFO - All stocks - json file saved
+2024-06-28 16:04:29,582 -INFO - All stocks - Excel file Saved
+2024-06-28 16:04:29,584 -INFO - All stocks - json file saved
+2024-06-28 16:04:29,584 -INFO - 20 - 25 - Stock threading ended ....
+2024-06-28 16:04:29,585 -INFO - SBILIFE.NS - this stock already completed
+2024-06-28 16:04:29,585 -INFO - HCLTECH.NS - this stock already completed
+2024-06-28 16:04:29,585 -INFO - LT.NS - this stock already completed
+2024-06-28 16:04:29,585 -INFO - NESTLEIND.NS - this stock already completed
+2024-06-28 16:04:29,585 -INFO - GRASIM.NS - this stock already completed
+2024-06-28 16:05:49,427 -INFO - All stocks - Excel file Saved
+2024-06-28 16:05:49,428 -INFO - All stocks - json file saved
+2024-06-28 16:07:03,732 -INFO - All stocks - Excel file Saved
+2024-06-28 16:07:03,732 -INFO - All stocks - json file saved
+2024-06-28 16:07:03,732 -INFO - 25 - 30 - Stock threading ended ....
+2024-06-28 16:07:03,733 -INFO - ITC.NS - this stock already completed
+2024-06-28 16:07:03,733 -INFO - HINDUNILVR.NS - this stock already completed
+2024-06-28 16:07:03,733 -INFO - TECHM.NS - this stock already completed
+2024-06-28 16:07:03,733 -INFO - HDFCLIFE.NS - this stock already completed
+2024-06-28 16:07:03,733 -INFO - TATAMOTORS.NS - this stock already completed
+2024-06-28 16:08:16,137 -INFO - All stocks - Excel file Saved
+2024-06-28 16:08:16,138 -INFO - All stocks - json file saved
+2024-06-28 16:09:28,739 -INFO - All stocks - Excel file Saved
+2024-06-28 16:09:28,739 -INFO - All stocks - json file saved
+2024-06-28 16:09:28,739 -INFO - 30 - 35 - Stock threading ended ....
+2024-06-28 16:09:28,739 -INFO - SUNPHARMA.NS - this stock already completed
+2024-06-28 16:09:28,739 -INFO - UPL.NS - this stock already completed
+2024-06-28 16:09:28,739 -INFO - POWERGRID.NS - this stock already completed
+2024-06-28 16:09:28,739 -INFO - ONGC.NS - this stock already completed
+2024-06-28 16:09:28,741 -INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/Users/runner/Library/Caches/py-yfinance' reason: [Errno 17] File exists: '/Users/runner/Library/Caches/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2024-06-28 16:09:31,494 -ERROR - 
+2 Failed downloads:
+2024-06-28 16:09:31,494 -ERROR - ['LTIM.NS']: IndexError('Boolean index has wrong length: 6 instead of 5')
+2024-06-28 16:09:31,494 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 16:10:45,736 -INFO - All stocks - Excel file Saved
+2024-06-28 16:10:45,738 -INFO - All stocks - json file saved
+2024-06-28 16:11:58,447 -INFO - All stocks - Excel file Saved
+2024-06-28 16:11:58,447 -INFO - All stocks - json file saved
+2024-06-28 16:11:58,447 -INFO - 35 - 40 - Stock threading ended ....
+2024-06-28 16:11:58,447 -INFO - JSWSTEEL.NS - this stock already completed
+2024-06-28 16:11:58,447 -INFO - TATASTEEL.NS - this stock already completed
+2024-06-28 16:11:58,447 -INFO - TATACONSUM.NS - this stock already completed
+2024-06-28 16:11:58,448 -INFO - TCS.NS - this stock already completed
+2024-06-28 16:11:58,448 -INFO - MARUTI.NS - this stock already completed
+2024-06-28 16:13:10,463 -INFO - All stocks - Excel file Saved
+2024-06-28 16:13:10,465 -INFO - All stocks - json file saved
+2024-06-28 16:14:22,494 -INFO - All stocks - Excel file Saved
+2024-06-28 16:14:22,494 -INFO - All stocks - json file saved
+2024-06-28 16:14:22,494 -INFO - 40 - 45 - Stock threading ended ....
+2024-06-28 16:14:22,495 -INFO - NTPC.NS - this stock already completed
+2024-06-28 16:14:22,495 -INFO - HDFCBANK.NS - this stock already completed
+2024-06-28 16:14:22,495 -INFO - KOTAKBANK.NS - this stock already completed
+2024-06-28 16:14:22,495 -INFO - AXISBANK.NS - this stock already completed
+2024-06-28 16:14:22,495 -INFO - INFY.NS - this stock already completed
+2024-06-28 16:15:34,480 -INFO - All stocks - Excel file Saved
+2024-06-28 16:15:34,481 -INFO - All stocks - json file saved
+2024-06-28 16:16:49,839 -INFO - All stocks - Excel file Saved
+2024-06-28 16:16:49,839 -INFO - All stocks - json file saved
+2024-06-28 16:16:49,839 -INFO - 45 - 50 - Stock threading ended ....
+2024-06-28 16:16:49,840 -INFO - INDUSINDBK.NS - this stock already completed
+2024-06-28 16:16:49,840 -INFO - AUBANK.NS - this stock already completed
+2024-06-28 16:16:49,840 -INFO - FEDERALBNK.NS - this stock already completed
+2024-06-28 16:16:49,840 -INFO - SBIN.NS - this stock already completed
+2024-06-28 16:16:49,840 -INFO - ICICIBANK.NS - this stock already completed
+2024-06-28 16:18:05,443 -INFO - All stocks - Excel file Saved
+2024-06-28 16:18:05,444 -INFO - All stocks - json file saved
+2024-06-28 16:19:20,301 -INFO - All stocks - Excel file Saved
+2024-06-28 16:19:20,301 -INFO - All stocks - json file saved
+2024-06-28 16:19:20,301 -INFO - 50 - 55 - Stock threading ended ....
+2024-06-28 16:19:20,301 -INFO - BANKBARODA.NS - this stock already completed
+2024-06-28 16:19:20,301 -INFO - BANDHANBNK.NS - this stock already completed
+2024-06-28 16:19:20,301 -INFO - BEL.NS - this stock already completed
+2024-06-28 16:19:20,301 -INFO - PNB.NS - this stock already completed
+2024-06-28 16:19:20,301 -INFO - IDFCFIRSTB.NS - this stock already completed
+2024-06-28 16:20:35,111 -INFO - All stocks - Excel file Saved
+2024-06-28 16:20:35,111 -INFO - All stocks - json file saved
+2024-06-28 16:21:49,963 -INFO - All stocks - Excel file Saved
+2024-06-28 16:21:49,964 -INFO - All stocks - json file saved
+2024-06-28 16:21:49,964 -INFO - 55 - 60 - Stock threading ended ....
+2024-06-28 16:21:49,964 -INFO - MUTHOOTFIN.NS - this stock already completed
+2024-06-28 16:21:49,964 -INFO - IRCTC.NS - this stock already completed
+2024-06-28 16:21:49,964 -INFO - MARICO.NS - this stock already completed
+2024-06-28 16:21:49,964 -INFO - AMBUJACEM.NS - this stock already completed
+2024-06-28 16:21:49,964 -INFO - JINDALSTEL.NS - this stock already completed
+2024-06-28 16:23:04,790 -INFO - All stocks - Excel file Saved
+2024-06-28 16:23:04,791 -INFO - All stocks - json file saved
+2024-06-28 16:24:19,569 -INFO - All stocks - Excel file Saved
+2024-06-28 16:24:19,569 -INFO - All stocks - json file saved
+2024-06-28 16:24:19,569 -INFO - 60 - 65 - Stock threading ended ....
+2024-06-28 16:24:19,570 -INFO - INDIGO.NS - this stock already completed
+2024-06-28 16:24:19,570 -INFO - CHOLAFIN.NS - this stock already completed
+2024-06-28 16:24:19,570 -INFO - ZYDUSLIFE.NS - this stock already completed
+2024-06-28 16:24:19,570 -INFO - CANBK.NS - this stock already completed
+2024-06-28 16:24:19,570 -INFO - MCDOWELL-N.NS - this stock already completed
+2024-06-28 16:25:34,399 -INFO - All stocks - Excel file Saved
+2024-06-28 16:25:34,399 -INFO - All stocks - json file saved
+2024-06-28 16:26:49,307 -INFO - All stocks - Excel file Saved
+2024-06-28 16:26:49,308 -INFO - All stocks - json file saved
+2024-06-28 16:26:49,308 -INFO - 65 - 70 - Stock threading ended ....
+2024-06-28 16:26:49,309 -INFO - TORNTPHARM.NS - this stock already completed
+2024-06-28 16:26:49,309 -INFO - HAL.NS - this stock already completed
+2024-06-28 16:26:49,309 -INFO - BERGEPAINT.NS - this stock already completed
+2024-06-28 16:26:49,309 -INFO - SHRIRAMFIN.NS - this stock already completed
+2024-06-28 16:26:49,309 -INFO - GAIL.NS - this stock already completed
+2024-06-28 16:28:03,949 -INFO - All stocks - Excel file Saved
+2024-06-28 16:28:03,949 -INFO - All stocks - json file saved
+2024-06-28 16:29:18,934 -INFO - All stocks - Excel file Saved
+2024-06-28 16:29:18,934 -INFO - All stocks - json file saved
+2024-06-28 16:29:18,934 -INFO - 70 - 75 - Stock threading ended ....
+2024-06-28 16:29:18,934 -INFO - DABUR.NS - this stock already completed
+2024-06-28 16:29:18,934 -INFO - ICICIPRULI.NS - this stock already completed
+2024-06-28 16:29:18,934 -INFO - ICICIGI.NS - this stock already completed
+2024-06-28 16:29:18,934 -INFO - MOTHERSON.NS - this stock already completed
+2024-06-28 16:29:18,934 -INFO - GODREJCP.NS - this stock already completed
+2024-06-28 16:30:33,787 -INFO - All stocks - Excel file Saved
+2024-06-28 16:30:33,788 -INFO - All stocks - json file saved
+2024-06-28 16:31:49,408 -INFO - All stocks - Excel file Saved
+2024-06-28 16:31:49,410 -INFO - All stocks - json file saved
+2024-06-28 16:31:49,410 -INFO - 75 - 80 - Stock threading ended ....
+2024-06-28 16:31:49,410 -INFO - VEDL.NS - this stock already completed
+2024-06-28 16:31:49,410 -INFO - PIDILITIND.NS - this stock already completed
+2024-06-28 16:31:49,410 -INFO - IOC.NS - this stock already completed
+2024-06-28 16:31:49,410 -INFO - DLF.NS - this stock already completed
+2024-06-28 16:31:49,410 -INFO - PIIND.NS - this stock already completed
+2024-06-28 16:33:04,647 -INFO - All stocks - Excel file Saved
+2024-06-28 16:33:04,647 -INFO - All stocks - json file saved
+2024-06-28 16:34:19,905 -INFO - All stocks - Excel file Saved
+2024-06-28 16:34:19,907 -INFO - All stocks - json file saved
+2024-06-28 16:34:19,907 -INFO - 80 - 85 - Stock threading ended ....
+2024-06-28 16:34:19,907 -INFO - SHREECEM.NS - this stock already completed
+2024-06-28 16:34:19,907 -INFO - PGHH.NS - this stock already completed
+2024-06-28 16:34:19,907 -INFO - SBICARD.NS - this stock already completed
+2024-06-28 16:34:19,907 -INFO - TATAPOWER.NS - this stock already completed
+2024-06-28 16:34:19,907 -INFO - SIEMENS.NS - this stock already completed
+2024-06-28 16:35:35,164 -INFO - All stocks - Excel file Saved
+2024-06-28 16:35:35,165 -INFO - All stocks - json file saved
+2024-06-28 16:36:53,566 -INFO - All stocks - Excel file Saved
+2024-06-28 16:36:53,568 -INFO - All stocks - json file saved
+2024-06-28 16:36:53,568 -INFO - 85 - 90 - Stock threading ended ....
+2024-06-28 16:36:53,569 -INFO - BAJAJHLDNG.NS - this stock already completed
+2024-06-28 16:36:53,569 -INFO - LICI.NS - this stock already completed
+2024-06-28 16:36:53,569 -INFO - ATGL.NS - this stock already completed
+2024-06-28 16:36:53,569 -INFO - ADANIGREEN.NS - this stock already completed
+2024-06-28 16:36:55,059 -ERROR - 
+2 Failed downloads:
+2024-06-28 16:36:55,059 -ERROR - ['ADANIENSOL.NS']: YFInvalidPeriodError("%ticker%: Period '2y' is invalid, must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', 'ytd', 'max']")
+2024-06-28 16:36:55,060 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 16:38:10,321 -INFO - All stocks - Excel file Saved
+2024-06-28 16:38:10,322 -INFO - All stocks - json file saved
+2024-06-28 16:39:31,024 -INFO - All stocks - Excel file Saved
+2024-06-28 16:39:31,025 -INFO - All stocks - json file saved
+2024-06-28 16:39:31,025 -INFO - 90 - 95 - Stock threading ended ....
+2024-06-28 16:39:31,026 -INFO - DMART.NS - this stock already completed
+2024-06-28 16:39:31,026 -INFO - ZOMATO.NS - this stock already completed
+2024-06-28 16:39:31,026 -INFO - VBL.NS - this stock already completed
+2024-06-28 16:39:31,026 -INFO - AWL.NS - this stock already completed
+2024-06-28 16:39:31,026 -INFO - TVSMOTOR.NS - this stock already completed
+2024-06-28 16:40:52,357 -INFO - All stocks - Excel file Saved
+2024-06-28 16:40:52,359 -INFO - All stocks - json file saved
+2024-06-28 16:42:12,782 -INFO - All stocks - Excel file Saved
+2024-06-28 16:42:12,782 -INFO - All stocks - json file saved
+2024-06-28 16:42:12,782 -INFO - 95 - 100 - Stock threading ended ....
+2024-06-28 16:42:12,783 -INFO - COLPAL.NS - this stock already completed
+2024-06-28 16:42:12,784 -INFO - ABB.NS - this stock already completed
+2024-06-28 16:42:12,784 -INFO - BOSCHLTD.NS - this stock already completed
+2024-06-28 16:42:12,784 -INFO - HAVELLS.NS - this stock already completed
+2024-06-28 16:42:12,784 -INFO - SRF.NS - this stock already completed
+2024-06-28 16:43:32,422 -INFO - All stocks - Excel file Saved
+2024-06-28 16:43:32,424 -INFO - All stocks - json file saved
+2024-06-28 16:44:52,484 -INFO - All stocks - Excel file Saved
+2024-06-28 16:44:52,485 -INFO - All stocks - json file saved
+2024-06-28 16:44:52,485 -INFO - 100 - 105 - Stock threading ended ....
+2024-06-28 16:44:52,486 -INFO - TRENT.NS - this stock already completed
+2024-06-28 16:44:52,486 -INFO - IDEA.NS - this stock already completed
+2024-06-28 16:44:52,486 -INFO - ASTRAL.NS - this stock already completed
+2024-06-28 16:44:52,486 -INFO - NAUKRI.NS - this stock already completed
+2024-06-28 16:44:52,486 -INFO - INDUSTOWER.NS - this stock already completed
+2024-06-28 16:46:12,870 -INFO - All stocks - Excel file Saved
+2024-06-28 16:46:12,870 -INFO - All stocks - json file saved
+2024-06-28 16:47:32,893 -INFO - All stocks - Excel file Saved
+2024-06-28 16:47:32,896 -INFO - All stocks - json file saved
+2024-06-28 16:47:32,896 -INFO - 105 - 110 - Stock threading ended ....
+2024-06-28 16:47:32,896 -INFO - CUMMINSIND.NS - this stock already completed
+2024-06-28 16:47:32,896 -INFO - ABBOTINDIA.NS - this stock already completed
+2024-06-28 16:47:32,896 -INFO - ASHOKLEY.NS - this stock already completed
+2024-06-28 16:47:32,896 -INFO - ABCAPITAL.NS - this stock already completed
+2024-06-28 16:47:32,896 -INFO - INDHOTEL.NS - this stock already completed
+2024-06-28 16:48:49,967 -INFO - All stocks - Excel file Saved
+2024-06-28 16:48:49,968 -INFO - All stocks - json file saved
+2024-06-28 16:50:04,899 -INFO - All stocks - Excel file Saved
+2024-06-28 16:50:04,899 -INFO - All stocks - json file saved
+2024-06-28 16:50:04,899 -INFO - 110 - 115 - Stock threading ended ....
+2024-06-28 16:50:04,900 -INFO - OBEROIRLTY.NS - this stock already completed
+2024-06-28 16:50:04,900 -INFO - BALKRISIND.NS - this stock already completed
+2024-06-28 16:50:04,900 -INFO - DALBHARAT.NS - this stock already completed
+2024-06-28 16:50:04,900 -INFO - AUROPHARMA.NS - this stock already completed
+2024-06-28 16:50:04,900 -INFO - GODREJPROP.NS - this stock already completed
+2024-06-28 16:51:20,851 -INFO - All stocks - Excel file Saved
+2024-06-28 16:51:20,851 -INFO - All stocks - json file saved
+2024-06-28 16:52:36,457 -INFO - All stocks - Excel file Saved
+2024-06-28 16:52:36,457 -INFO - All stocks - json file saved
+2024-06-28 16:52:36,457 -INFO - 115 - 120 - Stock threading ended ....
+2024-06-28 16:52:36,458 -INFO - COFORGE.NS - this stock already completed
+2024-06-28 16:52:36,458 -INFO - BHARATFORG.NS - this stock already completed
+2024-06-28 16:52:36,458 -INFO - JUBLFOOD.NS - this stock already completed
+2024-06-28 16:52:36,458 -INFO - CONCOR.NS - this stock already completed
+2024-06-28 16:52:36,458 -INFO - LTTS.NS - this stock already completed
+2024-06-28 16:54:07,755 -INFO - All stocks - Excel file Saved
+2024-06-28 16:54:07,757 -INFO - All stocks - json file saved
+2024-06-28 16:55:39,832 -INFO - All stocks - Excel file Saved
+2024-06-28 16:55:39,834 -INFO - All stocks - json file saved
+2024-06-28 16:55:39,834 -INFO - 120 - 125 - Stock threading ended ....
+2024-06-28 16:55:39,834 -INFO - PAGEIND.NS - this stock already completed
+2024-06-28 16:55:39,834 -INFO - HINDPETRO.NS - this stock already completed
+2024-06-28 16:55:39,834 -INFO - HDFCAMC.NS - this stock already completed
+2024-06-28 16:55:39,834 -INFO - MFSL.NS - this stock already completed
+2024-06-28 16:55:39,834 -INFO - GUJGASLTD.NS - this stock already completed
+2024-06-28 16:56:56,577 -INFO - All stocks - Excel file Saved
+2024-06-28 16:56:56,578 -INFO - All stocks - json file saved
+2024-06-28 16:58:09,770 -INFO - All stocks - Excel file Saved
+2024-06-28 16:58:09,771 -INFO - All stocks - json file saved
+2024-06-28 16:58:09,771 -INFO - 125 - 130 - Stock threading ended ....
+2024-06-28 16:58:09,771 -INFO - BIOCON.NS - this stock already completed
+2024-06-28 16:58:09,771 -INFO - BATAINDIA.NS - this stock already completed
+2024-06-28 16:58:09,771 -INFO - ZEEL.NS - this stock already completed
+2024-06-28 16:58:09,771 -INFO - M&MFIN.NS - this stock already completed
+2024-06-28 16:58:09,771 -INFO - IGL.NS - this stock already completed
+2024-06-28 16:59:22,505 -INFO - All stocks - Excel file Saved
+2024-06-28 16:59:22,505 -INFO - All stocks - json file saved
+2024-06-28 17:00:34,824 -INFO - All stocks - Excel file Saved
+2024-06-28 17:00:34,824 -INFO - All stocks - json file saved
+2024-06-28 17:00:34,824 -INFO - 130 - 135 - Stock threading ended ....
+2024-06-28 17:00:34,825 -INFO - MPHASIS.NS - this stock already completed
+2024-06-28 17:00:34,825 -INFO - MRF.NS - this stock already completed
+2024-06-28 17:00:34,825 -INFO - LUPIN.NS - this stock already completed
+2024-06-28 17:00:34,825 -INFO - PERSISTENT.NS - this stock already completed
+2024-06-28 17:00:34,825 -INFO - RECLTD.NS - this stock already completed
+2024-06-28 17:01:47,505 -INFO - All stocks - Excel file Saved
+2024-06-28 17:01:47,506 -INFO - All stocks - json file saved
+2024-06-28 17:03:00,278 -INFO - All stocks - Excel file Saved
+2024-06-28 17:03:00,279 -INFO - All stocks - json file saved
+2024-06-28 17:03:00,279 -INFO - 135 - 140 - Stock threading ended ....
+2024-06-28 17:03:00,279 -INFO - ESCORTS.NS - this stock already completed
+2024-06-28 17:03:00,279 -INFO - PETRONET.NS - this stock already completed
+2024-06-28 17:03:00,279 -INFO - UBL.NS - this stock already completed
+2024-06-28 17:03:00,279 -INFO - NMDC.NS - this stock already completed
+2024-06-28 17:03:00,279 -INFO - SAIL.NS - this stock already completed
+2024-06-28 17:04:13,005 -INFO - All stocks - Excel file Saved
+2024-06-28 17:04:13,007 -INFO - All stocks - json file saved
+2024-06-28 17:05:25,207 -INFO - All stocks - Excel file Saved
+2024-06-28 17:05:25,207 -INFO - All stocks - json file saved
+2024-06-28 17:05:25,207 -INFO - 140 - 145 - Stock threading ended ....
+2024-06-28 17:05:25,207 -INFO - WELSPUNLIV.NS - this stock already completed
+2024-06-28 17:05:25,207 -INFO - RBLBANK.NS - this stock already completed
+2024-06-28 17:05:25,207 -INFO - POLYCAB.NS - this stock already completed
+2024-06-28 17:05:25,207 -INFO - PFC.NS - this stock already completed
+2024-06-28 17:05:25,207 -INFO - ROUTE.NS - this stock already completed
+2024-06-28 17:06:37,626 -INFO - All stocks - Excel file Saved
+2024-06-28 17:06:37,626 -INFO - All stocks - json file saved
+2024-06-28 17:07:49,905 -INFO - All stocks - Excel file Saved
+2024-06-28 17:07:49,905 -INFO - All stocks - json file saved
+2024-06-28 17:07:49,906 -INFO - 145 - 150 - Stock threading ended ....
+2024-06-28 17:07:49,906 -INFO - CAMS.NS - this stock already completed
+2024-06-28 17:07:49,906 -INFO - KEI.NS - this stock already completed
+2024-06-28 17:07:49,906 -INFO - CAMPUS.NS - this stock already completed
+2024-06-28 17:07:49,906 -INFO - IDFC.NS - this stock already completed
+2024-06-28 17:07:49,906 -INFO - CIEINDIA.NS - this stock already completed
+2024-06-28 17:09:02,126 -INFO - All stocks - Excel file Saved
+2024-06-28 17:09:02,127 -INFO - All stocks - json file saved
+2024-06-28 17:10:14,392 -INFO - All stocks - Excel file Saved
+2024-06-28 17:10:14,392 -INFO - All stocks - json file saved
+2024-06-28 17:10:14,392 -INFO - 150 - 155 - Stock threading ended ....
+2024-06-28 17:10:14,393 -INFO - TEJASNET.NS - this stock already completed
+2024-06-28 17:10:14,393 -INFO - GLENMARK.NS - this stock already completed
+2024-06-28 17:10:14,393 -INFO - ANURAS.NS - this stock already completed
+2024-06-28 17:10:14,393 -INFO - CDSL.NS - this stock already completed
+2024-06-28 17:10:16,105 -ERROR - 
+2 Failed downloads:
+2024-06-28 17:10:16,105 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 17:10:16,105 -ERROR - ['ARE&M.NS']: YFInvalidPeriodError("%ticker%: Period '2y' is invalid, must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', 'ytd', 'max']")
+2024-06-28 17:11:28,399 -INFO - All stocks - Excel file Saved
+2024-06-28 17:11:28,401 -INFO - All stocks - json file saved
+2024-06-28 17:12:40,536 -INFO - All stocks - Excel file Saved
+2024-06-28 17:12:40,536 -INFO - All stocks - json file saved
+2024-06-28 17:12:40,536 -INFO - 155 - 160 - Stock threading ended ....
+2024-06-28 17:12:40,537 -INFO - ANGELONE.NS - this stock already completed
+2024-06-28 17:12:40,537 -INFO - BIKAJI.NS - this stock already completed
+2024-06-28 17:12:40,537 -INFO - PNBHOUSING.NS - this stock already completed
+2024-06-28 17:12:40,537 -INFO - IEX.NS - this stock already completed
+2024-06-28 17:12:40,537 -INFO - FINCABLES.NS - this stock already completed
+2024-06-28 17:13:52,729 -INFO - All stocks - Excel file Saved
+2024-06-28 17:13:52,731 -INFO - All stocks - json file saved
+2024-06-28 17:15:05,093 -INFO - All stocks - Excel file Saved
+2024-06-28 17:15:05,094 -INFO - All stocks - json file saved
+2024-06-28 17:15:05,094 -INFO - 160 - 165 - Stock threading ended ....
+2024-06-28 17:15:05,094 -INFO - JBCHEPHARM.NS - this stock already completed
+2024-06-28 17:15:05,094 -INFO - NATIONALUM.NS - this stock already completed
+2024-06-28 17:15:05,094 -INFO - HINDCOPPER.NS - this stock already completed
+2024-06-28 17:15:05,094 -INFO - PVRINOX.NS - this stock already completed
+2024-06-28 17:15:05,094 -INFO - REDINGTON.NS - this stock already completed
+2024-06-28 17:16:20,804 -INFO - All stocks - Excel file Saved
+2024-06-28 17:16:20,804 -INFO - All stocks - json file saved
+2024-06-28 17:17:38,754 -INFO - All stocks - Excel file Saved
+2024-06-28 17:17:38,755 -INFO - All stocks - json file saved
+2024-06-28 17:17:38,755 -INFO - 165 - 170 - Stock threading ended ....
+2024-06-28 17:17:38,756 -INFO - RENUKA.NS - this stock already completed
+2024-06-28 17:17:38,756 -INFO - CYIENT.NS - this stock already completed
+2024-06-28 17:17:38,756 -INFO - MANAPPURAM.NS - this stock already completed
+2024-06-28 17:17:38,756 -INFO - CHAMBLFERT.NS - this stock already completed
+2024-06-28 17:17:38,756 -INFO - GNFC.NS - this stock already completed
+2024-06-28 17:18:51,571 -INFO - All stocks - Excel file Saved
+2024-06-28 17:18:51,573 -INFO - All stocks - json file saved
+2024-06-28 17:20:04,274 -INFO - All stocks - Excel file Saved
+2024-06-28 17:20:04,274 -INFO - All stocks - json file saved
+2024-06-28 17:20:04,274 -INFO - 170 - 175 - Stock threading ended ....
+2024-06-28 17:20:04,275 -INFO - RADICO.NS - this stock already completed
+2024-06-28 17:20:04,275 -INFO - CUB.NS - this stock already completed
+2024-06-28 17:20:04,275 -INFO - EXIDEIND.NS - this stock already completed
+2024-06-28 17:20:04,275 -INFO - CESC.NS - this stock already completed
+2024-06-28 17:20:04,275 -INFO - KALYANKJIL.NS - this stock already completed
+2024-06-28 17:21:16,630 -INFO - All stocks - Excel file Saved
+2024-06-28 17:21:16,631 -INFO - All stocks - json file saved
+2024-06-28 17:22:30,540 -INFO - All stocks - Excel file Saved
+2024-06-28 17:22:30,540 -INFO - All stocks - json file saved
+2024-06-28 17:22:30,540 -INFO - 175 - 180 - Stock threading ended ....
+2024-06-28 17:22:30,541 -INFO - AMIORG.NS - this stock already completed
+2024-06-28 17:22:30,541 -INFO - TANLA.NS - this stock already completed
+2024-06-28 17:22:30,541 -INFO - GOKEX.NS - this stock already completed
+2024-06-28 17:22:30,541 -INFO - ORIENTCEM.NS - this stock already completed
+2024-06-28 17:22:30,541 -INFO - KOLTEPATIL.NS - this stock already completed
+2024-06-28 17:23:42,866 -INFO - All stocks - Excel file Saved
+2024-06-28 17:23:42,866 -INFO - All stocks - json file saved
+2024-06-28 17:24:55,246 -INFO - All stocks - Excel file Saved
+2024-06-28 17:24:55,246 -INFO - All stocks - json file saved
+2024-06-28 17:24:55,246 -INFO - 180 - 185 - Stock threading ended ....
+2024-06-28 17:24:55,246 -INFO - TCIEXP.NS - this stock already completed
+2024-06-28 17:24:55,246 -INFO - ESABINDIA.NS - this stock already completed
+2024-06-28 17:24:55,246 -INFO - TECHNOE.NS - this stock already completed
+2024-06-28 17:24:55,246 -INFO - TATVA.NS - this stock already completed
+2024-06-28 17:24:55,246 -INFO - VRLLOG.NS - this stock already completed
+2024-06-28 17:26:07,319 -INFO - All stocks - Excel file Saved
+2024-06-28 17:26:07,319 -INFO - All stocks - json file saved
+2024-06-28 17:27:19,747 -INFO - All stocks - Excel file Saved
+2024-06-28 17:27:19,747 -INFO - All stocks - json file saved
+2024-06-28 17:27:19,747 -INFO - 185 - 190 - Stock threading ended ....
+2024-06-28 17:27:19,748 -INFO - MASFIN.NS - this stock already completed
+2024-06-28 17:27:19,748 -INFO - HGS.NS - this stock already completed
+2024-06-28 17:27:19,748 -INFO - JINDALPOLY.NS - this stock already completed
+2024-06-28 17:27:19,748 -INFO - MAITHANALL.NS - this stock already completed
+2024-06-28 17:27:21,951 -ERROR - 
+2 Failed downloads:
+2024-06-28 17:27:21,951 -ERROR - ['TVSSCS.NS']: YFInvalidPeriodError("%ticker%: Period '2y' is invalid, must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', 'ytd', 'max']")
+2024-06-28 17:27:21,951 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 17:28:34,554 -INFO - All stocks - Excel file Saved
+2024-06-28 17:28:34,555 -INFO - All stocks - json file saved
+2024-06-28 17:29:46,658 -INFO - All stocks - Excel file Saved
+2024-06-28 17:29:46,660 -INFO - All stocks - json file saved
+2024-06-28 17:29:46,660 -INFO - 190 - 195 - Stock threading ended ....
+2024-06-28 17:29:46,660 -INFO - BARBEQUE.NS - this stock already completed
+2024-06-28 17:29:46,660 -INFO - CAPLIPOINT.NS - this stock already completed
+2024-06-28 17:29:46,660 -INFO - SARDAEN.NS - this stock already completed
+2024-06-28 17:29:46,660 -INFO - ZENTEC.NS - this stock already completed
+2024-06-28 17:29:46,660 -INFO - HGINFRA.NS - this stock already completed
+2024-06-28 17:30:59,354 -INFO - All stocks - Excel file Saved
+2024-06-28 17:30:59,355 -INFO - All stocks - json file saved
+2024-06-28 17:32:11,575 -INFO - All stocks - Excel file Saved
+2024-06-28 17:32:11,575 -INFO - All stocks - json file saved
+2024-06-28 17:32:11,575 -INFO - 195 - 200 - Stock threading ended ....
+2024-06-28 17:32:11,575 -INFO - NOCIL.NS - this stock already completed
+2024-06-28 17:32:11,575 -INFO - VESUVIUS.NS - this stock already completed
+2024-06-28 17:32:11,575 -INFO - AUTOAXLES.NS - this stock already completed
+2024-06-28 17:32:11,575 -INFO - ACLGATI.NS - this stock already completed
+2024-06-28 17:32:11,575 -INFO - TARSONS.NS - this stock already completed
+2024-06-28 17:33:23,757 -INFO - All stocks - Excel file Saved
+2024-06-28 17:33:23,757 -INFO - All stocks - json file saved
+2024-06-28 17:34:35,936 -INFO - All stocks - Excel file Saved
+2024-06-28 17:34:35,936 -INFO - All stocks - json file saved
+2024-06-28 17:34:35,936 -INFO - 200 - 205 - Stock threading ended ....
+2024-06-28 17:34:35,937 -INFO - SHANTIGEAR.NS - this stock already completed
+2024-06-28 17:34:35,937 -INFO - ARVIND.NS - this stock already completed
+2024-06-28 17:34:35,937 -INFO - INDOCO.NS - this stock already completed
+2024-06-28 17:34:35,937 -INFO - TCNSBRANDS.NS - this stock already completed
+2024-06-28 17:34:35,937 -INFO - MAYURUNIQ.NS - this stock already completed
+2024-06-28 17:35:48,351 -INFO - All stocks - Excel file Saved
+2024-06-28 17:35:48,351 -INFO - All stocks - json file saved
+2024-06-28 17:37:00,590 -INFO - All stocks - Excel file Saved
+2024-06-28 17:37:00,591 -INFO - All stocks - json file saved
+2024-06-28 17:37:00,591 -INFO - 205 - 210 - Stock threading ended ....
+2024-06-28 17:37:00,591 -INFO - MAHSEAMLES.NS - this stock already completed
+2024-06-28 17:37:00,591 -INFO - KRSNAA.NS - this stock already completed
+2024-06-28 17:37:00,591 -INFO - VSTTILLERS.NS - this stock already completed
+2024-06-28 17:37:00,591 -INFO - HIL.NS - this stock already completed
+2024-06-28 17:37:00,591 -INFO - SSWL.NS - this stock already completed
+2024-06-28 17:38:12,637 -INFO - All stocks - Excel file Saved
+2024-06-28 17:38:12,637 -INFO - All stocks - json file saved
+2024-06-28 17:39:24,874 -INFO - All stocks - Excel file Saved
+2024-06-28 17:39:24,879 -INFO - All stocks - json file saved
+2024-06-28 17:39:24,879 -INFO - 210 - 215 - Stock threading ended ....
+2024-06-28 17:39:24,879 -INFO - KTKBANK.NS - this stock already completed
+2024-06-28 17:39:24,880 -INFO - EMIL.NS - this stock already completed
+2024-06-28 17:39:24,880 -INFO - WELENT.NS - this stock already completed
+2024-06-28 17:39:24,880 -INFO - GLOBUSSPR.NS - this stock already completed
+2024-06-28 17:39:24,880 -INFO - HIKAL.NS - this stock already completed
+2024-06-28 17:40:37,667 -INFO - All stocks - Excel file Saved
+2024-06-28 17:40:37,667 -INFO - All stocks - json file saved
+2024-06-28 17:41:49,868 -INFO - All stocks - Excel file Saved
+2024-06-28 17:41:49,869 -INFO - All stocks - json file saved
+2024-06-28 17:41:49,869 -INFO - 215 - 220 - Stock threading ended ....
+2024-06-28 17:41:49,869 -INFO - OPTIEMUS.NS - this stock already completed
+2024-06-28 17:41:49,869 -INFO - DCBBANK.NS - this stock already completed
+2024-06-28 17:41:49,869 -INFO - GMDCLTD.NS - this stock already completed
+2024-06-28 17:41:49,869 -INFO - KKCL.NS - this stock already completed
+2024-06-28 17:41:51,512 -ERROR - 
+2 Failed downloads:
+2024-06-28 17:41:51,513 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 17:41:51,513 -ERROR - ['LTFOODS.NS']: YFInvalidPeriodError("%ticker%: Period '2y' is invalid, must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', 'ytd', 'max']")
+2024-06-28 17:43:03,981 -INFO - All stocks - Excel file Saved
+2024-06-28 17:43:03,982 -INFO - All stocks - json file saved
+2024-06-28 17:44:16,208 -INFO - All stocks - Excel file Saved
+2024-06-28 17:44:16,208 -INFO - All stocks - json file saved
+2024-06-28 17:44:16,208 -INFO - 220 - 225 - Stock threading ended ....
+2024-06-28 17:44:16,208 -INFO - BEPL.NS - this stock already completed
+2024-06-28 17:44:16,208 -INFO - KSCL.NS - this stock already completed
+2024-06-28 17:44:16,208 -INFO - AARTIPHARM.NS - this stock already completed
+2024-06-28 17:44:16,208 -INFO - LANDMARK.NS - this stock already completed
+2024-06-28 17:44:16,208 -INFO - RUPA.NS - this stock already completed
+2024-06-28 17:45:28,401 -INFO - All stocks - Excel file Saved
+2024-06-28 17:45:28,403 -INFO - All stocks - json file saved
+2024-06-28 17:46:40,879 -INFO - All stocks - Excel file Saved
+2024-06-28 17:46:40,879 -INFO - All stocks - json file saved
+2024-06-28 17:46:40,879 -INFO - 225 - 230 - Stock threading ended ....
+2024-06-28 17:46:40,879 -INFO - PGEL.NS - this stock already completed
+2024-06-28 17:46:40,880 -INFO - DWARKESH.NS - this stock already completed
+2024-06-28 17:46:40,880 -INFO - HATHWAY.NS - this stock already completed
+2024-06-28 17:46:40,880 -INFO - IFCI.NS - this stock already completed
+2024-06-28 17:46:40,880 -INFO - SULA.NS - this stock already completed
+2024-06-28 17:47:58,924 -INFO - All stocks - Excel file Saved
+2024-06-28 17:47:58,925 -INFO - All stocks - json file saved
+2024-06-28 17:49:16,201 -INFO - All stocks - Excel file Saved
+2024-06-28 17:49:16,202 -INFO - All stocks - json file saved
+2024-06-28 17:49:16,202 -INFO - 230 - 235 - Stock threading ended ....
+2024-06-28 17:49:16,202 -INFO - HEMIPROP.NS - this stock already completed
+2024-06-28 17:49:16,202 -INFO - JISLJALEQS.NS - this stock already completed
+2024-06-28 17:49:16,202 -INFO - HBLPOWER.NS - this stock already completed
+2024-06-28 17:49:16,202 -INFO - SOMANYCERA.NS - this stock already completed
+2024-06-28 17:49:16,202 -INFO - HNDFDS.NS - this stock already completed
+2024-06-28 17:50:29,301 -INFO - All stocks - Excel file Saved
+2024-06-28 17:50:29,301 -INFO - All stocks - json file saved
+2024-06-28 17:51:41,941 -INFO - All stocks - Excel file Saved
+2024-06-28 17:51:41,941 -INFO - All stocks - json file saved
+2024-06-28 17:51:41,941 -INFO - 235 - 240 - Stock threading ended ....
+2024-06-28 17:51:41,941 -INFO - PDSL.NS - this stock already completed
+2024-06-28 17:51:41,941 -INFO - NRBBEARING.NS - this stock already completed
+2024-06-28 17:51:41,941 -INFO - HERITGFOOD.NS - this stock already completed
+2024-06-28 17:51:41,941 -INFO - VENKEYS.NS - this stock already completed
+2024-06-28 17:51:41,941 -INFO - HEIDELBERG.NS - this stock already completed
+2024-06-28 17:52:54,258 -INFO - All stocks - Excel file Saved
+2024-06-28 17:52:54,259 -INFO - All stocks - json file saved
+2024-06-28 17:54:07,076 -INFO - All stocks - Excel file Saved
+2024-06-28 17:54:07,076 -INFO - All stocks - json file saved
+2024-06-28 17:54:07,076 -INFO - 240 - 245 - Stock threading ended ....
+2024-06-28 17:54:07,077 -INFO - SUNFLAG.NS - this stock already completed
+2024-06-28 17:54:07,077 -INFO - SUBEXLTD.NS - this stock already completed
+2024-06-28 17:54:07,077 -INFO - ASTEC.NS - this stock already completed
+2024-06-28 17:54:07,077 -INFO - NFL.NS - this stock already completed
+2024-06-28 17:54:07,077 -INFO - WSTCSTPAPR.NS - this stock already completed
+2024-06-28 17:55:19,769 -INFO - All stocks - Excel file Saved
+2024-06-28 17:55:19,771 -INFO - All stocks - json file saved
+2024-06-28 17:56:32,593 -INFO - All stocks - Excel file Saved
+2024-06-28 17:56:32,594 -INFO - All stocks - json file saved
+2024-06-28 17:56:32,594 -INFO - 245 - 250 - Stock threading ended ....
+2024-06-28 17:56:32,594 -INFO - ICIL.NS - this stock already completed
+2024-06-28 17:56:32,594 -INFO - GREENLAM.NS - this stock already completed
+2024-06-28 17:56:32,594 -INFO - ROLEXRINGS.NS - this stock already completed
+2024-06-28 17:56:32,594 -INFO - SURYAROSNI.NS - this stock already completed
+2024-06-28 17:56:32,594 -INFO - TDPOWERSYS.NS - this stock already completed
+2024-06-28 17:57:45,798 -INFO - All stocks - Excel file Saved
+2024-06-28 17:57:45,798 -INFO - All stocks - json file saved
+2024-06-28 17:58:59,441 -INFO - All stocks - Excel file Saved
+2024-06-28 17:58:59,441 -INFO - All stocks - json file saved
+2024-06-28 17:58:59,441 -INFO - 250 - 255 - Stock threading ended ....
+2024-06-28 17:58:59,441 -INFO - JTEKTINDIA.NS - this stock already completed
+2024-06-28 17:58:59,441 -INFO - GREENPANEL.NS - this stock already completed
+2024-06-28 17:58:59,441 -INFO - CARTRADE.NS - this stock already completed
+2024-06-28 17:58:59,441 -INFO - JAICORPLTD.NS - this stock already completed
+2024-06-28 17:58:59,441 -INFO - NEWGEN.NS - this stock already completed
+2024-06-28 18:00:11,630 -INFO - All stocks - Excel file Saved
+2024-06-28 18:00:11,630 -INFO - All stocks - json file saved
+2024-06-28 18:01:23,858 -INFO - All stocks - Excel file Saved
+2024-06-28 18:01:23,858 -INFO - All stocks - json file saved
+2024-06-28 18:01:23,858 -INFO - 255 - 260 - Stock threading ended ....
+2024-06-28 18:01:23,858 -INFO - JCHAC.NS - this stock already completed
+2024-06-28 18:01:23,858 -INFO - NEOGEN.NS - this stock already completed
+2024-06-28 18:01:23,858 -INFO - IKIO.NS - this stock already completed
+2024-06-28 18:01:23,858 -INFO - COSMOFIRST.NS - this stock already completed
+2024-06-28 18:01:23,858 -INFO - RESPONIND.NS - this stock already completed
+2024-06-28 18:02:36,114 -INFO - All stocks - Excel file Saved
+2024-06-28 18:02:36,116 -INFO - All stocks - json file saved
+2024-06-28 18:03:48,367 -INFO - All stocks - Excel file Saved
+2024-06-28 18:03:48,368 -INFO - All stocks - json file saved
+2024-06-28 18:03:48,368 -INFO - 260 - 265 - Stock threading ended ....
+2024-06-28 18:03:48,368 -INFO - RATEGAIN.NS - this stock already completed
+2024-06-28 18:03:48,368 -INFO - APCOTEXIND.NS - this stock already completed
+2024-06-28 18:03:48,368 -INFO - STYRENIX.NS - this stock already completed
+2024-06-28 18:03:48,368 -INFO - AVALON.NS - this stock already completed
+2024-06-28 18:03:48,368 -INFO - GRAVITA.NS - this stock already completed
+2024-06-28 18:05:00,697 -INFO - All stocks - Excel file Saved
+2024-06-28 18:05:00,698 -INFO - All stocks - json file saved
+2024-06-28 18:06:12,926 -INFO - All stocks - Excel file Saved
+2024-06-28 18:06:12,926 -INFO - All stocks - json file saved
+2024-06-28 18:06:12,926 -INFO - 265 - 270 - Stock threading ended ....
+2024-06-28 18:06:12,927 -INFO - JTLIND.NS - this stock already completed
+2024-06-28 18:06:12,927 -INFO - MOIL.NS - this stock already completed
+2024-06-28 18:06:12,927 -INFO - MIDHANI.NS - this stock already completed
+2024-06-28 18:06:12,927 -INFO - IOLCP.NS - this stock already completed
+2024-06-28 18:06:12,927 -INFO - RKFORGE.NS - this stock already completed
+2024-06-28 18:07:25,299 -INFO - All stocks - Excel file Saved
+2024-06-28 18:07:25,302 -INFO - All stocks - json file saved
+2024-06-28 18:08:37,544 -INFO - All stocks - Excel file Saved
+2024-06-28 18:08:37,545 -INFO - All stocks - json file saved
+2024-06-28 18:08:37,545 -INFO - 270 - 275 - Stock threading ended ....
+2024-06-28 18:08:37,545 -INFO - SPANDANA.NS - this stock already completed
+2024-06-28 18:08:37,545 -INFO - DCXINDIA.NS - this stock already completed
+2024-06-28 18:08:37,545 -INFO - DATAMATICS.NS - this stock already completed
+2024-06-28 18:08:37,545 -INFO - ARVINDFASN.NS - this stock already completed
+2024-06-28 18:08:37,545 -INFO - DREAMFOLKS.NS - this stock already completed
+2024-06-28 18:09:49,764 -INFO - All stocks - Excel file Saved
+2024-06-28 18:09:49,766 -INFO - All stocks - json file saved
+2024-06-28 18:11:01,890 -INFO - All stocks - Excel file Saved
+2024-06-28 18:11:01,890 -INFO - All stocks - json file saved
+2024-06-28 18:11:01,890 -INFO - 275 - 280 - Stock threading ended ....
+2024-06-28 18:11:01,891 -INFO - PARAS.NS - this stock already completed
+2024-06-28 18:11:01,891 -INFO - GODREJAGRO.NS - this stock already completed
+2024-06-28 18:11:01,891 -INFO - GARFIBRES.NS - this stock already completed
+2024-06-28 18:11:01,891 -INFO - SAKSOFT.NS - this stock already completed
+2024-06-28 18:11:01,891 -INFO - INDIAGLYCO.NS - this stock already completed
+2024-06-28 18:12:14,282 -INFO - All stocks - Excel file Saved
+2024-06-28 18:12:14,282 -INFO - All stocks - json file saved
+2024-06-28 18:13:32,437 -INFO - All stocks - Excel file Saved
+2024-06-28 18:13:32,438 -INFO - All stocks - json file saved
+2024-06-28 18:13:32,438 -INFO - 280 - 285 - Stock threading ended ....
+2024-06-28 18:13:32,438 -INFO - GATEWAY.NS - this stock already completed
+2024-06-28 18:13:32,438 -INFO - ISGEC.NS - this stock already completed
+2024-06-28 18:13:32,438 -INFO - GABRIEL.NS - this stock already completed
+2024-06-28 18:13:32,438 -INFO - PSPPROJECT.NS - this stock already completed
+2024-06-28 18:13:32,438 -INFO - STYLAMIND.NS - this stock already completed
+2024-06-28 18:14:45,948 -INFO - All stocks - Excel file Saved
+2024-06-28 18:14:45,950 -INFO - All stocks - json file saved
+2024-06-28 18:15:59,000 -INFO - All stocks - Excel file Saved
+2024-06-28 18:15:59,001 -INFO - All stocks - json file saved
+2024-06-28 18:15:59,001 -INFO - 285 - 290 - Stock threading ended ....
+2024-06-28 18:15:59,001 -INFO - LGBBROSLTD.NS - this stock already completed
+2024-06-28 18:15:59,001 -INFO - PTC.NS - this stock already completed
+2024-06-28 18:15:59,001 -INFO - SIYSIL.NS - this stock already completed
+2024-06-28 18:15:59,001 -INFO - SANSERA.NS - this stock already completed
+2024-06-28 18:15:59,001 -INFO - AGI.NS - this stock already completed
+2024-06-28 18:17:11,876 -INFO - All stocks - Excel file Saved
+2024-06-28 18:17:11,878 -INFO - All stocks - json file saved
+2024-06-28 18:18:24,809 -INFO - All stocks - Excel file Saved
+2024-06-28 18:18:24,812 -INFO - All stocks - json file saved
+2024-06-28 18:18:24,812 -INFO - 290 - 295 - Stock threading ended ....
+2024-06-28 18:18:24,813 -INFO - GUFICBIO.NS - this stock already completed
+2024-06-28 18:18:24,813 -INFO - ELECON.NS - this stock already completed
+2024-06-28 18:18:24,813 -INFO - KIRLOSBROS.NS - this stock already completed
+2024-06-28 18:18:24,813 -INFO - THYROCARE.NS - this stock already completed
+2024-06-28 18:18:24,813 -INFO - UNIPARTS.NS - this stock already completed
+2024-06-28 18:19:37,360 -INFO - All stocks - Excel file Saved
+2024-06-28 18:19:37,360 -INFO - All stocks - json file saved
+2024-06-28 18:20:50,641 -INFO - All stocks - Excel file Saved
+2024-06-28 18:20:50,641 -INFO - All stocks - json file saved
+2024-06-28 18:20:50,641 -INFO - 295 - 300 - Stock threading ended ....
+2024-06-28 18:20:50,641 -INFO - DALMIASUG.NS - this stock already completed
+2024-06-28 18:20:50,641 -INFO - UFLEX.NS - this stock already completed
+2024-06-28 18:20:50,641 -INFO - SBCL.NS - this stock already completed
+2024-06-28 18:20:50,641 -INFO - GHCL.NS - this stock already completed
+2024-06-28 18:20:50,641 -INFO - FINOPB.NS - this stock already completed
+2024-06-28 18:22:02,685 -INFO - All stocks - Excel file Saved
+2024-06-28 18:22:02,685 -INFO - All stocks - json file saved
+2024-06-28 18:23:15,155 -INFO - All stocks - Excel file Saved
+2024-06-28 18:23:15,155 -INFO - All stocks - json file saved
+2024-06-28 18:23:15,155 -INFO - 300 - 305 - Stock threading ended ....
+2024-06-28 18:23:15,155 -INFO - GRSE.NS - this stock already completed
+2024-06-28 18:23:15,155 -INFO - IONEXCHANG.NS - this stock already completed
+2024-06-28 18:23:15,155 -INFO - HINDWAREAP.NS - this stock already completed
+2024-06-28 18:23:15,155 -INFO - RAJRATAN.NS - this stock already completed
+2024-06-28 18:23:15,155 -INFO - MAHLOG.NS - this stock already completed
+2024-06-28 18:24:27,800 -INFO - All stocks - Excel file Saved
+2024-06-28 18:24:27,801 -INFO - All stocks - json file saved
+2024-06-28 18:25:40,141 -INFO - All stocks - Excel file Saved
+2024-06-28 18:25:40,143 -INFO - All stocks - json file saved
+2024-06-28 18:25:40,143 -INFO - 305 - 310 - Stock threading ended ....
+2024-06-28 18:25:40,143 -INFO - TIIL.NS - this stock already completed
+2024-06-28 18:25:40,143 -INFO - TMB.NS - this stock already completed
+2024-06-28 18:25:40,143 -INFO - TI.NS - this stock already completed
+2024-06-28 18:25:40,143 -INFO - FUSION.NS - this stock already completed
+2024-06-28 18:25:40,143 -INFO - TITAGARH.NS - this stock already completed
+2024-06-28 18:26:52,929 -INFO - All stocks - Excel file Saved
+2024-06-28 18:26:52,929 -INFO - All stocks - json file saved
+2024-06-28 18:28:05,034 -INFO - All stocks - Excel file Saved
+2024-06-28 18:28:05,037 -INFO - All stocks - json file saved
+2024-06-28 18:28:05,037 -INFO - 310 - 315 - Stock threading ended ....
+2024-06-28 18:28:05,037 -INFO - RAMKY.NS - this stock already completed
+2024-06-28 18:28:05,037 -INFO - SIS.NS - this stock already completed
+2024-06-28 18:28:05,037 -INFO - LAOPALA.NS - this stock already completed
+2024-06-28 18:28:05,037 -INFO - DEN.NS - this stock already completed
+2024-06-28 18:28:05,037 -INFO - DIVGIITTS.NS - this stock already completed
+2024-06-28 18:29:17,242 -INFO - All stocks - Excel file Saved
+2024-06-28 18:29:17,243 -INFO - All stocks - json file saved
+2024-06-28 18:30:29,627 -INFO - All stocks - Excel file Saved
+2024-06-28 18:30:29,627 -INFO - All stocks - json file saved
+2024-06-28 18:30:29,628 -INFO - 315 - 320 - Stock threading ended ....
+2024-06-28 18:30:29,628 -INFO - ASTRAZEN.NS - this stock already completed
+2024-06-28 18:30:29,628 -INFO - MANINFRA.NS - this stock already completed
+2024-06-28 18:30:29,629 -INFO - TCI.NS - this stock already completed
+2024-06-28 18:30:29,629 -INFO - EVEREADY.NS - this stock already completed
+2024-06-28 18:30:29,629 -INFO - BALMLAWRIE.NS - this stock already completed
+2024-06-28 18:31:42,024 -INFO - All stocks - Excel file Saved
+2024-06-28 18:31:42,024 -INFO - All stocks - json file saved
+2024-06-28 18:32:54,511 -INFO - All stocks - Excel file Saved
+2024-06-28 18:32:54,511 -INFO - All stocks - json file saved
+2024-06-28 18:32:54,511 -INFO - 320 - 325 - Stock threading ended ....
+2024-06-28 18:32:54,511 -INFO - NESCO.NS - this stock already completed
+2024-06-28 18:32:54,511 -INFO - KIRIINDUS.NS - this stock already completed
+2024-06-28 18:32:54,511 -INFO - RAILTEL.NS - this stock already completed
+2024-06-28 18:32:54,511 -INFO - GREENPLY.NS - this stock already completed
+2024-06-28 18:32:54,511 -INFO - MOLDTKPAC.NS - this stock already completed
+2024-06-28 18:34:07,106 -INFO - All stocks - Excel file Saved
+2024-06-28 18:34:07,106 -INFO - All stocks - json file saved
+2024-06-28 18:35:19,752 -INFO - All stocks - Excel file Saved
+2024-06-28 18:35:19,752 -INFO - All stocks - json file saved
+2024-06-28 18:35:19,752 -INFO - 325 - 330 - Stock threading ended ....
+2024-06-28 18:35:19,753 -INFO - CMSINFO.NS - this stock already completed
+2024-06-28 18:35:19,753 -INFO - IBREALEST.NS - this stock already completed
+2024-06-28 18:35:19,753 -INFO - PARADEEP.NS - this stock already completed
+2024-06-28 18:35:19,753 -INFO - ANANTRAJ.NS - this stock already completed
+2024-06-28 18:35:19,753 -INFO - PRICOLLTD.NS - this stock already completed
+2024-06-28 18:36:32,128 -INFO - All stocks - Excel file Saved
+2024-06-28 18:36:32,129 -INFO - All stocks - json file saved
+2024-06-28 18:37:44,707 -INFO - All stocks - Excel file Saved
+2024-06-28 18:37:44,707 -INFO - All stocks - json file saved
+2024-06-28 18:37:44,707 -INFO - 330 - 335 - Stock threading ended ....
+2024-06-28 18:37:44,708 -INFO - DHANI.NS - this stock already completed
+2024-06-28 18:37:44,708 -INFO - JINDWORLD.NS - this stock already completed
+2024-06-28 18:37:44,708 -INFO - HINDOILEXP.NS - this stock already completed
+2024-06-28 18:37:44,708 -INFO - CIGNITITEC.NS - this stock already completed
+2024-06-28 18:37:44,708 -INFO - ACE.NS - this stock already completed
+2024-06-28 18:38:57,211 -INFO - All stocks - Excel file Saved
+2024-06-28 18:38:57,212 -INFO - All stocks - json file saved
+2024-06-28 18:40:09,861 -INFO - All stocks - Excel file Saved
+2024-06-28 18:40:09,861 -INFO - All stocks - json file saved
+2024-06-28 18:40:09,861 -INFO - 335 - 340 - Stock threading ended ....
+2024-06-28 18:40:09,861 -INFO - JKIL.NS - this stock already completed
+2024-06-28 18:40:09,861 -INFO - SUDARSCHEM.NS - this stock already completed
+2024-06-28 18:40:09,861 -INFO - SOUTHBANK.NS - this stock already completed
+2024-06-28 18:40:09,861 -INFO - CAMLINFINE.NS - this stock already completed
+2024-06-28 18:40:09,861 -INFO - ADVENZYMES.NS - this stock already completed
+2024-06-28 18:41:22,478 -INFO - All stocks - Excel file Saved
+2024-06-28 18:41:22,480 -INFO - All stocks - json file saved
+2024-06-28 18:42:34,929 -INFO - All stocks - Excel file Saved
+2024-06-28 18:42:34,929 -INFO - All stocks - json file saved
+2024-06-28 18:42:34,929 -INFO - 340 - 345 - Stock threading ended ....
+2024-06-28 18:42:34,929 -INFO - GREAVESCOT.NS - this stock already completed
+2024-06-28 18:42:34,929 -INFO - INOXWIND.NS - this stock already completed
+2024-06-28 18:42:34,929 -INFO - BECTORFOOD.NS - this stock already completed
+2024-06-28 18:42:34,929 -INFO - POWERMECH.NS - this stock already completed
+2024-06-28 18:42:34,929 -INFO - FIEMIND.NS - this stock already completed
+2024-06-28 18:43:49,799 -INFO - All stocks - Excel file Saved
+2024-06-28 18:43:49,799 -INFO - All stocks - json file saved
+2024-06-28 18:45:04,289 -INFO - All stocks - Excel file Saved
+2024-06-28 18:45:04,290 -INFO - All stocks - json file saved
+2024-06-28 18:45:04,290 -INFO - 345 - 350 - Stock threading ended ....
+2024-06-28 18:45:04,290 -INFO - CHENNPETRO.NS - this stock already completed
+2024-06-28 18:45:04,290 -INFO - WONDERLA.NS - this stock already completed
+2024-06-28 18:45:04,290 -INFO - ANANDRATHI.NS - this stock already completed
+2024-06-28 18:45:04,290 -INFO - ACCELYA.NS - this stock already completed
+2024-06-28 18:45:04,290 -INFO - BOMDYEING.NS - this stock already completed
+2024-06-28 18:46:24,407 -INFO - All stocks - Excel file Saved
+2024-06-28 18:46:24,419 -INFO - All stocks - json file saved
+2024-06-28 18:47:46,479 -INFO - All stocks - Excel file Saved
+2024-06-28 18:47:46,480 -INFO - All stocks - json file saved
+2024-06-28 18:47:46,480 -INFO - 350 - 355 - Stock threading ended ....
+2024-06-28 18:47:46,480 -INFO - PTCIL.NS - this stock already completed
+2024-06-28 18:47:46,480 -INFO - NAVA.NS - this stock already completed
+2024-06-28 18:47:46,480 -INFO - JKTYRE.NS - this stock already completed
+2024-06-28 18:47:46,480 -INFO - ASHOKA.NS - this stock already completed
+2024-06-28 18:47:48,092 -ERROR - 
+2 Failed downloads:
+2024-06-28 18:47:48,092 -ERROR - ['SBFC.NS']: YFInvalidPeriodError("%ticker%: Period '2y' is invalid, must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', 'ytd', 'max']")
+2024-06-28 18:47:48,092 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 18:49:08,758 -INFO - All stocks - Excel file Saved
+2024-06-28 18:49:08,758 -INFO - All stocks - json file saved
+2024-06-28 18:50:27,168 -INFO - All stocks - Excel file Saved
+2024-06-28 18:50:27,169 -INFO - All stocks - json file saved
+2024-06-28 18:50:27,169 -INFO - 355 - 360 - Stock threading ended ....
+2024-06-28 18:50:27,169 -INFO - DODLA.NS - this stock already completed
+2024-06-28 18:50:27,169 -INFO - IMFA.NS - this stock already completed
+2024-06-28 18:50:27,169 -INFO - APOLLOPIPE.NS - this stock already completed
+2024-06-28 18:50:27,169 -INFO - JWL.NS - this stock already completed
+2024-06-28 18:50:28,584 -ERROR - 
+2 Failed downloads:
+2024-06-28 18:50:28,584 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 18:50:28,584 -ERROR - ['CARYSIL.NS']: IndexError('Boolean index has wrong length: 2 instead of 1')
+2024-06-28 18:51:47,971 -INFO - All stocks - Excel file Saved
+2024-06-28 18:51:47,972 -INFO - All stocks - json file saved
+2024-06-28 18:53:08,812 -INFO - All stocks - Excel file Saved
+2024-06-28 18:53:08,813 -INFO - All stocks - json file saved
+2024-06-28 18:53:08,813 -INFO - 360 - 365 - Stock threading ended ....
+2024-06-28 18:53:08,814 -INFO - MSTCLTD.NS - this stock already completed
+2024-06-28 18:53:08,814 -INFO - DCAL.NS - this stock already completed
+2024-06-28 18:53:08,814 -INFO - KIRLOSENG.NS - this stock already completed
+2024-06-28 18:53:08,814 -INFO - IFBIND.NS - this stock already completed
+2024-06-28 18:53:08,814 -INFO - PRUDENT.NS - this stock already completed
+2024-06-28 18:54:30,501 -INFO - All stocks - Excel file Saved
+2024-06-28 18:54:30,502 -INFO - All stocks - json file saved
+2024-06-28 18:55:51,960 -INFO - All stocks - Excel file Saved
+2024-06-28 18:55:51,960 -INFO - All stocks - json file saved
+2024-06-28 18:55:51,961 -INFO - 365 - 370 - Stock threading ended ....
+2024-06-28 18:55:51,962 -INFO - TIPSINDLTD.NS - this stock already completed
+2024-06-28 18:55:51,962 -INFO - GANESHHOUC.NS - this stock already completed
+2024-06-28 18:55:51,962 -INFO - ETHOSLTD.NS - this stock already completed
+2024-06-28 18:55:51,962 -INFO - AHLUCONT.NS - this stock already completed
+2024-06-28 18:55:51,962 -INFO - SPLPETRO.NS - this stock already completed
+2024-06-28 18:57:15,414 -INFO - All stocks - Excel file Saved
+2024-06-28 18:57:15,419 -INFO - All stocks - json file saved
+2024-06-28 18:58:34,902 -INFO - All stocks - Excel file Saved
+2024-06-28 18:58:34,902 -INFO - All stocks - json file saved
+2024-06-28 18:58:34,902 -INFO - 370 - 375 - Stock threading ended ....
+2024-06-28 18:58:34,903 -INFO - CARERATING.NS - this stock already completed
+2024-06-28 18:58:34,903 -INFO - WABAG.NS - this stock already completed
+2024-06-28 18:58:34,903 -INFO - MOL.NS - this stock already completed
+2024-06-28 18:58:34,903 -INFO - STARCEMENT.NS - this stock already completed
+2024-06-28 18:58:34,903 -INFO - DBREALTY.NS - this stock already completed
+2024-06-28 18:59:55,972 -INFO - All stocks - Excel file Saved
+2024-06-28 18:59:55,972 -INFO - All stocks - json file saved
+2024-06-28 19:01:08,906 -INFO - All stocks - Excel file Saved
+2024-06-28 19:01:08,906 -INFO - All stocks - json file saved
+2024-06-28 19:01:08,906 -INFO - 375 - 380 - Stock threading ended ....
+2024-06-28 19:01:08,907 -INFO - VOLTAMP.NS - this stock already completed
+2024-06-28 19:01:08,907 -INFO - EMUDHRA.NS - this stock already completed
+2024-06-28 19:01:08,907 -INFO - SUNTV.NS - this stock already completed
+2024-06-28 19:01:08,907 -INFO - NAVINFLUOR.NS - this stock already completed
+2024-06-28 19:01:08,907 -INFO - CROMPTON.NS - this stock already completed
+2024-06-28 19:02:21,438 -INFO - All stocks - Excel file Saved
+2024-06-28 19:02:21,438 -INFO - All stocks - json file saved
+2024-06-28 19:03:34,061 -INFO - All stocks - Excel file Saved
+2024-06-28 19:03:34,062 -INFO - All stocks - json file saved
+2024-06-28 19:03:34,062 -INFO - 380 - 385 - Stock threading ended ....
+2024-06-28 19:03:34,062 -INFO - BHEL.NS - this stock already completed
+2024-06-28 19:03:34,062 -INFO - DEEPAKNTR.NS - this stock already completed
+2024-06-28 19:03:34,062 -INFO - RAMCOCEM.NS - this stock already completed
+2024-06-28 19:03:34,062 -INFO - DIXON.NS - this stock already completed
+2024-06-28 19:03:34,062 -INFO - L&TFH.NS - this stock already completed
+2024-06-28 19:04:47,167 -INFO - All stocks - Excel file Saved
+2024-06-28 19:04:47,167 -INFO - All stocks - json file saved
+2024-06-28 19:05:59,803 -INFO - All stocks - Excel file Saved
+2024-06-28 19:05:59,803 -INFO - All stocks - json file saved
+2024-06-28 19:05:59,803 -INFO - 385 - 390 - Stock threading ended ....
+2024-06-28 19:05:59,804 -INFO - ABFRL.NS - this stock already completed
+2024-06-28 19:05:59,804 -INFO - LALPATHLAB.NS - this stock already completed
+2024-06-28 19:05:59,804 -INFO - TATACHEM.NS - this stock already completed
+2024-06-28 19:05:59,804 -INFO - PEL.NS - this stock already completed
+2024-06-28 19:05:59,804 -INFO - COROMANDEL.NS - this stock already completed
+2024-06-28 19:07:13,124 -INFO - All stocks - Excel file Saved
+2024-06-28 19:07:13,124 -INFO - All stocks - json file saved
+2024-06-28 19:08:25,460 -INFO - All stocks - Excel file Saved
+2024-06-28 19:08:25,460 -INFO - All stocks - json file saved
+2024-06-28 19:08:25,460 -INFO - 390 - 395 - Stock threading ended ....
+2024-06-28 19:08:25,461 -INFO - DEVYANI.NS - this stock already completed
+2024-06-28 19:08:25,461 -INFO - FACT.NS - this stock already completed
+2024-06-28 19:08:25,461 -INFO - LAURUSLABS.NS - this stock already completed
+2024-06-28 19:08:25,461 -INFO - GLAND.NS - this stock already completed
+2024-06-28 19:08:25,461 -INFO - LODHA.NS - this stock already completed
+2024-06-28 19:09:37,671 -INFO - All stocks - Excel file Saved
+2024-06-28 19:09:37,671 -INFO - All stocks - json file saved
+2024-06-28 19:10:49,949 -INFO - All stocks - Excel file Saved
+2024-06-28 19:10:49,949 -INFO - All stocks - json file saved
+2024-06-28 19:10:49,949 -INFO - 395 - 400 - Stock threading ended ....
+2024-06-28 19:10:49,950 -INFO - FORTIS.NS - this stock already completed
+2024-06-28 19:10:49,950 -INFO - NHPC.NS - this stock already completed
+2024-06-28 19:10:49,950 -INFO - YESBANK.NS - this stock already completed
+2024-06-28 19:10:49,950 -INFO - BANKINDIA.NS - this stock already completed
+2024-06-28 19:10:49,950 -INFO - TIINDIA.NS - this stock already completed
+2024-06-28 19:12:02,341 -INFO - All stocks - Excel file Saved
+2024-06-28 19:12:02,342 -INFO - All stocks - json file saved
+2024-06-28 19:13:14,779 -INFO - All stocks - Excel file Saved
+2024-06-28 19:13:14,779 -INFO - All stocks - json file saved
+2024-06-28 19:13:14,779 -INFO - 400 - 405 - Stock threading ended ....
+2024-06-28 19:13:14,779 -INFO - POONAWALLA.NS - this stock already completed
+2024-06-28 19:13:14,779 -INFO - CGPOWER.NS - this stock already completed
+2024-06-28 19:13:14,779 -INFO - PRESTIGE.NS - this stock already completed
+2024-06-28 19:13:14,779 -INFO - TATAELXSI.NS - this stock already completed
+2024-06-28 19:13:14,779 -INFO - NYKAA.NS - this stock already completed
+2024-06-28 19:14:27,082 -INFO - All stocks - Excel file Saved
+2024-06-28 19:14:27,082 -INFO - All stocks - json file saved
+2024-06-28 19:15:39,321 -INFO - All stocks - Excel file Saved
+2024-06-28 19:15:39,321 -INFO - All stocks - json file saved
+2024-06-28 19:15:39,321 -INFO - 405 - 410 - Stock threading ended ....
+2024-06-28 19:15:39,321 -INFO - RVNL.NS - this stock already completed
+2024-06-28 19:15:39,321 -INFO - MAZDOCK.NS - this stock already completed
+2024-06-28 19:15:39,321 -INFO - APLAPOLLO.NS - this stock already completed
+2024-06-28 19:15:39,321 -INFO - IRFC.NS - this stock already completed
+2024-06-28 19:15:39,321 -INFO - PAYTM.NS - this stock already completed
+2024-06-28 19:16:51,543 -INFO - All stocks - Excel file Saved
+2024-06-28 19:16:51,544 -INFO - All stocks - json file saved
+2024-06-28 19:18:03,774 -INFO - All stocks - Excel file Saved
+2024-06-28 19:18:03,774 -INFO - All stocks - json file saved
+2024-06-28 19:18:03,774 -INFO - 410 - 415 - Stock threading ended ....
+2024-06-28 19:18:03,774 -INFO - KPITTECH.NS - this stock already completed
+2024-06-28 19:18:03,774 -INFO - FLUOROCHEM.NS - this stock already completed
+2024-06-28 19:18:03,774 -INFO - TORNTPOWER.NS - this stock already completed
+2024-06-28 19:18:03,774 -INFO - BDL.NS - this stock already completed
+2024-06-28 19:18:03,774 -INFO - PATANJALI.NS - this stock already completed
+2024-06-28 19:19:16,047 -INFO - All stocks - Excel file Saved
+2024-06-28 19:19:16,047 -INFO - All stocks - json file saved
+2024-06-28 19:20:28,321 -INFO - All stocks - Excel file Saved
+2024-06-28 19:20:28,321 -INFO - All stocks - json file saved
+2024-06-28 19:20:28,321 -INFO - 415 - 420 - Stock threading ended ....
+2024-06-28 19:20:28,322 -INFO - DATAPATTNS.NS - this stock already completed
+2024-06-28 19:20:28,322 -INFO - SONACOMS.NS - this stock already completed
+2024-06-28 19:20:28,322 -INFO - POLICYBZR.NS - this stock already completed
+2024-06-28 19:20:28,322 -INFO - JSWENERGY.NS - this stock already completed
+2024-06-28 19:20:28,322 -INFO - GRANULES.NS - this stock already completed
+2024-06-28 19:21:40,635 -INFO - All stocks - Excel file Saved
+2024-06-28 19:21:40,636 -INFO - All stocks - json file saved
+2024-06-28 19:22:52,924 -INFO - All stocks - Excel file Saved
+2024-06-28 19:22:52,925 -INFO - All stocks - json file saved
+2024-06-28 19:22:52,925 -INFO - 420 - 425 - Stock threading ended ....
+2024-06-28 19:22:52,925 -INFO - CEATLTD.NS - this stock already completed
+2024-06-28 19:22:52,925 -INFO - VIPIND.NS - this stock already completed
+2024-06-28 19:22:52,925 -INFO - INTELLECT.NS - this stock already completed
+2024-06-28 19:22:52,925 -INFO - HAPPSTMNDS.NS - this stock already completed
+2024-06-28 19:22:52,925 -INFO - KARURVYSYA.NS - this stock already completed
+2024-06-28 19:24:09,909 -INFO - All stocks - Excel file Saved
+2024-06-28 19:24:09,910 -INFO - All stocks - json file saved
+2024-06-28 19:25:28,867 -INFO - All stocks - Excel file Saved
+2024-06-28 19:25:28,867 -INFO - All stocks - json file saved
+2024-06-28 19:25:28,867 -INFO - 425 - 430 - Stock threading ended ....
+2024-06-28 19:25:28,868 -INFO - MEDPLUS.NS - this stock already completed
+2024-06-28 19:25:28,868 -INFO - ZENSARTECH.NS - this stock already completed
+2024-06-28 19:25:28,868 -INFO - LXCHEM.NS - this stock already completed
+2024-06-28 19:25:28,868 -INFO - CREDITACC.NS - this stock already completed
+2024-06-28 19:25:28,868 -INFO - BSE.NS - this stock already completed
+2024-06-28 19:26:42,299 -INFO - All stocks - Excel file Saved
+2024-06-28 19:26:42,300 -INFO - All stocks - json file saved
+2024-06-28 19:27:55,126 -INFO - All stocks - Excel file Saved
+2024-06-28 19:27:55,126 -INFO - All stocks - json file saved
+2024-06-28 19:27:55,126 -INFO - 430 - 435 - Stock threading ended ....
+2024-06-28 19:27:55,126 -INFO - KRBL.NS - this stock already completed
+2024-06-28 19:27:55,127 -INFO - AFFLE.NS - this stock already completed
+2024-06-28 19:27:55,127 -INFO - BALAMINES.NS - this stock already completed
+2024-06-28 19:27:55,127 -INFO - BLS.NS - this stock already completed
+2024-06-28 19:27:55,127 -INFO - PRAJIND.NS - this stock already completed
+2024-06-28 19:29:07,696 -INFO - All stocks - Excel file Saved
+2024-06-28 19:29:07,697 -INFO - All stocks - json file saved
+2024-06-28 19:30:21,210 -INFO - All stocks - Excel file Saved
+2024-06-28 19:30:21,211 -INFO - All stocks - json file saved
+2024-06-28 19:30:21,211 -INFO - 435 - 440 - Stock threading ended ....
+2024-06-28 19:30:21,211 -INFO - EQUITASBNK.NS - this stock already completed
+2024-06-28 19:30:21,211 -INFO - HUDCO.NS - this stock already completed
+2024-06-28 19:30:21,211 -INFO - MCX.NS - this stock already completed
+2024-06-28 19:30:21,211 -INFO - METROPOLIS.NS - this stock already completed
+2024-06-28 19:30:21,211 -INFO - KEC.NS - this stock already completed
+2024-06-28 19:31:34,095 -INFO - All stocks - Excel file Saved
+2024-06-28 19:31:34,097 -INFO - All stocks - json file saved
+2024-06-28 19:32:46,580 -INFO - All stocks - Excel file Saved
+2024-06-28 19:32:46,581 -INFO - All stocks - json file saved
+2024-06-28 19:32:46,581 -INFO - 440 - 445 - Stock threading ended ....
+2024-06-28 19:32:46,581 -INFO - JYOTHYLAB.NS - this stock already completed
+2024-06-28 19:32:46,581 -INFO - AAVAS.NS - this stock already completed
+2024-06-28 19:32:46,581 -INFO - RITES.NS - this stock already completed
+2024-06-28 19:32:46,581 -INFO - CANFINHOME.NS - this stock already completed
+2024-06-28 19:32:46,581 -INFO - BALRAMCHIN.NS - this stock already completed
+2024-06-28 19:33:59,014 -INFO - All stocks - Excel file Saved
+2024-06-28 19:33:59,015 -INFO - All stocks - json file saved
+2024-06-28 19:35:11,463 -INFO - All stocks - Excel file Saved
+2024-06-28 19:35:11,464 -INFO - All stocks - json file saved
+2024-06-28 19:35:11,464 -INFO - 445 - 450 - Stock threading ended ....
+2024-06-28 19:35:11,465 -INFO - NATCOPHARM.NS - this stock already completed
+2024-06-28 19:35:11,465 -INFO - DEEPAKFERT.NS - this stock already completed
+2024-06-28 19:35:11,465 -INFO - AMBER.NS - this stock already completed
+2024-06-28 19:35:11,465 -INFO - FSL.NS - this stock already completed
+2024-06-28 19:35:11,465 -INFO - NLCINDIA.NS - this stock already completed
+2024-06-28 19:36:23,997 -INFO - All stocks - Excel file Saved
+2024-06-28 19:36:23,998 -INFO - All stocks - json file saved
+2024-06-28 19:37:36,462 -INFO - All stocks - Excel file Saved
+2024-06-28 19:37:36,463 -INFO - All stocks - json file saved
+2024-06-28 19:37:36,463 -INFO - 450 - 455 - Stock threading ended ....
+2024-06-28 19:37:36,463 -INFO - TRITURBINE.NS - this stock already completed
+2024-06-28 19:37:36,463 -INFO - BIRLACORPN.NS - this stock already completed
+2024-06-28 19:37:36,463 -INFO - JKLAKSHMI.NS - this stock already completed
+2024-06-28 19:37:36,463 -INFO - JUBLINGREA.NS - this stock already completed
+2024-06-28 19:37:36,463 -INFO - COCHINSHIP.NS - this stock already completed
+2024-06-28 19:38:48,834 -INFO - All stocks - Excel file Saved
+2024-06-28 19:38:48,834 -INFO - All stocks - json file saved
+2024-06-28 19:40:01,090 -INFO - All stocks - Excel file Saved
+2024-06-28 19:40:01,092 -INFO - All stocks - json file saved
+2024-06-28 19:40:01,092 -INFO - 455 - 460 - Stock threading ended ....
+2024-06-28 19:40:01,092 -INFO - IIFL.NS - this stock already completed
+2024-06-28 19:40:01,092 -INFO - CENTURYTEX.NS - this stock already completed
+2024-06-28 19:40:01,092 -INFO - SJVN.NS - this stock already completed
+2024-06-28 19:40:01,092 -INFO - EASEMYTRIP.NS - this stock already completed
+2024-06-28 19:40:01,092 -INFO - TTML.NS - this stock already completed
+2024-06-28 19:41:13,691 -INFO - All stocks - Excel file Saved
+2024-06-28 19:41:13,691 -INFO - All stocks - json file saved
+2024-06-28 19:42:26,103 -INFO - All stocks - Excel file Saved
+2024-06-28 19:42:26,104 -INFO - All stocks - json file saved
+2024-06-28 19:42:26,104 -INFO - 460 - 465 - Stock threading ended ....
+2024-06-28 19:42:26,104 -INFO - SUPRAJIT.NS - this stock already completed
+2024-06-28 19:42:26,104 -INFO - ZYDUSWELL.NS - this stock already completed
+2024-06-28 19:42:26,104 -INFO - AARTIIND.NS - this stock already completed
+2024-06-28 19:42:26,104 -INFO - IBULHSGFIN.NS - this stock already completed
+2024-06-28 19:42:26,104 -INFO - ELGIEQUIP.NS - this stock already completed
+2024-06-28 19:43:38,545 -INFO - All stocks - Excel file Saved
+2024-06-28 19:43:38,546 -INFO - All stocks - json file saved
+2024-06-28 19:44:50,992 -INFO - All stocks - Excel file Saved
+2024-06-28 19:44:50,992 -INFO - All stocks - json file saved
+2024-06-28 19:44:50,992 -INFO - 465 - 470 - Stock threading ended ....
+2024-06-28 19:44:50,993 -INFO - GALAXYSURF.NS - this stock already completed
+2024-06-28 19:44:50,993 -INFO - GRINFRA.NS - this stock already completed
+2024-06-28 19:44:50,993 -INFO - MAHLIFE.NS - this stock already completed
+2024-06-28 19:44:50,993 -INFO - USHAMART.NS - this stock already completed
+2024-06-28 19:44:52,598 -ERROR - 
+2 Failed downloads:
+2024-06-28 19:44:52,598 -ERROR - ['CONCORDBIO.NS']: YFInvalidPeriodError("%ticker%: Period '2y' is invalid, must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', 'ytd', 'max']")
+2024-06-28 19:44:52,599 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 19:46:04,767 -INFO - All stocks - Excel file Saved
+2024-06-28 19:46:04,769 -INFO - All stocks - json file saved
+2024-06-28 19:47:17,387 -INFO - All stocks - Excel file Saved
+2024-06-28 19:47:17,388 -INFO - All stocks - json file saved
+2024-06-28 19:47:17,388 -INFO - 470 - 475 - Stock threading ended ....
+2024-06-28 19:47:17,389 -INFO - ALLCARGO.NS - this stock already completed
+2024-06-28 19:47:17,389 -INFO - KPIL.NS - this stock already completed
+2024-06-28 19:47:17,389 -INFO - RATNAMANI.NS - this stock already completed
+2024-06-28 19:47:17,389 -INFO - ACI.NS - this stock already completed
+2024-06-28 19:47:17,389 -INFO - SAPPHIRE.NS - this stock already completed
+2024-06-28 19:48:29,450 -INFO - All stocks - Excel file Saved
+2024-06-28 19:48:29,452 -INFO - All stocks - json file saved
+2024-06-28 19:49:41,757 -INFO - All stocks - Excel file Saved
+2024-06-28 19:49:41,759 -INFO - All stocks - json file saved
+2024-06-28 19:49:41,759 -INFO - 475 - 480 - Stock threading ended ....
+2024-06-28 19:49:41,760 -INFO - INDIACEM.NS - this stock already completed
+2024-06-28 19:49:41,760 -INFO - NH.NS - this stock already completed
+2024-06-28 19:49:41,760 -INFO - NCC.NS - this stock already completed
+2024-06-28 19:49:41,760 -INFO - KFINTECH.NS - this stock already completed
+2024-06-28 19:49:41,760 -INFO - LEMONTREE.NS - this stock already completed
+2024-06-28 19:50:54,483 -INFO - All stocks - Excel file Saved
+2024-06-28 19:50:54,485 -INFO - All stocks - json file saved
+2024-06-28 19:52:07,833 -INFO - All stocks - Excel file Saved
+2024-06-28 19:52:07,834 -INFO - All stocks - json file saved
+2024-06-28 19:52:07,834 -INFO - 480 - 485 - Stock threading ended ....
+2024-06-28 19:52:07,834 -INFO - JUSTDIAL.NS - this stock already completed
+2024-06-28 19:52:07,834 -INFO - FDC.NS - this stock already completed
+2024-06-28 19:52:07,834 -INFO - GPPL.NS - this stock already completed
+2024-06-28 19:52:07,834 -INFO - GESHIP.NS - this stock already completed
+2024-06-28 19:52:07,834 -INFO - CLEAN.NS - this stock already completed
+2024-06-28 19:53:20,362 -INFO - All stocks - Excel file Saved
+2024-06-28 19:53:20,364 -INFO - All stocks - json file saved
+2024-06-28 19:54:39,522 -INFO - All stocks - Excel file Saved
+2024-06-28 19:54:39,524 -INFO - All stocks - json file saved
+2024-06-28 19:54:39,524 -INFO - 485 - 490 - Stock threading ended ....
+2024-06-28 19:54:39,524 -INFO - CERA.NS - this stock already completed
+2024-06-28 19:54:39,524 -INFO - RHIM.NS - this stock already completed
+2024-06-28 19:54:39,524 -INFO - WELCORP.NS - this stock already completed
+2024-06-28 19:54:39,524 -INFO - SUVENPHAR.NS - this stock already completed
+2024-06-28 19:54:39,524 -INFO - HOMEFIRST.NS - this stock already completed
+2024-06-28 19:55:58,812 -INFO - All stocks - Excel file Saved
+2024-06-28 19:55:58,814 -INFO - All stocks - json file saved
+2024-06-28 19:57:12,399 -INFO - All stocks - Excel file Saved
+2024-06-28 19:57:12,401 -INFO - All stocks - json file saved
+2024-06-28 19:57:12,401 -INFO - 490 - 495 - Stock threading ended ....
+2024-06-28 19:57:12,401 -INFO - GAEL.NS - this stock already completed
+2024-06-28 19:57:12,401 -INFO - SHARDACROP.NS - this stock already completed
+2024-06-28 19:57:12,401 -INFO - POWERINDIA.NS - this stock already completed
+2024-06-28 19:57:12,401 -INFO - DELTACORP.NS - this stock already completed
+2024-06-28 19:57:12,401 -INFO - POLYPLEX.NS - this stock already completed
+2024-06-28 19:58:25,503 -INFO - All stocks - Excel file Saved
+2024-06-28 19:58:25,505 -INFO - All stocks - json file saved
+2024-06-28 19:59:37,811 -INFO - All stocks - Excel file Saved
+2024-06-28 19:59:37,813 -INFO - All stocks - json file saved
+2024-06-28 19:59:37,813 -INFO - 495 - 500 - Stock threading ended ....
+2024-06-28 19:59:37,814 -INFO - FINPIPE.NS - this stock already completed
+2024-06-28 19:59:37,814 -INFO - MTARTECH.NS - this stock already completed
+2024-06-28 19:59:37,814 -INFO - WESTLIFE.NS - this stock already completed
+2024-06-28 19:59:37,814 -INFO - NUVOCO.NS - this stock already completed
+2024-06-28 19:59:37,814 -INFO - SYRMA.NS - this stock already completed
+2024-06-28 20:00:53,218 -INFO - All stocks - Excel file Saved
+2024-06-28 20:00:53,220 -INFO - All stocks - json file saved
+2024-06-28 20:02:06,639 -INFO - All stocks - Excel file Saved
+2024-06-28 20:02:06,641 -INFO - All stocks - json file saved
+2024-06-28 20:02:06,641 -INFO - 500 - 505 - Stock threading ended ....
+2024-06-28 20:02:06,641 -INFO - JUBLPHARMA.NS - this stock already completed
+2024-06-28 20:02:06,641 -INFO - ROSSARI.NS - this stock already completed
+2024-06-28 20:02:06,641 -INFO - TEAMLEASE.NS - this stock already completed
+2024-06-28 20:02:06,641 -INFO - VARROC.NS - this stock already completed
+2024-06-28 20:02:06,641 -INFO - SFL.NS - this stock already completed
+2024-06-28 20:03:18,987 -INFO - All stocks - Excel file Saved
+2024-06-28 20:03:18,988 -INFO - All stocks - json file saved
+2024-06-28 20:04:31,617 -INFO - All stocks - Excel file Saved
+2024-06-28 20:04:31,620 -INFO - All stocks - json file saved
+2024-06-28 20:04:31,620 -INFO - 505 - 510 - Stock threading ended ....
+2024-06-28 20:04:31,620 -INFO - INDIGOPNTS.NS - this stock already completed
+2024-06-28 20:04:31,620 -INFO - HEG.NS - this stock already completed
+2024-06-28 20:04:31,620 -INFO - DCMSHRIRAM.NS - this stock already completed
+2024-06-28 20:04:31,620 -INFO - JKCEMENT.NS - this stock already completed
+2024-06-28 20:04:31,620 -INFO - MASTEK.NS - this stock already completed
+2024-06-28 20:05:44,424 -INFO - All stocks - Excel file Saved
+2024-06-28 20:05:44,424 -INFO - All stocks - json file saved
+2024-06-28 20:06:56,708 -INFO - All stocks - Excel file Saved
+2024-06-28 20:06:56,709 -INFO - All stocks - json file saved
+2024-06-28 20:06:56,709 -INFO - 510 - 515 - Stock threading ended ....
+2024-06-28 20:06:56,709 -INFO - PNCINFRA.NS - this stock already completed
+2024-06-28 20:06:56,709 -INFO - EIDPARRY.NS - this stock already completed
+2024-06-28 20:06:56,709 -INFO - BRIGADE.NS - this stock already completed
+2024-06-28 20:06:56,709 -INFO - ALKYLAMINE.NS - this stock already completed
+2024-06-28 20:06:56,709 -INFO - EPL.NS - this stock already completed
+2024-06-28 20:08:09,146 -INFO - All stocks - Excel file Saved
+2024-06-28 20:08:09,146 -INFO - All stocks - json file saved
+2024-06-28 20:09:21,840 -INFO - All stocks - Excel file Saved
+2024-06-28 20:09:21,841 -INFO - All stocks - json file saved
+2024-06-28 20:09:21,841 -INFO - 515 - 520 - Stock threading ended ....
+2024-06-28 20:09:21,841 -INFO - ORIENTELEC.NS - this stock already completed
+2024-06-28 20:09:21,841 -INFO - BLUESTARCO.NS - this stock already completed
+2024-06-28 20:09:21,841 -INFO - BEML.NS - this stock already completed
+2024-06-28 20:09:21,841 -INFO - GSFC.NS - this stock already completed
+2024-06-28 20:09:21,841 -INFO - HLEGLAS.NS - this stock already completed
+2024-06-28 20:10:33,959 -INFO - All stocks - Excel file Saved
+2024-06-28 20:10:33,962 -INFO - All stocks - json file saved
+2024-06-28 20:11:46,452 -INFO - All stocks - Excel file Saved
+2024-06-28 20:11:46,453 -INFO - All stocks - json file saved
+2024-06-28 20:11:46,453 -INFO - 520 - 525 - Stock threading ended ....
+2024-06-28 20:11:46,453 -INFO - GMMPFAUDLR.NS - this stock already completed
+2024-06-28 20:11:46,453 -INFO - PRINCEPIPE.NS - this stock already completed
+2024-06-28 20:11:46,453 -INFO - FINEORG.NS - this stock already completed
+2024-06-28 20:11:46,453 -INFO - INGERRAND.NS - this stock already completed
+2024-06-28 20:11:46,453 -INFO - GMRINFRA.NS - this stock already completed
+2024-06-28 20:12:59,113 -INFO - All stocks - Excel file Saved
+2024-06-28 20:12:59,114 -INFO - All stocks - json file saved
+2024-06-28 20:14:13,656 -INFO - All stocks - Excel file Saved
+2024-06-28 20:14:13,664 -INFO - All stocks - json file saved
+2024-06-28 20:14:13,664 -INFO - 525 - 530 - Stock threading ended ....
+2024-06-28 20:14:13,664 -INFO - NAZARA.NS - this stock already completed
+2024-06-28 20:14:13,664 -INFO - CHALET.NS - this stock already completed
+2024-06-28 20:14:13,664 -INFO - VMART.NS - this stock already completed
+2024-06-28 20:14:13,664 -INFO - SHYAMMETL.NS - this stock already completed
+2024-06-28 20:14:13,664 -INFO - BBTC.NS - this stock already completed
+2024-06-28 20:15:32,467 -INFO - All stocks - Excel file Saved
+2024-06-28 20:15:32,467 -INFO - All stocks - json file saved
+2024-06-28 20:16:48,409 -INFO - All stocks - Excel file Saved
+2024-06-28 20:16:48,409 -INFO - All stocks - json file saved
+2024-06-28 20:16:48,409 -INFO - 530 - 535 - Stock threading ended ....
+2024-06-28 20:16:48,410 -INFO - PGHL.NS - this stock already completed
+2024-06-28 20:16:48,410 -INFO - CCL.NS - this stock already completed
+2024-06-28 20:16:48,410 -INFO - NAM-INDIA.NS - this stock already completed
+2024-06-28 20:16:48,410 -INFO - TTKPRESTIG.NS - this stock already completed
+2024-06-28 20:16:48,410 -INFO - GSPL.NS - this stock already completed
+2024-06-28 20:18:08,159 -INFO - All stocks - Excel file Saved
+2024-06-28 20:18:08,162 -INFO - All stocks - json file saved
+2024-06-28 20:19:21,927 -INFO - All stocks - Excel file Saved
+2024-06-28 20:19:21,927 -INFO - All stocks - json file saved
+2024-06-28 20:19:21,927 -INFO - 535 - 540 - Stock threading ended ....
+2024-06-28 20:19:21,928 -INFO - SYMPHONY.NS - this stock already completed
+2024-06-28 20:19:21,928 -INFO - AETHER.NS - this stock already completed
+2024-06-28 20:19:21,928 -INFO - CASTROLIND.NS - this stock already completed
+2024-06-28 20:19:21,928 -INFO - RBA.NS - this stock already completed
+2024-06-28 20:19:21,928 -INFO - CHEMPLASTS.NS - this stock already completed
+2024-06-28 20:20:34,843 -INFO - All stocks - Excel file Saved
+2024-06-28 20:20:34,844 -INFO - All stocks - json file saved
+2024-06-28 20:21:47,846 -INFO - All stocks - Excel file Saved
+2024-06-28 20:21:47,848 -INFO - All stocks - json file saved
+2024-06-28 20:21:47,848 -INFO - 540 - 545 - Stock threading ended ....
+2024-06-28 20:21:47,848 -INFO - MAPMYINDIA.NS - this stock already completed
+2024-06-28 20:21:47,848 -INFO - ATUL.NS - this stock already completed
+2024-06-28 20:21:47,848 -INFO - MHRIL.NS - this stock already completed
+2024-06-28 20:21:47,848 -INFO - EIHOTEL.NS - this stock already completed
+2024-06-28 20:21:47,848 -INFO - SWSOLAR.NS - this stock already completed
+2024-06-28 20:23:00,954 -INFO - All stocks - Excel file Saved
+2024-06-28 20:23:00,954 -INFO - All stocks - json file saved
+2024-06-28 20:24:14,811 -INFO - All stocks - Excel file Saved
+2024-06-28 20:24:14,811 -INFO - All stocks - json file saved
+2024-06-28 20:24:14,811 -INFO - 545 - 550 - Stock threading ended ....
+2024-06-28 20:24:14,811 -INFO - ECLERX.NS - this stock already completed
+2024-06-28 20:24:14,811 -INFO - CSBBANK.NS - this stock already completed
+2024-06-28 20:24:14,811 -INFO - RALLIS.NS - this stock already completed
+2024-06-28 20:24:14,811 -INFO - VAIBHAVGBL.NS - this stock already completed
+2024-06-28 20:24:14,811 -INFO - LUXIND.NS - this stock already completed
+2024-06-28 20:25:27,250 -INFO - All stocks - Excel file Saved
+2024-06-28 20:25:27,253 -INFO - All stocks - json file saved
+2024-06-28 20:26:39,771 -INFO - All stocks - Excel file Saved
+2024-06-28 20:26:39,771 -INFO - All stocks - json file saved
+2024-06-28 20:26:39,771 -INFO - 550 - 555 - Stock threading ended ....
+2024-06-28 20:26:39,771 -INFO - KSB.NS - this stock already completed
+2024-06-28 20:26:39,771 -INFO - SAFARI.NS - this stock already completed
+2024-06-28 20:26:39,771 -INFO - ENGINERSIN.NS - this stock already completed
+2024-06-28 20:26:39,771 -INFO - GOCOLORS.NS - this stock already completed
+2024-06-28 20:26:39,771 -INFO - JAMNAAUTO.NS - this stock already completed
+2024-06-28 20:27:52,732 -INFO - All stocks - Excel file Saved
+2024-06-28 20:27:52,732 -INFO - All stocks - json file saved
+2024-06-28 20:29:05,341 -INFO - All stocks - Excel file Saved
+2024-06-28 20:29:05,343 -INFO - All stocks - json file saved
+2024-06-28 20:29:05,343 -INFO - 555 - 560 - Stock threading ended ....
+2024-06-28 20:29:05,343 -INFO - JMFINANCIL.NS - this stock already completed
+2024-06-28 20:29:05,343 -INFO - SWANENERGY.NS - this stock already completed
+2024-06-28 20:29:05,343 -INFO - RAINBOW.NS - this stock already completed
+2024-06-28 20:29:05,343 -INFO - KNRCON.NS - this stock already completed
+2024-06-28 20:29:05,343 -INFO - JINDALSAW.NS - this stock already completed
+2024-06-28 20:30:17,858 -INFO - All stocks - Excel file Saved
+2024-06-28 20:30:17,858 -INFO - All stocks - json file saved
+2024-06-28 20:31:30,490 -INFO - All stocks - Excel file Saved
+2024-06-28 20:31:30,491 -INFO - All stocks - json file saved
+2024-06-28 20:31:30,491 -INFO - 560 - 565 - Stock threading ended ....
+2024-06-28 20:31:30,491 -INFO - VTL.NS - this stock already completed
+2024-06-28 20:31:30,491 -INFO - AVANTIFEED.NS - this stock already completed
+2024-06-28 20:31:30,491 -INFO - PCBL.NS - this stock already completed
+2024-06-28 20:31:30,491 -INFO - IRCON.NS - this stock already completed
+2024-06-28 20:31:32,130 -ERROR - 
+2 Failed downloads:
+2024-06-28 20:31:32,130 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 20:31:32,130 -ERROR - ['360ONE.NS']: IndexError('Boolean index has wrong length: 7 instead of 6')
+2024-06-28 20:32:44,710 -INFO - All stocks - Excel file Saved
+2024-06-28 20:32:44,710 -INFO - All stocks - json file saved
+2024-06-28 20:33:57,170 -INFO - All stocks - Excel file Saved
+2024-06-28 20:33:57,170 -INFO - All stocks - json file saved
+2024-06-28 20:33:57,170 -INFO - 565 - 570 - Stock threading ended ....
+2024-06-28 20:33:57,170 -INFO - RCF.NS - this stock already completed
+2024-06-28 20:33:57,170 -INFO - FIVESTAR.NS - this stock already completed
+2024-06-28 20:33:57,170 -INFO - GLS.NS - this stock already completed
+2024-06-28 20:33:57,170 -INFO - CENTURYPLY.NS - this stock already completed
+2024-06-28 20:33:57,170 -INFO - CHOLAHLDNG.NS - this stock already completed
+2024-06-28 20:35:09,520 -INFO - All stocks - Excel file Saved
+2024-06-28 20:35:09,520 -INFO - All stocks - json file saved
+2024-06-28 20:36:21,999 -INFO - All stocks - Excel file Saved
+2024-06-28 20:36:22,003 -INFO - All stocks - json file saved
+2024-06-28 20:36:22,003 -INFO - 570 - 575 - Stock threading ended ....
+2024-06-28 20:36:22,003 -INFO - RTNINDIA.NS - this stock already completed
+2024-06-28 20:36:22,003 -INFO - ASAHIINDIA.NS - this stock already completed
+2024-06-28 20:36:22,003 -INFO - AARTIDRUGS.NS - this stock already completed
+2024-06-28 20:36:22,003 -INFO - MMTC.NS - this stock already completed
+2024-06-28 20:36:22,003 -INFO - CRAFTSMAN.NS - this stock already completed
+2024-06-28 20:37:35,173 -INFO - All stocks - Excel file Saved
+2024-06-28 20:37:35,173 -INFO - All stocks - json file saved
+2024-06-28 20:38:50,375 -INFO - All stocks - Excel file Saved
+2024-06-28 20:38:50,376 -INFO - All stocks - json file saved
+2024-06-28 20:38:50,376 -INFO - 575 - 580 - Stock threading ended ....
+2024-06-28 20:38:50,377 -INFO - APTUS.NS - this stock already completed
+2024-06-28 20:38:50,377 -INFO - JKPAPER.NS - this stock already completed
+2024-06-28 20:38:50,377 -INFO - KIMS.NS - this stock already completed
+2024-06-28 20:38:50,377 -INFO - ITI.NS - this stock already completed
+2024-06-28 20:38:50,377 -INFO - ERIS.NS - this stock already completed
+2024-06-28 20:40:11,677 -INFO - All stocks - Excel file Saved
+2024-06-28 20:40:11,678 -INFO - All stocks - json file saved
+2024-06-28 20:41:39,170 -INFO - All stocks - Excel file Saved
+2024-06-28 20:41:39,171 -INFO - All stocks - json file saved
+2024-06-28 20:41:39,171 -INFO - 580 - 585 - Stock threading ended ....
+2024-06-28 20:41:39,172 -INFO - VIJAYA.NS - this stock already completed
+2024-06-28 20:41:39,172 -INFO - GILLETTE.NS - this stock already completed
+2024-06-28 20:41:39,172 -INFO - MOTILALOFS.NS - this stock already completed
+2024-06-28 20:41:39,172 -INFO - CGCL.NS - this stock already completed
+2024-06-28 20:41:39,172 -INFO - BORORENEW.NS - this stock already completed
+2024-06-28 20:43:02,683 -INFO - All stocks - Excel file Saved
+2024-06-28 20:43:02,683 -INFO - All stocks - json file saved
+2024-06-28 20:44:23,854 -INFO - All stocks - Excel file Saved
+2024-06-28 20:44:23,855 -INFO - All stocks - json file saved
+2024-06-28 20:44:23,855 -INFO - 585 - 590 - Stock threading ended ....
+2024-06-28 20:44:23,855 -INFO - PRSMJOHNSN.NS - this stock already completed
+2024-06-28 20:44:23,856 -INFO - 3MINDIA.NS - this stock already completed
+2024-06-28 20:44:23,856 -INFO - SUNDRMFAST.NS - this stock already completed
+2024-06-28 20:44:23,856 -INFO - WHIRLPOOL.NS - this stock already completed
+2024-06-28 20:44:23,856 -INFO - SHOPERSTOP.NS - this stock already completed
+2024-06-28 20:45:44,447 -INFO - All stocks - Excel file Saved
+2024-06-28 20:45:44,448 -INFO - All stocks - json file saved
+2024-06-28 20:47:05,320 -INFO - All stocks - Excel file Saved
+2024-06-28 20:47:05,321 -INFO - All stocks - json file saved
+2024-06-28 20:47:05,321 -INFO - 590 - 595 - Stock threading ended ....
+2024-06-28 20:47:05,322 -INFO - RAJESHEXPO.NS - this stock already completed
+2024-06-28 20:47:05,322 -INFO - EMAMILTD.NS - this stock already completed
+2024-06-28 20:47:05,322 -INFO - KANSAINER.NS - this stock already completed
+2024-06-28 20:47:05,322 -INFO - LINDEINDIA.NS - this stock already completed
+2024-06-28 20:47:05,322 -INFO - RELAXO.NS - this stock already completed
+2024-06-28 20:48:24,096 -INFO - All stocks - Excel file Saved
+2024-06-28 20:48:24,097 -INFO - All stocks - json file saved
+2024-06-28 20:49:37,963 -INFO - All stocks - Excel file Saved
+2024-06-28 20:49:37,963 -INFO - All stocks - json file saved
+2024-06-28 20:49:37,963 -INFO - 595 - 600 - Stock threading ended ....
+2024-06-28 20:49:37,963 -INFO - TRIDENT.NS - this stock already completed
+2024-06-28 20:49:37,963 -INFO - BLUEDART.NS - this stock already completed
+2024-06-28 20:49:37,963 -INFO - MANYAVAR.NS - this stock already completed
+2024-06-28 20:49:37,963 -INFO - PFIZER.NS - this stock already completed
+2024-06-28 20:49:39,467 -ERROR - 
+2 Failed downloads:
+2024-06-28 20:49:39,467 -ERROR - ['UNOMINDA.NS']: IndexError('Boolean index has wrong length: 5 instead of 4')
+2024-06-28 20:49:39,467 -ERROR - ['NIFTY']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-06-28 20:50:52,292 -INFO - All stocks - Excel file Saved
+2024-06-28 20:50:52,294 -INFO - All stocks - json file saved
+2024-06-28 20:52:04,638 -INFO - All stocks - Excel file Saved
+2024-06-28 20:52:04,638 -INFO - All stocks - json file saved
+2024-06-28 20:52:04,638 -INFO - 600 - 605 - Stock threading ended ....
+2024-06-28 20:52:04,638 -INFO - Max time reached....
+2024-06-28 20:53:18,160 -INFO - All stocks - Excel file Saved
+2024-06-28 20:53:18,161 -INFO - All stocks - json file saved
